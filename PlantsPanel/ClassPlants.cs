@@ -1,4 +1,6 @@
-﻿namespace PlantsPanel
+﻿using System;
+
+namespace PlantsPanel
 {
     public class PlantsPanel
     {
@@ -28,7 +30,7 @@
             return fieldNum;
         }
 
-        public static float getWaterPlants(PlantsPanel plantsPanel)
+        public float getWaterPlants(PlantsPanel plantsPanel)
         {
             float waterConsumption = plantsPanel.WaterConsumption;
 
@@ -49,7 +51,7 @@
             return power;
         }
 
-        public static string getLightIntensityPlants(PlantsPanel plantsPanel)
+        public string getLightIntensityPlants(PlantsPanel plantsPanel)
         {
             if (plantsPanel.LightIntensity == 0)
             {
@@ -69,7 +71,7 @@
             }
         }
 
-        public static float getTemperaturePlants(PlantsPanel plantsPanel, string measurementUnit)
+        public float getTemperaturePlants(PlantsPanel plantsPanel, string measurementUnit)
         {
             float temperature;
 
@@ -91,7 +93,7 @@
             }
         }
 
-        public static float getHumidityPlants(PlantsPanel plantsPanel)
+        public float getHumidityPlants(PlantsPanel plantsPanel)
         {
             float humidity = plantsPanel.ActualHumidity;
 
@@ -113,7 +115,7 @@
             plantsPanel.OxygenConsumption = DesiredOxygen;
         }
 
-        public static void setPlantPowerConsumption(PlantsPanel plantsPanel, int powerLevel)
+        public void setPlantPowerConsumption(PlantsPanel plantsPanel, int powerLevel)
         {
             plantsPanel.PowerConsumption = powerLevel;
         }
@@ -131,6 +133,24 @@
         public void setHumidityPlants(PlantsPanel plantsPanel, float Desiredhumidity)
         {
             plantsPanel.ActualHumidity = Desiredhumidity;
+        }
+
+        public void createFileHumidity(float DesiredHumidity)
+        {
+            Random random = new Random();
+
+            int NValues = 200;
+
+            float max = DesiredHumidity + 2;
+
+            float min = DesiredHumidity - 2;
+
+            for (int i = 0; i < NValues; i++)
+            {
+                double val = random.NextDouble() * (max - min) + min;
+
+                File.AppendAllText("FileHumidity.txt", val.ToString("0.00") + Environment.NewLine);
+            }
         }
     }
 }
