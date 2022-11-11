@@ -12,6 +12,17 @@ namespace PlantsPanel
         public float ActualTemperature { get; private set; }
         public float ActualHumidity { get; private set; }
 
+        public PlantsPanel()
+        {
+            FieldNum = 0;
+            WaterConsumption = 0;
+            OxygenConsumption = 0;
+            PowerConsumption = 0;
+            LightIntensity = 0;
+            ActualTemperature = 0;
+            ActualHumidity = 0;
+        }
+
         public PlantsPanel(int fieldNum, float waterLt, float temperatureCelsius, int lightIntensity, float humidity, float oxygenConsumption, int powerConsumption)
         {
             this.FieldNum = fieldNum;
