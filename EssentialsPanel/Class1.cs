@@ -1,5 +1,6 @@
 ﻿using System.Reflection.Emit;
 using System.Reflection.Metadata;
+using System;
 
 namespace EssentialsPanel
 {
@@ -7,7 +8,7 @@ namespace EssentialsPanel
     {
         private double oxygen_level;
         private double water_level;
-               
+ 
        public double oxygenLevel()
         {
             Random rand = new Random();
@@ -20,8 +21,22 @@ namespace EssentialsPanel
             Random rand = new Random();
             double waterLevel = rand.Next(0, 101); //returns random number between 0-100
             return waterLevel;
-
         }
+
+        public int CheckLevels()
+        {
+           if (oxygen_level < 25)
+            {
+              //print warning that oxygen level is below 25%
+            }
+           else if (water_level < 25)
+            {
+                //print warning that water level is below 25%
+            }
+
+            return 0;
+        }
+
         public double getOxygenLevel()
         {
             return oxygen_level;
@@ -60,13 +75,3 @@ namespace EssentialsPanel
         }
     }
 }
-
-//public getOxygenLevel(double oxyLevel); (This is the getter for the oxygen level parameter)
-//    public getWaterLevel(double waterLevel); (This is the getter for the water level parameter)
-//    public getUseLevels(int useLevel); (This is a the getter for power usage level parameter)
-//    public setOxygenLevel(double oxygenLevel); (This is the setter for the oxygen level parameter)
-//    public setWaterLevel(double water_Level); (This is the setter for the water level parameter)
-//    public setUseLevels(int use_level); (This is a the setter for power usage level parameter)
-//    public checkPower(); (This is a Boolean which checks if power is on or off)
-//public checkLevels(); (This function checks for the levels of water and oxygen before displaying
-//    it to user to make sure levels are not below a certain point.)
