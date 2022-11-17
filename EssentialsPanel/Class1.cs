@@ -57,4 +57,25 @@ namespace EssentialsPanel
             this.water_level = waterLevel;
         }
     }
+
+    public class powerConsumed
+    {
+        private int powerconsumed;
+
+        public powerConsumed(int power)
+        {
+            this.powerconsumed = power;
+        }
+
+        public int getPower()
+        {
+            return this.powerconsumed;
+        }
+
+        public int setPower(int power)
+        {
+            this.powerconsumed = power;
+            return this.powerconsumed;
+        } 
+    }
 }
