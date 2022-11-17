@@ -1,9 +1,6 @@
 ﻿using System.Reflection.Emit;
 using System;
 using System.IO;
-using PlantsPanel;
-using EssentialsPanel;
-using ComfortPanel;
 
 
 namespace PowerPanel
@@ -96,9 +93,9 @@ namespace PowerPanel
     public class UseLevel
     {
         private float energy_used;
-        private string[] lines1 = new string[15];
-        private string[] lines2 = new string[15];
-        private string[] lines3 = new string[15];
+        private string[] lines1 = new string[14];
+        private string[] lines2 = new string[14];
+        private string[] lines3 = new string[14];
 
         public void readEnergyUsed(int useLevel)
         {
@@ -212,7 +209,7 @@ namespace PowerPanel
     {
         private float solar_energy;
         private bool panel_state;
-        private string[] lines = new string[15];
+        private string[] lines = new string[14];
 
         public float getSolarEnergy()
         {
