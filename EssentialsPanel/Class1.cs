@@ -8,8 +8,10 @@ namespace EssentialsPanel
     {
         private double oxygen_level;
         private double water_level;
- 
-       public double oxygenLevel()
+        private string[] oxygenUseLevel = new string[1];
+        private string[] waterUseLevel = new string[1];
+
+        public double oxygenLevel()
         {
             Random rand = new Random();
             double oxyLevel = rand.Next(0, 101); //returns random number between 0-100
@@ -27,7 +29,7 @@ namespace EssentialsPanel
         {
            if (oxygen_level < 25)
             {
-                Console.WriteLine("Warning!! fOxygen Level is below 25%");
+                Console.WriteLine("Warning!! Oxygen Level is below 25%");
             }
            else if (water_level < 25)
             {
@@ -36,6 +38,64 @@ namespace EssentialsPanel
 
             return 0;
         }
+
+        public void oxygenUsed(double usedOxygen)
+        {
+            StreamReader reader;
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "Oxygen Used.txt");
+            reader = new StreamReader(path);
+            string line = reader.ReadLine();
+            int i = 0;
+
+            while (i < 7 && line == oxygenUseLevel[i])
+            {
+                line = reader.ReadLine();
+                i++;
+            }
+
+            if (line != null)
+            {
+                oxygenUseLevel[i] = line;
+                usedOxygen = double.Parse(line);
+                double newOxygenLevel = getOxygenLevel() - usedOxygen;
+
+                setOxygenLevel(newOxygenLevel);
+            }
+            else
+            {
+                reader.Close();
+            }
+        }
+
+        public void waterUsed(double usedWater)
+        {
+            StreamReader reader;
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "Water Used.txt");
+            reader = new StreamReader(path);
+            string line = reader.ReadLine();
+            int i = 0;
+
+            while (i < 7 && line == waterUseLevel[i])
+            {
+                line = reader.ReadLine();
+                i++;
+            }
+
+            if (line != null)
+            {
+                waterUseLevel[i] = line;
+                usedWater = double.Parse(line);
+                double newWaterLevel = getWaterLevel() - usedWater;
+
+                setWaterLevel(newWaterLevel);
+            }
+            else
+            {
+                reader.Close();
+            }
+        }
+
+
 
         public double getOxygenLevel()
         {
