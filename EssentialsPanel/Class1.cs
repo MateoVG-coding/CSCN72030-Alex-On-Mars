@@ -27,11 +27,11 @@ namespace EssentialsPanel
         {
            if (oxygen_level < 25)
             {
-              //print warning that oxygen level is below 25%
+                Console.WriteLine("Warning!! fOxygen Level is below 25%");
             }
            else if (water_level < 25)
             {
-                //print warning that water level is below 25%
+                Console.WriteLine("Warning!! Water Level is below 25%");
             }
 
             return 0;
@@ -55,23 +55,6 @@ namespace EssentialsPanel
         public void setWaterLevel(double waterLevel)
         {
             this.water_level = waterLevel;
-        }
-    }
-
-    //not complete
-    public class essentials_Power
-    {
-        private double power;
-        private int powerUseLevel;
-
-        public int getpowerUseLevels()
-        {
-            return powerUseLevel;
-        }
-
-        public void setpowerUseLevels(int use_level)
-        {
-
         }
     }
 }
