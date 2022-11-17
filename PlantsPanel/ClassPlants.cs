@@ -148,6 +148,11 @@ namespace PlantsPanel
 
         public void createFileHumidity(float DesiredHumidity)
         {
+            if (File.Exists("FileHumidity.txt"))
+            {
+                File.Delete("FileHumidity.txt");
+            }
+
             Random random = new Random();
 
             int NValues = 200;
