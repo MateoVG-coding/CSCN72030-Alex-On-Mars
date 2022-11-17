@@ -1,6 +1,9 @@
 ﻿using System.Reflection.Emit;
 using System;
 using System.IO;
+using PlantsPanel;
+using EssentialsPanel;
+using ComfortPanel;
 
 
 namespace PowerPanel
@@ -12,6 +15,16 @@ namespace PowerPanel
         private float max_energy;
         private int energy_percentage;
         SolarPanel[] solar_Panel;
+
+
+        public Energy()
+        {
+            energy_watts = 0;
+            max_energy = 0;
+            energy_percentage = 0;
+            energy_available = true;
+            this.solar_Panel = new SolarPanel[10];
+        }
 
         public Energy(float energyWatts, float maxEnergy, int energyPercentage, bool energyAvailable)
         {
@@ -31,9 +44,22 @@ namespace PowerPanel
             setEnergyPercentage(newEnergyPercentage);
         }
 
-        public void changeUseLevel(int module)
+        public int changeUseLevel(int useLevel)
         {
-            // incomplete
+            if (useLevel == 1)
+            {
+                return 1;
+            }
+            else if (useLevel == 2)
+            {
+                return 2;
+            }
+            else if (useLevel == 3)
+            {
+                return 3;
+            }
+            else
+                return -1;
         }
 
         public float getTotalEnergy()
