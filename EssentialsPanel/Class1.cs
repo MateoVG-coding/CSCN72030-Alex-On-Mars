@@ -8,8 +8,8 @@ namespace EssentialsPanel
     {
         private double oxygen_level;
         private double water_level;
-        private string[] oxygenUseLevel = new string[1];
-        private string[] waterUseLevel = new string[1];
+        private string[] oxygenUseLevel = new string[6];
+        private string[] waterUseLevel = new string[6];
 
         public double oxygenLevel()
         {
