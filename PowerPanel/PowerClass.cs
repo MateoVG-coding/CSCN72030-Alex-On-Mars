@@ -70,17 +70,105 @@ namespace PowerPanel
     public class UseLevel
     {
         private float energy_used;
+        private string[] lines1 = new string[15];
+        private string[] lines2 = new string[15];
+        private string[] lines3 = new string[15];
 
-        private void readEnergyUsed()
+        public void readEnergyUsed(int useLevel)
         {
-            // incomplete
+            StreamReader reader;
+            float energyUsed;
+
+            if (useLevel == 1)
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "UseLevel1.txt");
+                reader = new StreamReader(path);
+                string line = reader.ReadLine();
+                int i = 0;
+
+                while (i < 3 && line == lines1[i])
+                {
+                    line = reader.ReadLine();
+                    i++;
+                }
+
+                if (line != null)
+                {
+                    lines1[i] = line;
+                    energyUsed = float.Parse(line);
+                    setEnergyUsed(energyUsed);
+                }
+                else
+                {
+                    reader.Close();
+                    Array.Clear(lines1, 0, lines1.Length);
+                }
+
+                reader.Close();
+            }
+            else if (useLevel == 2)
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "UseLevel2.txt");
+                reader = new StreamReader(path);
+                string line = reader.ReadLine();
+                int i = 0;
+
+                while (i < 3 && line == lines2[i])
+                {
+                    line = reader.ReadLine();
+                    i++;
+                }
+
+                if (line != null)
+                {
+                    lines2[i] = line;
+                    energyUsed = float.Parse(line);
+                    setEnergyUsed(energyUsed);
+                }
+                else
+                {
+                    reader.Close();
+                    Array.Clear(lines2, 0, lines2.Length);
+                }
+
+                reader.Close();
+            }
+            else if (useLevel == 3)
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "UseLevel3.txt");
+                reader = new StreamReader(path);
+                string line = reader.ReadLine();
+                int i = 0;
+
+                while (i < 3 && line == lines3[i])
+                {
+                    line = reader.ReadLine();
+                    i++;
+                }
+
+                if (line != null)
+                {
+                    lines3[i] = line;
+                    energyUsed = float.Parse(line);
+                    setEnergyUsed(energyUsed);
+                }
+                else
+                {
+                    reader.Close();
+                    Array.Clear(lines3, 0, lines3.Length);
+                }
+
+                reader.Close();
+            }
+            else
+                return;
         }
 
         private void setEnergyUsed(float energyUsed)
         {
             this.energy_used = energyUsed;
         }
-
+                
         public float getEnergyUsed()
         {
             return energy_used;
@@ -98,8 +186,7 @@ namespace PowerPanel
     {
         private float solar_energy;
         private bool panel_state;
-
-        string[] lines = System.IO.File.ReadAllLines(@"C:\Users\Ibapo\OneDrive\Escritorio\School\Fall 2022\Software Development\Project\PowerPanel\SolarEnergy.txt");
+        private string[] lines = new string[15];
 
         public float getSolarEnergy()
         {
@@ -131,15 +218,43 @@ namespace PowerPanel
                 return;
         }
 
-        public void readSolarEnergy()
+        public int readSolarEnergy()
         {
-            int numberLines = lines.GetLength(0);
-            Random rnd = new Random();
-            int num = rnd.Next(0, numberLines);
+            StreamReader reader;
+            var dir = Directory.GetCurrentDirectory();
+            string fileName = "SolarEnergy.txt";
+            var path = Path.Combine(dir, fileName);
+            reader = new StreamReader(path);
 
-            float solarEnergy = Single.Parse(lines[num]);
+            string line = reader.ReadLine();
+            int i = 0;
+            float solarEnergy = 0;
+            float newSolar = 0;
 
-            setSolarEnergy(solarEnergy);
+            while (i < 3 && line == lines[i])
+            {
+                line = reader.ReadLine();
+                i++;
+            }
+
+            if (line != null)
+            {
+                lines[i] = line;
+                solarEnergy = float.Parse(line);
+                newSolar = solarEnergy + getSolarEnergy();
+                setSolarEnergy(newSolar);
+            }
+            else
+            {
+                reader.Close();
+                Array.Clear(lines, 0, lines.Length);
+                return 1;
+            }
+
+            reader.Close();
+
+
+            return 0;
         }
     }
 }
