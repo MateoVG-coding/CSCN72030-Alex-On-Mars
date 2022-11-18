@@ -82,6 +82,10 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.pictureBox38 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -119,6 +123,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -626,7 +631,7 @@
             // 
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Font = new System.Drawing.Font("Amazon Ember", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(1772, 537);
+            this.button4.Location = new System.Drawing.Point(1772, 682);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(94, 43);
             this.button4.TabIndex = 53;
@@ -638,7 +643,7 @@
             this.pictureBox37.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox37.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox37.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox37.Location = new System.Drawing.Point(1628, 520);
+            this.pictureBox37.Location = new System.Drawing.Point(1628, 665);
             this.pictureBox37.Name = "pictureBox37";
             this.pictureBox37.Size = new System.Drawing.Size(138, 80);
             this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -651,17 +656,17 @@
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label7.Font = new System.Drawing.Font("Amazon Ember", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(1589, 472);
+            this.label7.Location = new System.Drawing.Point(1589, 617);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(239, 45);
+            this.label7.Size = new System.Drawing.Size(260, 45);
             this.label7.TabIndex = 50;
-            this.label7.Text = "Light Intesity";
+            this.label7.Text = "Light Intensity";
             // 
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.SystemColors.Desktop;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(1640, 548);
+            this.comboBox1.Location = new System.Drawing.Point(1640, 693);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(116, 28);
             this.comboBox1.TabIndex = 54;
@@ -688,12 +693,58 @@
             this.label9.TabIndex = 56;
             this.label9.Text = "Water Lt\n";
             // 
+            // button5
+            // 
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Font = new System.Drawing.Font("Amazon Ember", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5.Location = new System.Drawing.Point(1772, 537);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(94, 43);
+            this.button5.TabIndex = 60;
+            this.button5.Text = "Ok";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.SystemColors.Desktop;
+            this.textBox4.Location = new System.Drawing.Point(1638, 548);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(114, 27);
+            this.textBox4.TabIndex = 59;
+            // 
+            // pictureBox38
+            // 
+            this.pictureBox38.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBox38.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox38.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
+            this.pictureBox38.Location = new System.Drawing.Point(1628, 520);
+            this.pictureBox38.Name = "pictureBox38";
+            this.pictureBox38.Size = new System.Drawing.Size(138, 80);
+            this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox38.TabIndex = 58;
+            this.pictureBox38.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label10.Font = new System.Drawing.Font("Amazon Ember", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(1621, 472);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(145, 45);
+            this.label10.TabIndex = 57;
+            this.label10.Text = "Oxygen";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.pictureBox38);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.comboBox1);
@@ -788,6 +839,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -849,5 +901,9 @@
         private ComboBox comboBox1;
         private Label label8;
         private Label label9;
+        private Button button5;
+        private TextBox textBox4;
+        private PictureBox pictureBox38;
+        private Label label10;
     }
 }
