@@ -41,6 +41,24 @@ namespace PowerPanel
             setEnergyPercentage(newEnergyPercentage);
         }
 
+        public void checkEnergy()
+        {
+            if (energy_watts > 0)
+                energy_available = true;
+            else
+                energy_available = false;
+        }
+
+        public void setEnergyAvailable(bool energyAvailable)
+        {
+            this.energy_available = energyAvailable;
+        }
+
+        public bool getEnergyAvailable()
+        {
+            return energy_available;
+        }
+
         public int changeUseLevel(int useLevel)
         {
             if (useLevel == 1)
