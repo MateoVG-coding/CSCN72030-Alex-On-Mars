@@ -63,6 +63,16 @@ namespace HMI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap centerPivot_circle {
+            get {
+                object obj = ResourceManager.GetObject("centerPivot_circle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap coolingtower {
             get {
                 object obj = ResourceManager.GetObject("coolingtower", resourceCulture);
@@ -96,6 +106,16 @@ namespace HMI.Properties {
         internal static System.Drawing.Bitmap lcd_types_arduino_supports_01 {
             get {
                 object obj = ResourceManager.GetObject("lcd-types-arduino-supports-01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap leaves_elm {
+            get {
+                object obj = ResourceManager.GetObject("leaves_elm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
