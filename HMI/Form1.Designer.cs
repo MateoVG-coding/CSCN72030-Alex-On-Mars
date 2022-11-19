@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -62,35 +63,21 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.pictureBox33 = new System.Windows.Forms.PictureBox();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.pictureBox35 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.pictureBox36 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.pictureBox37 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.pictureBox38 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label11 = new System.Windows.Forms.Label();
-            this.Humidity = new System.Windows.Forms.ProgressBar();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.pictureBox35 = new System.Windows.Forms.PictureBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -121,21 +108,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HMI.Properties.Resources.tank_cylinder;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 53);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 57);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 149);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -146,7 +128,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::HMI.Properties.Resources.tank_cylinder;
-            this.pictureBox2.Location = new System.Drawing.Point(6, 179);
+            this.pictureBox2.Location = new System.Drawing.Point(19, 183);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(200, 132);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -156,7 +138,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::HMI.Properties.Resources.pipe_3d_h1;
-            this.pictureBox3.Location = new System.Drawing.Point(128, 80);
+            this.pictureBox3.Location = new System.Drawing.Point(141, 84);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(150, 80);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -166,7 +148,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::HMI.Properties.Resources.pipe_3d_h1;
-            this.pictureBox4.Location = new System.Drawing.Point(128, 203);
+            this.pictureBox4.Location = new System.Drawing.Point(141, 207);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(150, 80);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -176,7 +158,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::HMI.Properties.Resources.pipe_3d_tjunction_r270;
-            this.pictureBox5.Location = new System.Drawing.Point(233, 129);
+            this.pictureBox5.Location = new System.Drawing.Point(246, 133);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(99, 104);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -186,7 +168,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::HMI.Properties.Resources.pipe_3d_elbow_r90;
-            this.pictureBox6.Location = new System.Drawing.Point(232, 80);
+            this.pictureBox6.Location = new System.Drawing.Point(245, 84);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(101, 80);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -196,7 +178,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::HMI.Properties.Resources.pipe_3d_elbow;
-            this.pictureBox7.Location = new System.Drawing.Point(233, 203);
+            this.pictureBox7.Location = new System.Drawing.Point(246, 207);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(99, 80);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -207,7 +189,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(315, 236);
+            this.label1.Location = new System.Drawing.Point(328, 240);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 38);
             this.label1.TabIndex = 7;
@@ -219,7 +201,7 @@
             this.pictureBox8.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox8.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox8.Location = new System.Drawing.Point(295, 285);
+            this.pictureBox8.Location = new System.Drawing.Point(308, 289);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(138, 80);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -229,7 +211,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::HMI.Properties.Resources.pipe_3d_tjunction;
-            this.pictureBox9.Location = new System.Drawing.Point(307, 129);
+            this.pictureBox9.Location = new System.Drawing.Point(320, 133);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(126, 104);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -239,7 +221,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::HMI.Properties.Resources.tank_pillshape2;
-            this.pictureBox10.Location = new System.Drawing.Point(283, 12);
+            this.pictureBox10.Location = new System.Drawing.Point(296, 16);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(169, 148);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -249,7 +231,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::HMI.Properties.Resources.pipe_3d_elbow_r90;
-            this.pictureBox11.Location = new System.Drawing.Point(411, 129);
+            this.pictureBox11.Location = new System.Drawing.Point(424, 133);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(90, 104);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -259,7 +241,7 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::HMI.Properties.Resources.coolingtower;
-            this.pictureBox12.Location = new System.Drawing.Point(491, 53);
+            this.pictureBox12.Location = new System.Drawing.Point(504, 57);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(163, 196);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -269,7 +251,7 @@
             // pictureBox13
             // 
             this.pictureBox13.Image = global::HMI.Properties.Resources.pipe_3d_elbow_r270;
-            this.pictureBox13.Location = new System.Drawing.Point(401, 205);
+            this.pictureBox13.Location = new System.Drawing.Point(414, 209);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(109, 76);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -433,7 +415,7 @@
             // 
             this.pictureBox20.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox20.Image = global::HMI.Properties.Resources.centerPivot_circle;
-            this.pictureBox20.Location = new System.Drawing.Point(1375, 69);
+            this.pictureBox20.Location = new System.Drawing.Point(1566, 69);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(197, 165);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -444,7 +426,7 @@
             // 
             this.pictureBox26.BackColor = System.Drawing.SystemColors.Desktop;
             this.pictureBox26.Image = global::HMI.Properties.Resources.leaves_elm;
-            this.pictureBox26.Location = new System.Drawing.Point(1400, 107);
+            this.pictureBox26.Location = new System.Drawing.Point(1590, 107);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(150, 89);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -456,7 +438,7 @@
             this.label3.AutoSize = true;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(1414, 13);
+            this.label3.Location = new System.Drawing.Point(1605, 13);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 40);
             this.label3.TabIndex = 33;
@@ -466,11 +448,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(1589, 51);
+            this.label4.Location = new System.Drawing.Point(1391, 243);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(216, 40);
+            this.label4.Size = new System.Drawing.Size(214, 38);
             this.label4.TabIndex = 34;
             this.label4.Text = "Temperature";
             // 
@@ -479,102 +460,21 @@
             this.pictureBox30.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox30.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox30.Location = new System.Drawing.Point(1627, 99);
+            this.pictureBox30.Location = new System.Drawing.Point(1431, 289);
             this.pictureBox30.Name = "pictureBox30";
             this.pictureBox30.Size = new System.Drawing.Size(138, 80);
             this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox30.TabIndex = 35;
             this.pictureBox30.TabStop = false;
             // 
-            // pictureBox31
-            // 
-            this.pictureBox31.BackColor = System.Drawing.SystemColors.Desktop;
-            this.pictureBox31.Image = global::HMI.Properties.Resources.leaves_elm;
-            this.pictureBox31.Location = new System.Drawing.Point(1400, 276);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(150, 89);
-            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox31.TabIndex = 37;
-            this.pictureBox31.TabStop = false;
-            // 
-            // pictureBox32
-            // 
-            this.pictureBox32.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox32.Image = global::HMI.Properties.Resources.centerPivot_circle;
-            this.pictureBox32.Location = new System.Drawing.Point(1375, 241);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(197, 165);
-            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox32.TabIndex = 36;
-            this.pictureBox32.TabStop = false;
-            // 
-            // pictureBox33
-            // 
-            this.pictureBox33.BackColor = System.Drawing.SystemColors.Desktop;
-            this.pictureBox33.Image = global::HMI.Properties.Resources.leaves_elm;
-            this.pictureBox33.Location = new System.Drawing.Point(1400, 451);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(150, 89);
-            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox33.TabIndex = 39;
-            this.pictureBox33.TabStop = false;
-            // 
-            // pictureBox34
-            // 
-            this.pictureBox34.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox34.Image = global::HMI.Properties.Resources.centerPivot_circle;
-            this.pictureBox34.Location = new System.Drawing.Point(1375, 411);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(197, 165);
-            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox34.TabIndex = 38;
-            this.pictureBox34.TabStop = false;
-            // 
-            // pictureBox35
-            // 
-            this.pictureBox35.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox35.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox35.Location = new System.Drawing.Point(1627, 231);
-            this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(138, 80);
-            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox35.TabIndex = 41;
-            this.pictureBox35.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(1633, 187);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 40);
-            this.label5.TabIndex = 40;
-            this.label5.Text = "Water";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.textBox1.Location = new System.Drawing.Point(1640, 125);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(114, 27);
-            this.textBox1.TabIndex = 42;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Desktop;
-            this.textBox2.Location = new System.Drawing.Point(1640, 259);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(114, 27);
-            this.textBox2.TabIndex = 43;
-            // 
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.Desktop;
-            this.textBox3.Location = new System.Drawing.Point(1638, 404);
+            this.textBox3.Font = new System.Drawing.Font("Amazon Ember", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox3.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox3.Location = new System.Drawing.Point(1444, 469);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(114, 27);
+            this.textBox3.Size = new System.Drawing.Size(114, 36);
             this.textBox3.TabIndex = 46;
             // 
             // pictureBox36
@@ -582,7 +482,7 @@
             this.pictureBox36.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox36.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox36.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox36.Location = new System.Drawing.Point(1627, 376);
+            this.pictureBox36.Location = new System.Drawing.Point(1434, 444);
             this.pictureBox36.Name = "pictureBox36";
             this.pictureBox36.Size = new System.Drawing.Size(138, 80);
             this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -592,64 +492,19 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(1616, 328);
+            this.label6.Location = new System.Drawing.Point(1423, 396);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(154, 40);
+            this.label6.Size = new System.Drawing.Size(152, 38);
             this.label6.TabIndex = 44;
             this.label6.Text = "Humidity";
-            // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(1771, 115);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 43);
-            this.button1.TabIndex = 47;
-            this.button1.Text = "Ok";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(1771, 247);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 43);
-            this.button2.TabIndex = 48;
-            this.button2.Text = "Ok";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(1771, 393);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 43);
-            this.button3.TabIndex = 49;
-            this.button3.Text = "Ok";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(1771, 683);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 43);
-            this.button4.TabIndex = 53;
-            this.button4.Text = "Ok";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // pictureBox37
             // 
             this.pictureBox37.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox37.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox37.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox37.Location = new System.Drawing.Point(1627, 665);
+            this.pictureBox37.Location = new System.Drawing.Point(1701, 444);
             this.pictureBox37.Name = "pictureBox37";
             this.pictureBox37.Size = new System.Drawing.Size(138, 80);
             this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -659,189 +514,177 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(1589, 617);
+            this.label7.Location = new System.Drawing.Point(1663, 396);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(234, 40);
+            this.label7.Size = new System.Drawing.Size(232, 38);
             this.label7.TabIndex = 50;
             this.label7.Text = "Light Intensity";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(1640, 693);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(116, 28);
-            this.comboBox1.TabIndex = 54;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.SystemColors.Desktop;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(736, 132);
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label8.Font = new System.Drawing.Font("Amazon Ember", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.SystemColors.Window;
+            this.label8.Location = new System.Drawing.Point(729, 130);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 29);
+            this.label8.Size = new System.Drawing.Size(118, 38);
             this.label8.TabIndex = 55;
             this.label8.Text = "Oxygen\r\n";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.SystemColors.Desktop;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(315, 309);
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label9.Font = new System.Drawing.Font("Amazon Ember", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.SystemColors.Window;
+            this.label9.Location = new System.Drawing.Point(320, 314);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(108, 29);
+            this.label9.Size = new System.Drawing.Size(113, 33);
             this.label9.TabIndex = 56;
             this.label9.Text = "Water Lt\n";
-            // 
-            // button5
-            // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button5.Location = new System.Drawing.Point(1771, 537);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(94, 43);
-            this.button5.TabIndex = 60;
-            this.button5.Text = "Ok";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Desktop;
-            this.textBox4.Location = new System.Drawing.Point(1638, 548);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(114, 27);
-            this.textBox4.TabIndex = 59;
-            // 
-            // pictureBox38
-            // 
-            this.pictureBox38.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox38.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox38.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox38.Location = new System.Drawing.Point(1627, 520);
-            this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(138, 80);
-            this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox38.TabIndex = 58;
-            this.pictureBox38.TabStop = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(1621, 472);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(139, 40);
-            this.label10.TabIndex = 57;
-            this.label10.Text = "Oxygen";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            65536});
-            this.numericUpDown1.Location = new System.Drawing.Point(26, 441);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.numericUpDown1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.numericUpDown1.Font = new System.Drawing.Font("Amazon Ember", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown1.ForeColor = System.Drawing.SystemColors.Window;
+            this.numericUpDown1.Location = new System.Drawing.Point(1444, 314);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             28,
             0,
             0,
             0});
             this.numericUpDown1.Minimum = new decimal(new int[] {
-            16,
+            7,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(137, 27);
-            this.numericUpDown1.TabIndex = 61;
+            this.numericUpDown1.Size = new System.Drawing.Size(114, 36);
+            this.numericUpDown1.TabIndex = 60;
             this.numericUpDown1.Value = new decimal(new int[] {
-            16,
+            7,
             0,
             0,
             0});
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
-            // label11
+            // radioButton2
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(45, 417);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(93, 20);
-            this.label11.TabIndex = 62;
-            this.label11.Text = "Temperature";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Amazon Ember", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.radioButton2.Location = new System.Drawing.Point(1579, 289);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(46, 32);
+            this.radioButton2.TabIndex = 62;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "F";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // Humidity
+            // listBox1
             // 
-            this.Humidity.Location = new System.Drawing.Point(218, 441);
-            this.Humidity.Name = "Humidity";
-            this.Humidity.Size = new System.Drawing.Size(125, 29);
-            this.Humidity.Step = 1;
-            this.Humidity.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.Humidity.TabIndex = 63;
-            this.Humidity.Value = 30;
+            this.listBox1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.listBox1.Font = new System.Drawing.Font("Amazon Ember", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.listBox1.ForeColor = System.Drawing.SystemColors.Window;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 25;
+            this.listBox1.Items.AddRange(new object[] {
+            "Low",
+            "Medium",
+            "High"});
+            this.listBox1.Location = new System.Drawing.Point(1714, 469);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(112, 4);
+            this.listBox1.TabIndex = 64;
             // 
-            // label12
+            // radioButton1
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(245, 416);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(70, 20);
-            this.label12.TabIndex = 64;
-            this.label12.Text = "Humidity";
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Amazon Ember", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.radioButton1.Location = new System.Drawing.Point(1579, 337);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(48, 32);
+            this.radioButton1.TabIndex = 61;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "C";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // label13
+            // pictureBox35
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(343, 448);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(21, 20);
-            this.label13.TabIndex = 65;
-            this.label13.Text = "%";
+            this.pictureBox35.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBox35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox35.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
+            this.pictureBox35.Location = new System.Drawing.Point(1701, 286);
+            this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.Size = new System.Drawing.Size(138, 80);
+            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox35.TabIndex = 41;
+            this.pictureBox35.TabStop = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.Desktop;
+            this.textBox2.Font = new System.Drawing.Font("Amazon Ember", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox2.Location = new System.Drawing.Point(1714, 309);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(114, 36);
+            this.textBox2.TabIndex = 43;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(1714, 243);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 38);
+            this.label5.TabIndex = 40;
+            this.label5.Text = "Water";
+            // 
+            // listBox2
+            // 
+            this.listBox2.BackColor = System.Drawing.SystemColors.Desktop;
+            this.listBox2.Font = new System.Drawing.Font("Amazon Ember", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.listBox2.ForeColor = System.Drawing.SystemColors.Window;
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 28;
+            this.listBox2.Items.AddRange(new object[] {
+            "Low",
+            "Medium",
+            "High"});
+            this.listBox2.Location = new System.Drawing.Point(1714, 469);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(114, 32);
+            this.listBox2.TabIndex = 65;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1541, 845);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.Humidity);
-            this.Controls.Add(this.label11);
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.pictureBox38);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.pictureBox37);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.pictureBox36);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox35);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureBox33);
-            this.Controls.Add(this.pictureBox34);
-            this.Controls.Add(this.pictureBox31);
-            this.Controls.Add(this.pictureBox32);
             this.Controls.Add(this.pictureBox30);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -876,8 +719,10 @@
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox25);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "Alex On Mars";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -909,15 +754,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -959,34 +799,20 @@
         private Label label3;
         private Label label4;
         private PictureBox pictureBox30;
-        private PictureBox pictureBox31;
-        private PictureBox pictureBox32;
-        private PictureBox pictureBox33;
-        private PictureBox pictureBox34;
-        private PictureBox pictureBox35;
-        private Label label5;
-        private TextBox textBox1;
-        private TextBox textBox2;
         private TextBox textBox3;
         private PictureBox pictureBox36;
         private Label label6;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
         private PictureBox pictureBox37;
         private Label label7;
-        private ComboBox comboBox1;
         private Label label8;
         private Label label9;
-        private Button button5;
-        private TextBox textBox4;
-        private PictureBox pictureBox38;
-        private Label label10;
         private NumericUpDown numericUpDown1;
-        private Label label11;
-        private ProgressBar Humidity;
-        private Label label12;
-        private Label label13;
+        private RadioButton radioButton2;
+        private ListBox listBox1;
+        private RadioButton radioButton1;
+        private PictureBox pictureBox35;
+        private TextBox textBox2;
+        private Label label5;
+        private ListBox listBox2;
     }
 }
