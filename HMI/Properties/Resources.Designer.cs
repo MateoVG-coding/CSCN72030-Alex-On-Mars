@@ -223,6 +223,16 @@ namespace HMI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngtree_thermometer_icon_vector__icon_design_png_image_1978811 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-thermometer-icon-vector--icon-design-png-image_1978811", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap solarpanel {
             get {
                 object obj = ResourceManager.GetObject("solarpanel", resourceCulture);
@@ -266,6 +276,16 @@ namespace HMI.Properties {
         internal static System.Drawing.Bitmap tank_rounded_wlegs {
             get {
                 object obj = ResourceManager.GetObject("tank_rounded_wlegs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thermometer_vector_icon_png_260730 {
+            get {
+                object obj = ResourceManager.GetObject("thermometer-vector-icon-png_260730", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

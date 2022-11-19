@@ -7,7 +7,9 @@ namespace EssentialsPanel
     public class essentials_Oxygen_Water
     {
         private double oxygen_level;
-        private double water_level;
+        private double water_level = 20000;
+        public double desiredWater;
+        private double newWaterLevel;
         private string[] oxygenUseLevel = new string[6];
         private string[] waterUseLevel = new string[6];
 
@@ -18,13 +20,14 @@ namespace EssentialsPanel
             return oxyLevel;
         }
 
-        public double waterLevel()
-        {
-            Random rand = new Random();
-            double waterLevel = rand.Next(0, 101); //returns random number between 0-100
-            return waterLevel;
-        }
+        //public double waterLevel()
+        //{
+        //    Random rand = new Random();
+        //    double waterLevel = rand.Next(0, 101); //returns random number between 0-100
+        //    return waterLevel;
+        //}
 
+        /// ///////////////////////////
         public int CheckLevels()
         {
            if (oxygen_level < 25)
@@ -67,31 +70,16 @@ namespace EssentialsPanel
             }
         }
 
-        public void waterUsed(double usedWater)
+        public double WaterUsed(double desiredWater)
         {
-            StreamReader reader;
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "Water Used.txt");
-            reader = new StreamReader(path);
-            string line = reader.ReadLine();
-            int i = 0;
-
-            while (i < 7 && line == waterUseLevel[i])
+            if (water_level < desiredWater)
             {
-                line = reader.ReadLine();
-                i++;
-            }
-
-            if (line != null)
-            {
-                waterUseLevel[i] = line;
-                usedWater = double.Parse(line);
-                double newWaterLevel = getWaterLevel() - usedWater;
-
-                setWaterLevel(newWaterLevel);
+                return 0;
             }
             else
             {
-                reader.Close();
+                double newWaterLevel = desiredWater - water_level;
+                return newWaterLevel;
             }
         }
 
@@ -104,7 +92,7 @@ namespace EssentialsPanel
 
         public double getWaterLevel()
         {
-            return water_level;
+            return desiredWater;
         }
         
         public void setOxygenLevel(double oxyLevel)
@@ -112,9 +100,13 @@ namespace EssentialsPanel
             this.oxygen_level = oxyLevel;
         }
 
-        public void setWaterLevel(double waterLevel)
+        public void setWaterLevel()
         {
-            this.water_level = waterLevel;
+            double newWater_level = water_level - desiredWater;
+            if (newWaterLevel > 50)
+            {
+                this.water_level = newWaterLevel;
+            }
         }
     }
 
