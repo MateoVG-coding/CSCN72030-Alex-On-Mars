@@ -144,9 +144,17 @@ namespace PlantsPanel
             plantsPanel.ActualTemperature = Desiredtemperature;
         }
 
-        public void setHumidityPlants(PlantsPanel plantsPanel, double Desiredhumidity)
+        public void setHumidityPlants(PlantsPanel plantsPanel, double Desiredhumidity, string measurementUnit)
         {
-            plantsPanel.ActualHumidity = Desiredhumidity;
+            if(measurementUnit == "F")
+            {
+                plantsPanel.ActualHumidity = (Desiredhumidity - 32) * 5 / 9; 
+            }
+            else
+            {
+                plantsPanel.ActualHumidity = Desiredhumidity;
+            }
+            
         }
 
         public void createFileHumidity(double DesiredHumidity)
