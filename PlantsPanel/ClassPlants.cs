@@ -1,16 +1,17 @@
-﻿using System;
+﻿using EssentialsPanel;
+using System;
 
 namespace PlantsPanel
 {
     public class PlantsPanel
     {
         public int FieldNum { get; private set; }
-        public float WaterConsumption { get; private set; }
-        public float OxygenConsumption { get; private set; }
+        public double WaterConsumption { get; private set; }
+        public double OxygenConsumption { get; private set; }
         public int PowerConsumption { get; private set; }
         public int LightIntensity { get; private set; }
-        public float ActualTemperature { get; private set; }
-        public float ActualHumidity { get; private set; }
+        public double ActualTemperature { get; private set; }
+        public double ActualHumidity { get; private set; }
 
         public PlantsPanel()
         {
@@ -23,7 +24,7 @@ namespace PlantsPanel
             ActualHumidity = 0;
         }
 
-        public PlantsPanel(int fieldNum, float waterLt, float temperatureCelsius, int lightIntensity, float humidity, float oxygenConsumption, int powerConsumption)
+        public PlantsPanel(int fieldNum, double waterLt, double temperatureCelsius, int lightIntensity, double humidity, double oxygenConsumption, int powerConsumption)
         {
             this.FieldNum = fieldNum;
             this.WaterConsumption = waterLt;
@@ -41,16 +42,16 @@ namespace PlantsPanel
             return fieldNum;
         }
 
-        public float getWaterPlants(PlantsPanel plantsPanel)
+        public double getWaterPlants(PlantsPanel plantsPanel)
         {
-            float waterConsumption = plantsPanel.WaterConsumption;
+            double waterConsumption = plantsPanel.WaterConsumption;
 
             return waterConsumption;
         }
 
-        public float getOxygenPlants(PlantsPanel plantsPanel)
+        public double getOxygenPlants(PlantsPanel plantsPanel)
         {
-            float oxygen = plantsPanel.OxygenConsumption;
+            double oxygen = plantsPanel.OxygenConsumption;
 
             return oxygen;
         }
@@ -82,9 +83,9 @@ namespace PlantsPanel
             }
         }
 
-        public float getTemperaturePlants(PlantsPanel plantsPanel, string measurementUnit)
+        public double getTemperaturePlants(PlantsPanel plantsPanel, string measurementUnit)
         {
-            float temperature;
+            double temperature;
 
             if (measurementUnit == "C")
             {
@@ -104,9 +105,9 @@ namespace PlantsPanel
             }
         }
 
-        public float getHumidityPlants(PlantsPanel plantsPanel)
+        public double getHumidityPlants(PlantsPanel plantsPanel)
         {
-            float humidity = plantsPanel.ActualHumidity;
+            double humidity = plantsPanel.ActualHumidity;
 
             return humidity;
         }
@@ -116,14 +117,16 @@ namespace PlantsPanel
             plantsPanel.FieldNum = fieldNum;
         }
 
-        public void setWaterPlants(PlantsPanel plantsPanel, float DesiredwaterLt)
+        public void setWaterPlants(PlantsPanel plantsPanel, double DesiredwaterLt, essentials_Oxygen_Water essentialsPanel)
         {
+            essentialsPanel.setWaterLevel(DesiredwaterLt);
+
             plantsPanel.WaterConsumption = DesiredwaterLt;
         }
 
-        public void setOxygenPlants(PlantsPanel plantsPanel, float DesiredOxygen)
+        public void setOxygenPlants(PlantsPanel plantsPanel, essentials_Oxygen_Water essentialsPanel)
         {
-            plantsPanel.OxygenConsumption = DesiredOxygen;
+            plantsPanel.OxygenConsumption = essentialsPanel.getOxygenLevel();
         }
 
         public void setPlantPowerConsumption(PlantsPanel plantsPanel, int powerLevel)
@@ -136,17 +139,17 @@ namespace PlantsPanel
             plantsPanel.LightIntensity = DesiredlightIntensity;
         }
 
-        public void setTemperaturePlants(PlantsPanel plantsPanel, float Desiredtemperature)
+        public void setTemperaturePlants(PlantsPanel plantsPanel, double Desiredtemperature)
         {
             plantsPanel.ActualTemperature = Desiredtemperature;
         }
 
-        public void setHumidityPlants(PlantsPanel plantsPanel, float Desiredhumidity)
+        public void setHumidityPlants(PlantsPanel plantsPanel, double Desiredhumidity)
         {
             plantsPanel.ActualHumidity = Desiredhumidity;
         }
 
-        public void createFileHumidity(float DesiredHumidity)
+        public void createFileHumidity(double DesiredHumidity)
         {
             if (File.Exists("FileHumidity.txt"))
             {
@@ -157,9 +160,9 @@ namespace PlantsPanel
 
             int NValues = 200;
 
-            float max = DesiredHumidity + 2;
+            double max = DesiredHumidity + 2;
 
-            float min = DesiredHumidity - 2;
+            double min = DesiredHumidity - 2;
 
             for (int i = 0; i < NValues; i++)
             {
