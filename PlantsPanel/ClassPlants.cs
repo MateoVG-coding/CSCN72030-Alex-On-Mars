@@ -171,5 +171,28 @@ namespace PlantsPanel
                 File.AppendAllText("FileHumidity.txt", val.ToString("0.00") + Environment.NewLine);
             }
         }
+
+        public void createFileTemperature(double DesiredTemperature)
+        {
+            if (File.Exists("FileTemperature.txt"))
+            {
+                File.Delete("FileTemperature.txt");
+            }
+
+            Random random = new Random();
+
+            int NValues = 200;
+
+            double max = DesiredTemperature + 1;
+
+            double min = DesiredTemperature - 1;
+
+            for (int i = 0; i < NValues; i++)
+            {
+                double val = random.NextDouble() * (max - min) + min;
+
+                File.AppendAllText("FileTemperature.txt", val.ToString("0.0") + Environment.NewLine);
+            }
+        }
     }
 }
