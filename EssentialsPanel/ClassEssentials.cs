@@ -52,14 +52,18 @@ namespace EssentialsPanel
             this.oxygen_level = oxyLevel;
         }
 
-        public void setWaterLevel(double desiredWaterLt)
+        public int setWaterLevel(double desiredWaterLt)
         {
             double newWaterLevel = getWaterLevel() - desiredWaterLt;
 
             if(newWaterLevel > 50)
             {
                 this.water_level = newWaterLevel;
+
+                return 0;
             }
+
+            return 1;
         }
     }
 
