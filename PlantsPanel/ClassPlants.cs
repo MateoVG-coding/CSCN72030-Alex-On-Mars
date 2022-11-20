@@ -117,11 +117,16 @@ namespace PlantsPanel
             plantsPanel.FieldNum = fieldNum;
         }
 
-        public void setWaterPlants(PlantsPanel plantsPanel, double DesiredwaterLt, essentials_Oxygen_Water essentialsPanel)
+        public int setWaterPlants(PlantsPanel plantsPanel, double DesiredwaterLt, essentials_Oxygen_Water essentialsPanel)
         {
-            essentialsPanel.setWaterLevel(DesiredwaterLt);
+            
+            if(essentialsPanel.setWaterLevel(DesiredwaterLt) == 0)
+            {
+                plantsPanel.WaterConsumption = DesiredwaterLt;
+                return 0;
+            }
 
-            plantsPanel.WaterConsumption = DesiredwaterLt;
+            return 1;
         }
 
         public void setOxygenPlants(PlantsPanel plantsPanel, essentials_Oxygen_Water essentialsPanel)
