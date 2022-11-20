@@ -180,7 +180,7 @@ namespace PlantsPanel
             }
         }
 
-        public void createFileTemperature(double DesiredTemperature)
+        public void createFileTemperature(double DesiredTemperature, string measurementUnit)
         {
             if (File.Exists("FileTemperature.txt"))
             {
@@ -191,9 +191,14 @@ namespace PlantsPanel
 
             int NValues = 200;
 
-            double max = DesiredTemperature + 1;
+            if(measurementUnit == "F")
+            {
+                DesiredTemperature = (DesiredTemperature - 32) * 5 / 9;
+            }
 
-            double min = DesiredTemperature - 1;
+            double max = DesiredTemperature + 0.5;
+
+            double min = DesiredTemperature - 0.5;
 
             for (int i = 0; i < NValues; i++)
             {
