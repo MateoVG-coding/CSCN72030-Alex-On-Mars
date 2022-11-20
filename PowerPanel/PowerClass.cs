@@ -227,7 +227,7 @@ namespace PowerPanel
     {
         private float solar_energy;
         private bool panel_state;
-        private string[] lines = new string[14];
+        private string[] lines = new string[15];
 
         public float getSolarEnergy()
         {
@@ -270,9 +270,8 @@ namespace PowerPanel
             string line = reader.ReadLine();
             int i = 0;
             float solarEnergy = 0;
-            float newSolar = 0;
 
-            while (i < 3 && line == lines[i])
+            while (i < 15 && line == lines[i])
             {
                 line = reader.ReadLine();
                 i++;
@@ -282,8 +281,7 @@ namespace PowerPanel
             {
                 lines[i] = line;
                 solarEnergy = float.Parse(line);
-                newSolar = solarEnergy + getSolarEnergy();
-                setSolarEnergy(newSolar);
+                setSolarEnergy(solarEnergy);
             }
             else
             {
