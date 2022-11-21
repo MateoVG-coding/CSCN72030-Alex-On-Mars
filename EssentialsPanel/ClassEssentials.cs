@@ -6,7 +6,7 @@ namespace EssentialsPanel
 {
     public class essentials_Oxygen_Water
     {
-        private double oxygen_level;
+        private double oxygen_level = 100;
         private double water_level = 20000;
         private string[] oxygenUseLevel = new string[7];
         private string[] waterUseLevel = new string[7];
