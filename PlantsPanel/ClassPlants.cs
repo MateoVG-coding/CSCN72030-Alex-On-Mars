@@ -1,5 +1,6 @@
 ﻿using EssentialsPanel;
 using System;
+using System.Diagnostics.Metrics;
 
 namespace PlantsPanel
 {
@@ -171,7 +172,7 @@ namespace PlantsPanel
 
             Random random = new Random();
 
-            int NValues = 200;
+            int NValues = 100000;
 
             double max = DesiredHumidity + 2;
 
@@ -194,7 +195,7 @@ namespace PlantsPanel
 
             Random random = new Random();
 
-            int NValues = 200;
+            int NValues = 100000;
 
             if(measurementUnit == "F")
             {
@@ -211,6 +212,38 @@ namespace PlantsPanel
 
                 File.AppendAllText("FileTemperature.txt", val.ToString("0.0") + Environment.NewLine);
             }
+        }
+
+        public string readFileTemperature()
+        {
+            if (File.Exists("FileTemperature.txt"))
+            {
+                int counter = 0;
+
+                foreach (string line in System.IO.File.ReadLines("FileTemperature.txt"))
+                {
+                    return (line);
+                    counter++;
+                }
+            }
+
+            return String.Empty;
+        }
+
+        public string readFileHumidity()
+        {
+            if (File.Exists("FileHumidity.txt"))
+            {
+                int counter = 0;
+
+                foreach (string line in System.IO.File.ReadLines("FileHumidity.txt"))
+                {
+                    return (line);
+                    counter++;
+                }
+            }
+
+            return String.Empty;
         }
     }
 }
