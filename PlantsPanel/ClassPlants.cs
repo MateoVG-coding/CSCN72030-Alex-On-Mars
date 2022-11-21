@@ -150,25 +150,19 @@ namespace PlantsPanel
             plantsPanel.ActualTemperature = Desiredtemperature;
         }
 
-        public void setHumidityPlants(PlantsPanel plantsPanel, double Desiredhumidity, string measurementUnit)
+        public void setHumidityPlants(PlantsPanel plantsPanel, double Desiredhumidity)
         {
-            if(measurementUnit == "F")
-            {
-                plantsPanel.ActualHumidity = (Desiredhumidity - 32) * 5 / 9; 
-            }
-            else
-            {
-                plantsPanel.ActualHumidity = Desiredhumidity;
-            }
-            
+            plantsPanel.ActualHumidity = Desiredhumidity;        
         }
 
-        public void createFileHumidity(double DesiredHumidity)
+        public void createFileHumidity(PlantsPanel plantsPanel)
         {
             if (File.Exists("FileHumidity.txt"))
             {
                 File.Delete("FileHumidity.txt");
             }
+
+            double DesiredHumidity = plantsPanel.ActualHumidity;
 
             Random random = new Random();
 
@@ -186,7 +180,7 @@ namespace PlantsPanel
             }
         }
 
-        public void createFileTemperature(double DesiredTemperature, string measurementUnit)
+        public void createFileTemperature(PlantsPanel plantsPanel, string measurementUnit)
         {
             if (File.Exists("FileTemperature.txt"))
             {
@@ -195,12 +189,9 @@ namespace PlantsPanel
 
             Random random = new Random();
 
-            int NValues = 100000;
+            double DesiredTemperature = plantsPanel.ActualTemperature;
 
-            if(measurementUnit == "F")
-            {
-                DesiredTemperature = (DesiredTemperature - 32) * 5 / 9;
-            }
+            int NValues = 100000;
 
             double max = DesiredTemperature + 0.5;
 
@@ -214,7 +205,7 @@ namespace PlantsPanel
             }
         }
 
-        public string readFileTemperature()
+        public string readFileTemperature(string measurementUnit)
         {
             if (File.Exists("FileTemperature.txt"))
             {
@@ -222,7 +213,17 @@ namespace PlantsPanel
 
                 foreach (string line in System.IO.File.ReadLines("FileTemperature.txt"))
                 {
-                    return (line);
+                    if (measurementUnit == "F")
+                    {
+                        double temp = Convert.ToDouble(line);
+                        temp = (temp - 32) * 5 / 9;
+                        return (Convert.ToString(temp));
+                    }
+                    else
+                    {
+                        return (line);
+                    }
+
                     counter++;
                 }
             }
