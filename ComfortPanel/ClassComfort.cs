@@ -9,12 +9,12 @@
             this.cTemp = CelciusTemp;
         }
 
-        public float getCelciusTemp(Temperature temperature)
-        {
-            float CelciusTemp = temperature.cTemp;
-
-            return CelciusTemp;
-        }
+      //  public float getCelciusTemp(Temperature temperature)
+      //  {
+      //      float CelciusTemp = temperature.cTemp;
+      //
+      //      return CelciusTemp;
+      //  }
 
         public void setCelciusTemp(Temperature temperature, float CelciusTemp)
         {
@@ -41,6 +41,57 @@
             {
                 return 0;
             }
+        }
+
+        public void createFileTemperature(Temperature temp, string tempUnit)
+        {
+            if (File.Exists("FileComfortTemperature.txt"))
+            {
+                File.Delete("FileComfortTemperature.txt");
+            }
+
+            Random random = new Random();
+
+            double prefferedTemperature = temp.cTemp;
+
+            int NValues = 100;
+
+            double max = prefferedTemperature + 0.5;
+
+            double min = prefferedTemperature - 0.5;
+
+            for (int i = 0; i < NValues; i++)
+            {
+                double val = random.NextDouble() * (max - min) + min;
+
+                File.AppendAllText("FileComfortTemperature.txt", val.ToString("0.0") + Environment.NewLine);
+            }
+        }
+
+        public string readFileTemperature(string tempUnit)
+        {
+            if (File.Exists("FileComfortTemperature.txt"))
+            {
+                int counter = 0;
+
+                foreach (string line in System.IO.File.ReadLines("FileComfortTemperature.txt"))
+                {
+                    if (tempUnit == "F")
+                    {
+                        double temp = Convert.ToDouble(line);
+                        temp = (temp - 32) * 5 / 9;
+                        return (Convert.ToString(temp));
+                    }
+                    else
+                    {
+                        return (line);
+                    }
+
+                    counter++;
+                }
+            }
+
+            return String.Empty;
         }
 
 
@@ -83,6 +134,22 @@
 
                 File.AppendAllText("FileComfortHumidity.txt", val.ToString("0.00") + Environment.NewLine);
             }
+        }
+
+        public string readFileHumidity()
+        {
+            if (File.Exists("FileComfortHumidity.txt"))
+            {
+                int counter = 0;
+
+                foreach (string line in System.IO.File.ReadLines("FileComfortHumidity.txt"))
+                {
+                    return (line);
+                    counter++;
+                }
+            }
+
+            return String.Empty;
         }
     }
 
