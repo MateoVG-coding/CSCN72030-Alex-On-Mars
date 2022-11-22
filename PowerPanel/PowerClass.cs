@@ -111,9 +111,9 @@ namespace PowerPanel
     public class UseLevel
     {
         private float energy_used;
-        private string[] lines1 = new string[14];
-        private string[] lines2 = new string[14];
-        private string[] lines3 = new string[14];
+        private string[] lines1 = new string[15];
+        private string[] lines2 = new string[15];
+        private string[] lines3 = new string[15];
 
         public void readEnergyUsed(int useLevel)
         {
@@ -127,7 +127,7 @@ namespace PowerPanel
                 string line = reader.ReadLine();
                 int i = 0;
 
-                while (i < 3 && line == lines1[i])
+                while (i < 15 && line == lines1[i])
                 {
                     line = reader.ReadLine();
                     i++;
@@ -154,7 +154,7 @@ namespace PowerPanel
                 string line = reader.ReadLine();
                 int i = 0;
 
-                while (i < 3 && line == lines2[i])
+                while (i < 15 && line == lines2[i])
                 {
                     line = reader.ReadLine();
                     i++;
@@ -181,7 +181,7 @@ namespace PowerPanel
                 string line = reader.ReadLine();
                 int i = 0;
 
-                while (i < 3 && line == lines3[i])
+                while (i < 16 && line == lines3[i])
                 {
                     line = reader.ReadLine();
                     i++;
