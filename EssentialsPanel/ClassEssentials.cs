@@ -56,7 +56,7 @@ namespace EssentialsPanel
 
             int NValues = 1000;
 
-            double max = oxygenAvailable + 1.5;
+            double max = oxygenAvailable ;
 
             double min = oxygenAvailable - 1.5;
 
