@@ -63,9 +63,29 @@ namespace HMI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap boiler {
+            get {
+                object obj = ResourceManager.GetObject("boiler", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap centerPivot_circle {
             get {
                 object obj = ResourceManager.GetObject("centerPivot_circle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap compass_background {
+            get {
+                object obj = ResourceManager.GetObject("compass_background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +116,26 @@ namespace HMI.Properties {
         internal static System.Drawing.Bitmap electrocell_nomembrane_r {
             get {
                 object obj = ResourceManager.GetObject("electrocell_nomembrane_r", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap generator_3 {
+            get {
+                object obj = ResourceManager.GetObject("generator_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap heater1 {
+            get {
+                object obj = ResourceManager.GetObject("heater1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -286,6 +326,16 @@ namespace HMI.Properties {
         internal static System.Drawing.Bitmap thermometer_vector_icon_png_260730 {
             get {
                 object obj = ResourceManager.GetObject("thermometer-vector-icon-png_260730", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap valve {
+            get {
+                object obj = ResourceManager.GetObject("valve", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

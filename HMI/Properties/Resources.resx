@@ -121,50 +121,8 @@
   <data name="tank_lowrounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tank_lowrounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pipe_3d_elbow_r270" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pipe_3d_elbow_r270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="centerPivot_circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\centerPivot_circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="electricmeter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\electricmeter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tank_rounded_wlegs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tank_rounded_wlegs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="coolingtower" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coolingtower.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pngtree-thermometer-icon-vector--icon-design-png-image_1978811" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-thermometer-icon-vector--icon-design-png-image_1978811.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tank_pillshape2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tank_pillshape2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pipe_3d_tjunction" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pipe_3d_tjunction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pipe_3d_tjunction_r270" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pipe_3d_tjunction_r270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pipe_3d_h1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pipe_3d_h1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="solarpanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\solarpanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pipe_3d_elbow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pipe_3d_elbow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lcd-types-arduino-supports-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lcd-types-arduino-supports-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="leaves_elm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\leaves_elm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pipe_3d_h2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pipe_3d_h2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="boiler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boiler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pipe_3d_elbow_r180" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pipe_3d_elbow_r180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,19 +130,76 @@
   <data name="tank_cylinder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tank_cylinder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pipe_3d_tjunction_r90" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pipe_3d_tjunction_r90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="thermometer-vector-icon-png_260730" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\thermometer-vector-icon-png_260730.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pipe_3d_elbow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pipe_3d_elbow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pipe_3d_tjunction_r180" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pipe_3d_tjunction_r180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="electrocell_nomembrane_r" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\electrocell_nomembrane_r.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="leaves_elm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leaves_elm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pipe_3d_h2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pipe_3d_h2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pipe_3d_tjunction_r270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pipe_3d_tjunction_r270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pipe_3d_tjunction_r90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pipe_3d_tjunction_r90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pipe_3d_tjunction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pipe_3d_tjunction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lcd-types-arduino-supports-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lcd-types-arduino-supports-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="solarpanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\solarpanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="centerPivot_circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\centerPivot_circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="compass_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\compass_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pipe_3d_elbow_r270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pipe_3d_elbow_r270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pipe_3d_elbow_r90" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pipe_3d_elbow_r90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="thermometer-vector-icon-png_260730" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\thermometer-vector-icon-png_260730.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pngtree-thermometer-icon-vector--icon-design-png-image_1978811" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-thermometer-icon-vector--icon-design-png-image_1978811.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electrocell_nomembrane_r" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electrocell_nomembrane_r.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electricmeter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electricmeter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heater1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heater1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="valve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\valve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tank_rounded_wlegs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tank_rounded_wlegs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coolingtower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coolingtower.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pipe_3d_h1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pipe_3d_h1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tank_pillshape2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tank_pillshape2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="generator_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\generator_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
