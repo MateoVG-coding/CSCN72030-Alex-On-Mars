@@ -4,40 +4,86 @@ using System;
 
 namespace EssentialsPanel
 {
-    public class essentials_Oxygen_Water
+    public class EssentialsPanel
     {
         private double oxygen_level = 100;
         private double water_level = 20000;
-        private string[] oxygenUseLevel = new string[7];
-        private string[] waterUseLevel = new string[7];
+       // private string[] oxygenUseLevel = new string[7];
+       // private string[] waterUseLevel = new string[7];
        
-        public void oxygenUsed(double usedOxygen)
+        //public void oxygenUsed(double usedOxygen)
+        //{
+        //    StreamReader reader;
+        //    var path = Path.Combine(Directory.GetCurrentDirectory(), "Oxygen Used.txt");
+        //    reader = new StreamReader(path);
+        //    string line = reader.ReadLine();
+        //    int i = 0;
+
+        //    while (i < 7 && line == oxygenUseLevel[i])
+        //    {
+        //        line = reader.ReadLine();
+        //        i++;
+        //    }
+
+        //    if (line != null)
+        //    {
+        //        oxygenUseLevel[i] = line;
+        //        usedOxygen = double.Parse(line);
+        //        double newOxygenLevel = getOxygenLevel() - usedOxygen;
+
+        //        setOxygenLevel(newOxygenLevel);
+        //    }
+        //    else
+        //    {
+        //        reader.Close();
+        //    }
+        //}
+
+        public EssentialsPanel(double availableOxygen)
         {
-            StreamReader reader;
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "Oxygen Used.txt");
-            reader = new StreamReader(path);
-            string line = reader.ReadLine();
-            int i = 0;
-
-            while (i < 7 && line == oxygenUseLevel[i])
+            this.oxygen_level = availableOxygen;
+        }
+        public void createFileOxygen(EssentialsPanel essentialsPanel)
+        {
+            if (File.Exists("FileOxygen.txt"))
             {
-                line = reader.ReadLine();
-                i++;
+                File.Delete("FileOxygen.txt");
             }
 
-            if (line != null)
-            {
-                oxygenUseLevel[i] = line;
-                usedOxygen = double.Parse(line);
-                double newOxygenLevel = getOxygenLevel() - usedOxygen;
+            double oxygenAvailable = essentialsPanel.oxygen_level;
 
-                setOxygenLevel(newOxygenLevel);
-            }
-            else
+            Random random = new Random();
+
+            int NValues = 1000;
+
+            double max = oxygenAvailable + 1.5;
+
+            double min = oxygenAvailable - 1.5;
+
+            for (int i = 0; i < NValues; i++)
             {
-                reader.Close();
+                double val = random.NextDouble() * (max - min) + min;
+
+                File.AppendAllText("FileOxygen.txt", val.ToString("0.00") + Environment.NewLine);
             }
         }
+
+        public string readFileOxygen()
+        {
+            if (File.Exists("FileOxygen.txt"))
+            {
+                int counter = 0;
+
+                foreach (string line in System.IO.File.ReadLines("FileOxygen.txt"))
+                {
+                    return (line);
+                    counter++;
+                }
+            }
+
+            return String.Empty;
+        }
+
         public double getOxygenLevel()
         {
             return oxygen_level;
