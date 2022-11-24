@@ -207,12 +207,14 @@ namespace PlantsPanel
 
         public string readFileTemperature(string measurementUnit)
         {
+
+            int counter = 0;
             if (File.Exists("FileTemperature.txt"))
             {
-                int counter = 0;
 
                 foreach (string line in System.IO.File.ReadLines("FileTemperature.txt"))
                 {
+                    counter++;
                     if (measurementUnit == "F")
                     {
                         double temp = Convert.ToDouble(line);
@@ -223,8 +225,6 @@ namespace PlantsPanel
                     {
                         return (line);
                     }
-
-                    counter++;
                 }
             }
 
@@ -239,8 +239,8 @@ namespace PlantsPanel
 
                 foreach (string line in System.IO.File.ReadLines("FileHumidity.txt"))
                 {
-                    return (line);
                     counter++;
+                    return (line);
                 }
             }
 
