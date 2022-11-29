@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ComfortPanel\ComfortPanel.csproj" />
+    <ProjectReference Include="..\EssentialsPanel\EssentialsPanel.csproj" />
+    <ProjectReference Include="..\PlantsPanel\PlantsPanel.csproj" />
+    <ProjectReference Include="..\PowerPanel\PowerPanel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

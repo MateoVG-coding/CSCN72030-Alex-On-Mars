@@ -4,6 +4,10 @@ using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using System.Linq;
 using System.Text;
+using ComfortPanel;
+using EssentialsPanel;
+using PlantsPanel;
+using PowerPanel;
 
 namespace HMI
 {
@@ -13,6 +17,7 @@ namespace HMI
         {
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
+            PlantsPanel.PlantsPanel plantsPanel = new PlantsPanel.PlantsPanel();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -82,7 +87,7 @@ namespace HMI
 
         private void roundButton4_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label27_Click(object sender, EventArgs e)

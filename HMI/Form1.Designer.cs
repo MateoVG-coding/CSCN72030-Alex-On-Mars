@@ -86,18 +86,18 @@
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.roundButton1 = new HMI.RoundButton();
             this.roundButton2 = new HMI.RoundButton();
-            this.roundButton3 = new HMI.RoundButton();
-            this.roundButton4 = new HMI.RoundButton();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.roundButtonHumidityPlants = new HMI.RoundButton();
+            this.roundButtonTemperaturePlants = new HMI.RoundButton();
+            this.numericUpDownHumidityPlants = new System.Windows.Forms.NumericUpDown();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownTemperaturePlants = new System.Windows.Forms.NumericUpDown();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.roundButton5 = new HMI.RoundButton();
-            this.roundButton6 = new HMI.RoundButton();
+            this.numericUpDownWaterPlants = new System.Windows.Forms.NumericUpDown();
+            this.listBoxLightIntensity = new System.Windows.Forms.ListBox();
+            this.roundButtonLightIntensity = new HMI.RoundButton();
+            this.roundButtonWaterPlants = new HMI.RoundButton();
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
@@ -164,9 +164,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHumidityPlants)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTemperaturePlants)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWaterPlants)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
@@ -847,61 +847,61 @@
             this.roundButton2.TabIndex = 82;
             this.roundButton2.UseVisualStyleBackColor = false;
             // 
-            // roundButton3
+            // roundButtonHumidityPlants
             // 
-            this.roundButton3.BackColor = System.Drawing.SystemColors.WindowText;
-            this.roundButton3.BackgroundImage = global::HMI.Properties.Resources.compass_background;
-            this.roundButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.roundButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundButton3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.roundButton3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.roundButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundButton3.Location = new System.Drawing.Point(853, 145);
-            this.roundButton3.Name = "roundButton3";
-            this.roundButton3.Size = new System.Drawing.Size(40, 40);
-            this.roundButton3.TabIndex = 88;
-            this.roundButton3.UseVisualStyleBackColor = false;
+            this.roundButtonHumidityPlants.BackColor = System.Drawing.SystemColors.WindowText;
+            this.roundButtonHumidityPlants.BackgroundImage = global::HMI.Properties.Resources.compass_background;
+            this.roundButtonHumidityPlants.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.roundButtonHumidityPlants.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundButtonHumidityPlants.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.roundButtonHumidityPlants.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.roundButtonHumidityPlants.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.roundButtonHumidityPlants.Location = new System.Drawing.Point(853, 145);
+            this.roundButtonHumidityPlants.Name = "roundButtonHumidityPlants";
+            this.roundButtonHumidityPlants.Size = new System.Drawing.Size(40, 40);
+            this.roundButtonHumidityPlants.TabIndex = 88;
+            this.roundButtonHumidityPlants.UseVisualStyleBackColor = false;
             // 
-            // roundButton4
+            // roundButtonTemperaturePlants
             // 
-            this.roundButton4.BackColor = System.Drawing.SystemColors.WindowText;
-            this.roundButton4.BackgroundImage = global::HMI.Properties.Resources.compass_background;
-            this.roundButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.roundButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.roundButton4.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.roundButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundButton4.Location = new System.Drawing.Point(853, 80);
-            this.roundButton4.Name = "roundButton4";
-            this.roundButton4.Size = new System.Drawing.Size(40, 40);
-            this.roundButton4.TabIndex = 87;
-            this.roundButton4.UseVisualStyleBackColor = false;
-            this.roundButton4.Click += new System.EventHandler(this.roundButton4_Click);
+            this.roundButtonTemperaturePlants.BackColor = System.Drawing.SystemColors.WindowText;
+            this.roundButtonTemperaturePlants.BackgroundImage = global::HMI.Properties.Resources.compass_background;
+            this.roundButtonTemperaturePlants.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.roundButtonTemperaturePlants.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundButtonTemperaturePlants.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.roundButtonTemperaturePlants.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.roundButtonTemperaturePlants.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.roundButtonTemperaturePlants.Location = new System.Drawing.Point(853, 80);
+            this.roundButtonTemperaturePlants.Name = "roundButtonTemperaturePlants";
+            this.roundButtonTemperaturePlants.Size = new System.Drawing.Size(40, 40);
+            this.roundButtonTemperaturePlants.TabIndex = 87;
+            this.roundButtonTemperaturePlants.UseVisualStyleBackColor = false;
+            this.roundButtonTemperaturePlants.Click += new System.EventHandler(this.roundButton4_Click);
             // 
-            // numericUpDown3
+            // numericUpDownHumidityPlants
             // 
-            this.numericUpDown3.Font = new System.Drawing.Font("Amazon Ember", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown3.Increment = new decimal(new int[] {
+            this.numericUpDownHumidityPlants.Font = new System.Drawing.Font("Amazon Ember", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDownHumidityPlants.Increment = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown3.Location = new System.Drawing.Point(757, 150);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.numericUpDownHumidityPlants.Location = new System.Drawing.Point(757, 150);
+            this.numericUpDownHumidityPlants.Maximum = new decimal(new int[] {
             90,
             0,
             0,
             0});
-            this.numericUpDown3.Minimum = new decimal(new int[] {
+            this.numericUpDownHumidityPlants.Minimum = new decimal(new int[] {
             30,
             0,
             0,
             0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.ReadOnly = true;
-            this.numericUpDown3.Size = new System.Drawing.Size(72, 33);
-            this.numericUpDown3.TabIndex = 86;
-            this.numericUpDown3.Value = new decimal(new int[] {
+            this.numericUpDownHumidityPlants.Name = "numericUpDownHumidityPlants";
+            this.numericUpDownHumidityPlants.ReadOnly = true;
+            this.numericUpDownHumidityPlants.Size = new System.Drawing.Size(72, 33);
+            this.numericUpDownHumidityPlants.TabIndex = 86;
+            this.numericUpDownHumidityPlants.Value = new decimal(new int[] {
             60,
             0,
             0,
@@ -927,31 +927,31 @@
             this.label19.TabIndex = 84;
             this.label19.Text = "Temperature";
             // 
-            // numericUpDown4
+            // numericUpDownTemperaturePlants
             // 
-            this.numericUpDown4.DecimalPlaces = 1;
-            this.numericUpDown4.Font = new System.Drawing.Font("Amazon Ember", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown4.Increment = new decimal(new int[] {
+            this.numericUpDownTemperaturePlants.DecimalPlaces = 1;
+            this.numericUpDownTemperaturePlants.Font = new System.Drawing.Font("Amazon Ember", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDownTemperaturePlants.Increment = new decimal(new int[] {
             5,
             0,
             0,
             65536});
-            this.numericUpDown4.Location = new System.Drawing.Point(756, 85);
-            this.numericUpDown4.Maximum = new decimal(new int[] {
+            this.numericUpDownTemperaturePlants.Location = new System.Drawing.Point(756, 85);
+            this.numericUpDownTemperaturePlants.Maximum = new decimal(new int[] {
             25,
             0,
             0,
             0});
-            this.numericUpDown4.Minimum = new decimal(new int[] {
+            this.numericUpDownTemperaturePlants.Minimum = new decimal(new int[] {
             5,
             0,
             0,
             0});
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.ReadOnly = true;
-            this.numericUpDown4.Size = new System.Drawing.Size(72, 33);
-            this.numericUpDown4.TabIndex = 83;
-            this.numericUpDown4.Value = new decimal(new int[] {
+            this.numericUpDownTemperaturePlants.Name = "numericUpDownTemperaturePlants";
+            this.numericUpDownTemperaturePlants.ReadOnly = true;
+            this.numericUpDownTemperaturePlants.Size = new System.Drawing.Size(72, 33);
+            this.numericUpDownTemperaturePlants.TabIndex = 83;
+            this.numericUpDownTemperaturePlants.Value = new decimal(new int[] {
             25,
             0,
             0,
@@ -979,77 +979,77 @@
             this.label21.TabIndex = 90;
             this.label21.Text = "Light Intensity";
             // 
-            // numericUpDown5
+            // numericUpDownWaterPlants
             // 
-            this.numericUpDown5.Font = new System.Drawing.Font("Amazon Ember", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown5.Increment = new decimal(new int[] {
+            this.numericUpDownWaterPlants.Font = new System.Drawing.Font("Amazon Ember", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDownWaterPlants.Increment = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.numericUpDown5.Location = new System.Drawing.Point(1116, 75);
-            this.numericUpDown5.Maximum = new decimal(new int[] {
+            this.numericUpDownWaterPlants.Location = new System.Drawing.Point(1116, 75);
+            this.numericUpDownWaterPlants.Maximum = new decimal(new int[] {
             19000,
             0,
             0,
             0});
-            this.numericUpDown5.Minimum = new decimal(new int[] {
+            this.numericUpDownWaterPlants.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             0});
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(72, 33);
-            this.numericUpDown5.TabIndex = 91;
-            this.numericUpDown5.Value = new decimal(new int[] {
+            this.numericUpDownWaterPlants.Name = "numericUpDownWaterPlants";
+            this.numericUpDownWaterPlants.Size = new System.Drawing.Size(72, 33);
+            this.numericUpDownWaterPlants.TabIndex = 91;
+            this.numericUpDownWaterPlants.Value = new decimal(new int[] {
             100,
             0,
             0,
             0});
             // 
-            // listBox2
+            // listBoxLightIntensity
             // 
-            this.listBox2.Font = new System.Drawing.Font("Amazon Ember", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 25;
-            this.listBox2.Items.AddRange(new object[] {
+            this.listBoxLightIntensity.Font = new System.Drawing.Font("Amazon Ember", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.listBoxLightIntensity.FormattingEnabled = true;
+            this.listBoxLightIntensity.ItemHeight = 25;
+            this.listBoxLightIntensity.Items.AddRange(new object[] {
             "Low",
             "Medium",
             "High"});
-            this.listBox2.Location = new System.Drawing.Point(1116, 140);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(120, 29);
-            this.listBox2.TabIndex = 92;
+            this.listBoxLightIntensity.Location = new System.Drawing.Point(1116, 140);
+            this.listBoxLightIntensity.Name = "listBoxLightIntensity";
+            this.listBoxLightIntensity.Size = new System.Drawing.Size(120, 29);
+            this.listBoxLightIntensity.TabIndex = 92;
             // 
-            // roundButton5
+            // roundButtonLightIntensity
             // 
-            this.roundButton5.BackColor = System.Drawing.SystemColors.WindowText;
-            this.roundButton5.BackgroundImage = global::HMI.Properties.Resources.compass_background;
-            this.roundButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.roundButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundButton5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.roundButton5.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.roundButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundButton5.Location = new System.Drawing.Point(1270, 134);
-            this.roundButton5.Name = "roundButton5";
-            this.roundButton5.Size = new System.Drawing.Size(40, 40);
-            this.roundButton5.TabIndex = 94;
-            this.roundButton5.UseVisualStyleBackColor = false;
+            this.roundButtonLightIntensity.BackColor = System.Drawing.SystemColors.WindowText;
+            this.roundButtonLightIntensity.BackgroundImage = global::HMI.Properties.Resources.compass_background;
+            this.roundButtonLightIntensity.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.roundButtonLightIntensity.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundButtonLightIntensity.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.roundButtonLightIntensity.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.roundButtonLightIntensity.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.roundButtonLightIntensity.Location = new System.Drawing.Point(1270, 134);
+            this.roundButtonLightIntensity.Name = "roundButtonLightIntensity";
+            this.roundButtonLightIntensity.Size = new System.Drawing.Size(40, 40);
+            this.roundButtonLightIntensity.TabIndex = 94;
+            this.roundButtonLightIntensity.UseVisualStyleBackColor = false;
             // 
-            // roundButton6
+            // roundButtonWaterPlants
             // 
-            this.roundButton6.BackColor = System.Drawing.SystemColors.WindowText;
-            this.roundButton6.BackgroundImage = global::HMI.Properties.Resources.compass_background;
-            this.roundButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.roundButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundButton6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.roundButton6.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.roundButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundButton6.Location = new System.Drawing.Point(1267, 66);
-            this.roundButton6.Name = "roundButton6";
-            this.roundButton6.Size = new System.Drawing.Size(40, 40);
-            this.roundButton6.TabIndex = 93;
-            this.roundButton6.UseVisualStyleBackColor = false;
+            this.roundButtonWaterPlants.BackColor = System.Drawing.SystemColors.WindowText;
+            this.roundButtonWaterPlants.BackgroundImage = global::HMI.Properties.Resources.compass_background;
+            this.roundButtonWaterPlants.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.roundButtonWaterPlants.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundButtonWaterPlants.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.roundButtonWaterPlants.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.roundButtonWaterPlants.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.roundButtonWaterPlants.Location = new System.Drawing.Point(1267, 66);
+            this.roundButtonWaterPlants.Name = "roundButtonWaterPlants";
+            this.roundButtonWaterPlants.Size = new System.Drawing.Size(40, 40);
+            this.roundButtonWaterPlants.TabIndex = 93;
+            this.roundButtonWaterPlants.UseVisualStyleBackColor = false;
             // 
             // pictureBox31
             // 
@@ -1208,10 +1208,10 @@
             this.panel1.Controls.Add(this.label28);
             this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.label21);
-            this.panel1.Controls.Add(this.listBox2);
-            this.panel1.Controls.Add(this.numericUpDown5);
-            this.panel1.Controls.Add(this.roundButton6);
-            this.panel1.Controls.Add(this.roundButton5);
+            this.panel1.Controls.Add(this.listBoxLightIntensity);
+            this.panel1.Controls.Add(this.numericUpDownWaterPlants);
+            this.panel1.Controls.Add(this.roundButtonWaterPlants);
+            this.panel1.Controls.Add(this.roundButtonLightIntensity);
             this.panel1.Location = new System.Drawing.Point(10, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1900, 211);
@@ -1451,12 +1451,12 @@
             this.Controls.Add(this.pictureBox33);
             this.Controls.Add(this.pictureBox32);
             this.Controls.Add(this.pictureBox31);
-            this.Controls.Add(this.roundButton3);
-            this.Controls.Add(this.roundButton4);
-            this.Controls.Add(this.numericUpDown3);
+            this.Controls.Add(this.roundButtonHumidityPlants);
+            this.Controls.Add(this.roundButtonTemperaturePlants);
+            this.Controls.Add(this.numericUpDownHumidityPlants);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.numericUpDown4);
+            this.Controls.Add(this.numericUpDownTemperaturePlants);
             this.Controls.Add(this.roundButton2);
             this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.numericUpDown2);
@@ -1556,9 +1556,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHumidityPlants)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTemperaturePlants)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWaterPlants)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
@@ -1637,18 +1637,18 @@
         private NumericUpDown numericUpDown2;
         private RoundButton roundButton1;
         private RoundButton roundButton2;
-        private RoundButton roundButton3;
-        private RoundButton roundButton4;
-        private NumericUpDown numericUpDown3;
+        private RoundButton roundButtonHumidityPlants;
+        private RoundButton roundButtonTemperaturePlants;
+        private NumericUpDown numericUpDownHumidityPlants;
         private Label label18;
         private Label label19;
-        private NumericUpDown numericUpDown4;
+        private NumericUpDown numericUpDownTemperaturePlants;
         private Label label20;
         private Label label21;
-        private NumericUpDown numericUpDown5;
-        private ListBox listBox2;
-        private RoundButton roundButton5;
-        private RoundButton roundButton6;
+        private NumericUpDown numericUpDownWaterPlants;
+        private ListBox listBoxLightIntensity;
+        private RoundButton roundButtonLightIntensity;
+        private RoundButton roundButtonWaterPlants;
         private PictureBox pictureBox31;
         private PictureBox pictureBox32;
         private PictureBox pictureBox33;

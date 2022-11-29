@@ -118,7 +118,7 @@ namespace PlantsPanel
             plantsPanel.FieldNum = fieldNum;
         }
 
-        public int setWaterPlants(PlantsPanel plantsPanel, double DesiredwaterLt, essentials_Oxygen_Water essentialsPanel)
+        public int setWaterPlants(PlantsPanel plantsPanel, double DesiredwaterLt, EssentialsPanel.EssentialsPanel essentialsPanel)
         {
             
             if(essentialsPanel.setWaterLevel(DesiredwaterLt) == 0)
@@ -130,7 +130,7 @@ namespace PlantsPanel
             return 1;
         }
 
-        public void setOxygenPlants(PlantsPanel plantsPanel, essentials_Oxygen_Water essentialsPanel)
+        public void setOxygenPlants(PlantsPanel plantsPanel, EssentialsPanel.EssentialsPanel essentialsPanel)
         {
             plantsPanel.OxygenConsumption = essentialsPanel.getOxygenLevel();
         }
