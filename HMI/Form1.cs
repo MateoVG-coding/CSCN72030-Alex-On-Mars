@@ -8,16 +8,23 @@ using ComfortPanel;
 using EssentialsPanel;
 using PlantsPanel;
 using PowerPanel;
+using System.IO;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Drawing;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace HMI
 {
     public partial class Form1 : Form
     {
+        PlantsPanel.PlantsPanel plantsPanel = new PlantsPanel.PlantsPanel();
+
+        CancellationTokenSource cts;
         public Form1()
         {
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
-            PlantsPanel.PlantsPanel plantsPanel = new PlantsPanel.PlantsPanel();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -84,18 +91,39 @@ namespace HMI
         {
 
         }
-
-        private void roundButton4_Click(object sender, EventArgs e)
+        private async void roundButton4_Click(object sender, EventArgs e)
         {
-            
-        }
+            double desiredTemperature = Convert.ToDouble(numericUpDownTemperaturePlants.Text);
 
+            plantsPanel.setTemperaturePlants(plantsPanel, desiredTemperature);
+
+            plantsPanel.createFileTemperature(plantsPanel);
+
+            int counter = 0;
+
+            using (StreamReader sr = new StreamReader("FileTemperature.txt"))
+            {
+                while (sr.Peek() >= 0)
+                {
+                    label11.Text = sr.ReadLine();
+                    await Task.Delay(2000);
+                    counter++;
+                }
+            }
+
+            return;
+        }
         private void label27_Click(object sender, EventArgs e)
         {
 
         }
 
         private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void process1_Exited(object sender, EventArgs e)
         {
 
         }

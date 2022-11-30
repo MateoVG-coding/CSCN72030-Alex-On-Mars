@@ -613,7 +613,6 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(46, 32);
             this.radioButton2.TabIndex = 62;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "F";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
@@ -642,9 +641,8 @@
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(48, 32);
             this.radioButton1.TabIndex = 61;
-            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "C";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.UseVisualStyleBackColor = false;
             // 
             // pictureBox35
             // 
@@ -690,6 +688,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(120, 40);
             this.label11.TabIndex = 72;
+            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label12
             // 
@@ -1121,13 +1120,13 @@
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(46, 32);
             this.radioButton3.TabIndex = 119;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "F";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
+            this.radioButton4.Checked = true;
             this.radioButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton4.Font = new System.Drawing.Font("Amazon Ember", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.radioButton4.Location = new System.Drawing.Point(1335, 772);

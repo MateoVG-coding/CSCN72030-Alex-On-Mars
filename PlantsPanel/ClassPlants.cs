@@ -1,6 +1,8 @@
 ﻿using EssentialsPanel;
 using System;
+using System.Diagnostics;
 using System.Diagnostics.Metrics;
+using System.IO;
 
 namespace PlantsPanel
 {
@@ -180,7 +182,7 @@ namespace PlantsPanel
             }
         }
 
-        public void createFileTemperature(PlantsPanel plantsPanel, string measurementUnit)
+        public void createFileTemperature(PlantsPanel plantsPanel)
         {
             if (File.Exists("FileTemperature.txt"))
             {
@@ -191,11 +193,11 @@ namespace PlantsPanel
 
             double DesiredTemperature = plantsPanel.ActualTemperature;
 
-            int NValues = 100000;
+            int NValues = 10000;
 
-            double max = DesiredTemperature + 0.5;
+            double max = DesiredTemperature + 0.2;
 
-            double min = DesiredTemperature - 0.5;
+            double min = DesiredTemperature - 0.2;
 
             for (int i = 0; i < NValues; i++)
             {
@@ -207,15 +209,13 @@ namespace PlantsPanel
 
         public string readFileTemperature(string measurementUnit)
         {
-
-            int counter = 0;
-            if (File.Exists("FileTemperature.txt"))
+            if (File.Exists("FileHumidity.txt"))
             {
+                int counter = 0;
 
-                foreach (string line in System.IO.File.ReadLines("FileTemperature.txt"))
+                foreach (string line in System.IO.File.ReadLines("FileHumidity.txt"))
                 {
-                    counter++;
-                    if (measurementUnit == "F")
+                    if(measurementUnit == "F")
                     {
                         double temp = Convert.ToDouble(line);
                         temp = (temp - 32) * 5 / 9;
@@ -223,11 +223,11 @@ namespace PlantsPanel
                     }
                     else
                     {
+                        counter++;
                         return (line);
                     }
                 }
             }
-
             return String.Empty;
         }
 
