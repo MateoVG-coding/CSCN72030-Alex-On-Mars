@@ -19,8 +19,6 @@ namespace HMI
     public partial class Form1 : Form
     {
         PlantsPanel.PlantsPanel plantsPanel = new PlantsPanel.PlantsPanel();
-
-        CancellationTokenSource cts;
         public Form1()
         {
             InitializeComponent();
@@ -91,27 +89,35 @@ namespace HMI
         {
 
         }
-        private async void roundButton4_Click(object sender, EventArgs e)
+        private void roundButton4_Click(object sender, EventArgs e)
         {
             double desiredTemperature = Convert.ToDouble(numericUpDownTemperaturePlants.Text);
 
             plantsPanel.setTemperaturePlants(plantsPanel, desiredTemperature);
 
+            Cursor.Current = Cursors.WaitCursor;
+
             plantsPanel.createFileTemperature(plantsPanel);
 
-            int counter = 0;
+            Cursor.Current = Cursors.Default;
 
-            using (StreamReader sr = new StreamReader("FileTemperature.txt"))
+            string[] lines = File.ReadAllLines("FileTemperature.txt");
+
+            for(int i = 0; i < lines.Length; i++)
             {
-                while (sr.Peek() >= 0)
-                {
-                    label11.Text = sr.ReadLine();
-                    await Task.Delay(2000);
-                    counter++;
-                }
+                label11.Text = lines[i];
+                WaitNSeconds(4);
             }
+        }
 
-            return;
+        private void WaitNSeconds(int seconds)
+        {
+            if (seconds < 1) return;
+            DateTime _desired = DateTime.Now.AddSeconds(seconds);
+            while (DateTime.Now < _desired)
+            {
+                System.Windows.Forms.Application.DoEvents();
+            }
         }
         private void label27_Click(object sender, EventArgs e)
         {

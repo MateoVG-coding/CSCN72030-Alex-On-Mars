@@ -193,7 +193,7 @@ namespace PlantsPanel
 
             double DesiredTemperature = plantsPanel.ActualTemperature;
 
-            int NValues = 10000;
+            int NValues = 50000;
 
             double max = DesiredTemperature + 0.2;
 
