@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Drawing;
 using static System.Net.Mime.MediaTypeNames;
+using System.Diagnostics;
 
 namespace HMI
 {
@@ -106,7 +107,7 @@ namespace HMI
 
             string[] lines = File.ReadAllLines("FileTemperature.txt");
 
-            for(int i = 0; i < lines.Length; i++)
+            for (int i = 0; i < lines.Length; i++)
             {
                 label11.Text = lines[i];
                 WaitNSeconds(4);
@@ -153,6 +154,13 @@ namespace HMI
             }
 
             totalEnergy = power.getTotalEnergy() + (energy[0] + energy[1] + energy[2] + energy[3]);
+
+            if (totalEnergy > power.getMaxEnergy())
+            {
+                float x = totalEnergy - power.getMaxEnergy();
+                totalEnergy = totalEnergy - x;
+            }
+
             power.setTotalEnergy(totalEnergy);
             power.calculateEnergyPercentage(totalEnergy, power.getMaxEnergy());
 
@@ -189,6 +197,11 @@ namespace HMI
                         newTotalEnergy();
                         WaitNSeconds(4);
                     }
+                    else
+                    {
+                        WaitNSeconds(10);
+                        continue;
+                    }
                 }
             }
         }
@@ -222,6 +235,11 @@ namespace HMI
                     {
                         newTotalEnergy();
                         WaitNSeconds(4);
+                    }
+                    else
+                    {
+                        WaitNSeconds(10);
+                        continue;
                     }
                 }
             }
@@ -258,6 +276,11 @@ namespace HMI
                         newTotalEnergy();
                         WaitNSeconds(4);
                     }
+                    else
+                    {
+                        WaitNSeconds(10);
+                        continue;
+                    }
                 }
             }
         }
@@ -291,6 +314,11 @@ namespace HMI
                     {
                         newTotalEnergy();
                         WaitNSeconds(4);
+                    }
+                    else
+                    {
+                        WaitNSeconds(10);
+                        continue;
                     }
                 }
             }
