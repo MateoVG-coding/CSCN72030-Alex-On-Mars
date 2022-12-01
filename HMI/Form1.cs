@@ -161,6 +161,8 @@ namespace HMI
 
         private void pictureBox40_Click(object sender, EventArgs e)
         {
+            power.checkEnergy();
+
             if (power.solar_Panel[0].getPanelState() == true)
             {
                 DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -193,6 +195,8 @@ namespace HMI
 
         private void pictureBox43_Click(object sender, EventArgs e)
         {
+            power.checkEnergy();
+
             if (power.solar_Panel[1].getPanelState() == true)
             {
                 DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -225,6 +229,8 @@ namespace HMI
 
         private void pictureBox41_Click(object sender, EventArgs e)
         {
+            power.checkEnergy();
+
             if (power.solar_Panel[2].getPanelState() == true)
             {
                 DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -258,6 +264,8 @@ namespace HMI
 
         private void pictureBox42_Click(object sender, EventArgs e)
         {
+            power.checkEnergy();
+
             if (power.solar_Panel[3].getPanelState() == true)
             {
                 DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
