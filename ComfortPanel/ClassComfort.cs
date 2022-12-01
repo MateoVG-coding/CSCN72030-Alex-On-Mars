@@ -2,28 +2,22 @@
 {
     public class Temperature
     {
-        public float cTemp;
+        public double cTemp;
+
+        public Temperature()
+        {
+            cTemp = 24;
+        }
         
-        public Temperature(float CelciusTemp)
+        public Temperature(double CelciusTemp)
         {
             this.cTemp = CelciusTemp;
         }
-
-      //  public float getCelciusTemp(Temperature temperature)
-      //  {
-      //      float CelciusTemp = temperature.cTemp;
-      //
-      //      return CelciusTemp;
-      //  }
-
-        public void setCelciusTemp(Temperature temperature, float CelciusTemp)
+           
+       
+        public double getTemperaturePlants(Temperature temp, string tempUnit)
         {
-            temperature.cTemp = CelciusTemp;
-        }
-
-        public float getTemperaturePlants(Temperature temp, string tempUnit)
-        {
-            float temperature;
+            double temperature;
 
             if (tempUnit == "C")
             {
@@ -43,7 +37,7 @@
             }
         }
 
-        public void createFileTemperature(Temperature temp, string tempUnit)
+        public void createFileTemperature(Temperature temp)
         {
             if (File.Exists("FileComfortTemperature.txt"))
             {
@@ -94,39 +88,50 @@
             return String.Empty;
         }
 
+        public void setTemperature(Temperature temperature, double CelciusTemp)
+        {
+            temperature.cTemp = CelciusTemp;
+        }
 
     }
 
     public class Humidity
     {
-        public float humidity;
+        public double humidity;
 
-        public Humidity(float hum1dity)
+        public Humidity()
+        {
+            humidity = 60;
+        }
+
+        public Humidity(double hum1dity)
         {
             this.humidity = hum1dity;
         }
 
-        public float getHumidityPlants(Humidity humidity)
+        public double getHumidityPlants(Humidity humidity)
         {
-            float hum1dity = humidity.humidity;
+            double hum1dity = humidity.humidity;
 
             return hum1dity;
         }
 
-        public void setHumidity(Humidity humidity, float preferredHumidity)
+        public void setHumidity(Humidity humidity, double preferredHumidity)
         {
             humidity.humidity = preferredHumidity;
         }
 
-        public void createFileHumidity(float prefferedHumidity)
+        public void createFileHumidity(Humidity humidity)
         {
             Random random = new Random();
 
+            double prefferedHumidity = humidity.humidity;
+
             int NValues = 100;
 
-            float max = prefferedHumidity + 4;
+            double max = prefferedHumidity + 4;
 
-            float min = prefferedHumidity - 4;
+            double min = prefferedHumidity - 4;
 
             for (int i = 0; i < NValues; i++)
             {

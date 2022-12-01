@@ -19,6 +19,8 @@ namespace HMI
     public partial class Form1 : Form
     {
         PlantsPanel.PlantsPanel plantsPanel = new PlantsPanel.PlantsPanel();
+        Temperature temperature = new Temperature();
+        Humidity humidity = new Humidity();
         Energy power = new Energy();
         UseLevel uselevel = new UseLevel();
 
@@ -298,7 +300,59 @@ namespace HMI
 
         private void label26_Click(object sender, EventArgs e)
         {
+         
+        }
 
+        private void numericUpDown1_ValueChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void roundButton1_Click(object sender, EventArgs e)
+        {
+            double prefferedTemperature = Convert.ToDouble(numericUpDownTemperatureHome.Text);
+
+            temperature.setTemperature(temperature, prefferedTemperature);
+
+            Cursor.Current = Cursors.WaitCursor;
+
+            temperature.createFileTemperature(temperature);
+
+            Cursor.Current = Cursors.Default;
+
+            string[] lines = File.ReadAllLines("FileComfortTemperature.txt");
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                label11.Text = lines[i];
+                WaitNSeconds(4);
+            }
+        }
+
+        private void roundButton2_Click(object sender, EventArgs e)
+        {
+            double prefferedHumidity = Convert.ToDouble(numericUpDownHumidityHome.Text);
+
+            humidity.setHumidity(humidity, prefferedHumidity);
+
+            Cursor.Current = Cursors.WaitCursor;
+
+            humidity.createFileHumidity(humidity);
+
+            Cursor.Current = Cursors.Default;
+
+            string[] lines = File.ReadAllLines("FileComfortHumidity.txt");
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                label11.Text = lines[i];
+                WaitNSeconds(4);
+            }
         }
     }
 
