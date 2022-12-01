@@ -273,8 +273,6 @@ namespace PowerPanel
         {
             StreamReader reader;
             var dir = Directory.GetCurrentDirectory();
-            int v = dir.Length - 25;
-            dir = dir.Remove(v);
             string fileName = "SolarEnergy.txt";
             var path = Path.Combine(dir, fileName);
             reader = new StreamReader(path);

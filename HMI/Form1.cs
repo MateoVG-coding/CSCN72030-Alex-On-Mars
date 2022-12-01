@@ -13,11 +13,16 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Drawing;
 using static System.Net.Mime.MediaTypeNames;
+using System.Diagnostics;
 
 namespace HMI
 {
     public partial class Form1 : Form
     {
+        private CancellationTokenSource ctsTemperature;
+
+        private CancellationTokenSource ctsHumidity;
+
         PlantsPanel.PlantsPanel plantsPanel = new PlantsPanel.PlantsPanel();
         Temperature temperature = new Temperature();
         Humidity humidity = new Humidity();
@@ -94,8 +99,16 @@ namespace HMI
         {
 
         }
-        private void roundButton4_Click(object sender, EventArgs e)
+
+        private async void roundButton4_Click(object sender, EventArgs e)
         {
+            if (ctsTemperature != null)
+            {
+                ctsTemperature.Cancel();
+            }
+            // Create a CTS for this request.
+            ctsTemperature = new CancellationTokenSource();
+
             double desiredTemperature = Convert.ToDouble(numericUpDownTemperaturePlants.Text);
 
             plantsPanel.setTemperaturePlants(plantsPanel, desiredTemperature);
@@ -106,13 +119,87 @@ namespace HMI
 
             Cursor.Current = Cursors.Default;
 
+            try
+            {
+                await readFileTemperature(ctsTemperature.Token, 4000);
+            }
+            catch (OperationCanceledException)
+            {
+            }
+        }
+
+        private async Task readFileTemperature(CancellationToken token, int time)
+        {
             string[] lines = File.ReadAllLines("FileTemperature.txt");
 
             for(int i = 0; i < lines.Length; i++)
             {
+                await Task.Delay(time, token);
                 label11.Text = lines[i];
-                WaitNSeconds(4);
             }
+        }
+
+        private async void roundButtonHumidityPlants_Click(object sender, EventArgs e)
+        {
+            if (ctsHumidity != null)
+            {
+                ctsHumidity.Cancel();
+            }
+            // Create a CTS for this request.
+            ctsHumidity = new CancellationTokenSource();
+
+            double desiredHumdity = Convert.ToDouble(numericUpDownHumidityPlants.Text);
+
+            plantsPanel.setHumidityPlants(plantsPanel, desiredHumdity);
+
+            Cursor.Current = Cursors.WaitCursor;
+
+            plantsPanel.createFileHumidity(plantsPanel);
+
+            Cursor.Current = Cursors.Default;
+
+            try
+            {
+                await readFileHumidity(ctsHumidity.Token, 2000);
+            }
+            catch (OperationCanceledException)
+            {
+            }
+        }
+
+        private async Task readFileHumidity(CancellationToken token, int time)
+        {
+            string[] lines = File.ReadAllLines("FileHumidity.txt");
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                await Task.Delay(time, token);
+                label13.Text = lines[i];
+            }
+        }
+
+        private void roundButtonWaterPlants_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void roundButtonLightIntensity_Click(object sender, EventArgs e)
+        {
+            string desiredLightIntensity = comboBoxLightIntensity.Text;
+
+            if (desiredLightIntensity == "High")
+            {
+                plantsPanel.setLightIntensityPlants(plantsPanel, 2);
+            }
+            else if(desiredLightIntensity == "Medium")
+            {
+                plantsPanel.setLightIntensityPlants(plantsPanel, 1);
+            }
+            else
+            {
+                plantsPanel.setLightIntensityPlants(plantsPanel, 0);
+            }
+
+            label14.Text = desiredLightIntensity;
         }
 
         private void WaitNSeconds(int seconds)
@@ -155,6 +242,13 @@ namespace HMI
             }
 
             totalEnergy = power.getTotalEnergy() + (energy[0] + energy[1] + energy[2] + energy[3]);
+
+            if (totalEnergy > power.getMaxEnergy())
+            {
+                float x = totalEnergy - power.getMaxEnergy();
+                totalEnergy = totalEnergy - x;
+            }
+
             power.setTotalEnergy(totalEnergy);
             power.calculateEnergyPercentage(totalEnergy, power.getMaxEnergy());
 
@@ -191,6 +285,11 @@ namespace HMI
                         newTotalEnergy();
                         WaitNSeconds(4);
                     }
+                    else
+                    {
+                        WaitNSeconds(10);
+                        continue;
+                    }
                 }
             }
         }
@@ -224,6 +323,11 @@ namespace HMI
                     {
                         newTotalEnergy();
                         WaitNSeconds(4);
+                    }
+                    else
+                    {
+                        WaitNSeconds(10);
+                        continue;
                     }
                 }
             }
@@ -260,6 +364,11 @@ namespace HMI
                         newTotalEnergy();
                         WaitNSeconds(4);
                     }
+                    else
+                    {
+                        WaitNSeconds(10);
+                        continue;
+                    }
                 }
             }
         }
@@ -293,6 +402,11 @@ namespace HMI
                     {
                         newTotalEnergy();
                         WaitNSeconds(4);
+                    }
+                    else
+                    {
+                        WaitNSeconds(10);
+                        continue;
                     }
                 }
             }
@@ -353,6 +467,21 @@ namespace HMI
                 label11.Text = lines[i];
                 WaitNSeconds(4);
             }
+        }
+
+        private void roundButton7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundButton8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundButton9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

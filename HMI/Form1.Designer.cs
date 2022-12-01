@@ -95,7 +95,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.numericUpDownWaterPlants = new System.Windows.Forms.NumericUpDown();
-            this.listBoxLightIntensity = new System.Windows.Forms.ListBox();
             this.roundButtonLightIntensity = new HMI.RoundButton();
             this.roundButtonWaterPlants = new HMI.RoundButton();
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
@@ -112,6 +111,7 @@
             this.pictureBox54 = new System.Windows.Forms.PictureBox();
             this.label25 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBoxLightIntensity = new System.Windows.Forms.ComboBox();
             this.roundButton9 = new HMI.RoundButton();
             this.roundButton8 = new HMI.RoundButton();
             this.roundButton7 = new HMI.RoundButton();
@@ -711,6 +711,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(120, 40);
             this.label13.TabIndex = 74;
+            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label14
             // 
@@ -722,6 +723,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(120, 40);
             this.label14.TabIndex = 75;
+            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label15
             // 
@@ -744,8 +746,13 @@
             0,
             0,
             65536});
+<<<<<<< HEAD
             this.numericUpDownTemperatureHome.Location = new System.Drawing.Point(265, 87);
             this.numericUpDownTemperatureHome.Maximum = new decimal(new int[] {
+=======
+            this.numericUpDown1.Location = new System.Drawing.Point(265, 87);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+>>>>>>> 2979ee84560c35670ab22ea3e6fc73ba79ce4d08
             28,
             0,
             0,
@@ -755,11 +762,19 @@
             0,
             0,
             0});
+<<<<<<< HEAD
             this.numericUpDownTemperatureHome.Name = "numericUpDownTemperatureHome";
             this.numericUpDownTemperatureHome.ReadOnly = true;
             this.numericUpDownTemperatureHome.Size = new System.Drawing.Size(72, 30);
             this.numericUpDownTemperatureHome.TabIndex = 77;
             this.numericUpDownTemperatureHome.Value = new decimal(new int[] {
+=======
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.ReadOnly = true;
+            this.numericUpDown1.Size = new System.Drawing.Size(72, 30);
+            this.numericUpDown1.TabIndex = 77;
+            this.numericUpDown1.Value = new decimal(new int[] {
+>>>>>>> 2979ee84560c35670ab22ea3e6fc73ba79ce4d08
             26,
             0,
             0,
@@ -796,8 +811,13 @@
             0,
             0,
             0});
+<<<<<<< HEAD
             this.numericUpDownHumidityHome.Location = new System.Drawing.Point(267, 153);
             this.numericUpDownHumidityHome.Maximum = new decimal(new int[] {
+=======
+            this.numericUpDown2.Location = new System.Drawing.Point(267, 153);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+>>>>>>> 2979ee84560c35670ab22ea3e6fc73ba79ce4d08
             60,
             0,
             0,
@@ -807,11 +827,19 @@
             0,
             0,
             0});
+<<<<<<< HEAD
             this.numericUpDownHumidityHome.Name = "numericUpDownHumidityHome";
             this.numericUpDownHumidityHome.ReadOnly = true;
             this.numericUpDownHumidityHome.Size = new System.Drawing.Size(72, 30);
             this.numericUpDownHumidityHome.TabIndex = 80;
             this.numericUpDownHumidityHome.Value = new decimal(new int[] {
+=======
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.ReadOnly = true;
+            this.numericUpDown2.Size = new System.Drawing.Size(72, 30);
+            this.numericUpDown2.TabIndex = 80;
+            this.numericUpDown2.Value = new decimal(new int[] {
+>>>>>>> 2979ee84560c35670ab22ea3e6fc73ba79ce4d08
             60,
             0,
             0,
@@ -864,6 +892,7 @@
             this.roundButtonHumidityPlants.Size = new System.Drawing.Size(40, 40);
             this.roundButtonHumidityPlants.TabIndex = 88;
             this.roundButtonHumidityPlants.UseVisualStyleBackColor = false;
+            this.roundButtonHumidityPlants.Click += new System.EventHandler(this.roundButtonHumidityPlants_Click);
             // 
             // roundButtonTemperaturePlants
             // 
@@ -1010,6 +1039,7 @@
             0,
             0});
             // 
+<<<<<<< HEAD
             // listBoxLightIntensity
             // 
             this.listBoxLightIntensity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -1024,6 +1054,8 @@
             this.listBoxLightIntensity.Size = new System.Drawing.Size(121, 29);
             this.listBoxLightIntensity.TabIndex = 92;
             // 
+=======
+>>>>>>> 2979ee84560c35670ab22ea3e6fc73ba79ce4d08
             // roundButtonLightIntensity
             // 
             this.roundButtonLightIntensity.BackColor = System.Drawing.SystemColors.WindowText;
@@ -1038,6 +1070,7 @@
             this.roundButtonLightIntensity.Size = new System.Drawing.Size(40, 40);
             this.roundButtonLightIntensity.TabIndex = 94;
             this.roundButtonLightIntensity.UseVisualStyleBackColor = false;
+            this.roundButtonLightIntensity.Click += new System.EventHandler(this.roundButtonLightIntensity_Click);
             // 
             // roundButtonWaterPlants
             // 
@@ -1053,6 +1086,7 @@
             this.roundButtonWaterPlants.Size = new System.Drawing.Size(40, 40);
             this.roundButtonWaterPlants.TabIndex = 93;
             this.roundButtonWaterPlants.UseVisualStyleBackColor = false;
+            this.roundButtonWaterPlants.Click += new System.EventHandler(this.roundButtonWaterPlants_Click);
             // 
             // pictureBox31
             // 
@@ -1199,6 +1233,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.comboBoxLightIntensity);
             this.panel1.Controls.Add(this.roundButton9);
             this.panel1.Controls.Add(this.roundButton8);
             this.panel1.Controls.Add(this.roundButton7);
@@ -1211,7 +1246,6 @@
             this.panel1.Controls.Add(this.label28);
             this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.label21);
-            this.panel1.Controls.Add(this.listBoxLightIntensity);
             this.panel1.Controls.Add(this.numericUpDownWaterPlants);
             this.panel1.Controls.Add(this.roundButtonWaterPlants);
             this.panel1.Controls.Add(this.roundButtonLightIntensity);
@@ -1219,6 +1253,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1899, 211);
             this.panel1.TabIndex = 124;
+            // 
+            // comboBoxLightIntensity
+            // 
+            this.comboBoxLightIntensity.DisplayMember = "Low";
+            this.comboBoxLightIntensity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxLightIntensity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxLightIntensity.FormattingEnabled = true;
+            this.comboBoxLightIntensity.Items.AddRange(new object[] {
+            "Low",
+            "Medium",
+            "High"});
+            this.comboBoxLightIntensity.Location = new System.Drawing.Point(1116, 140);
+            this.comboBoxLightIntensity.Name = "comboBoxLightIntensity";
+            this.comboBoxLightIntensity.Size = new System.Drawing.Size(121, 33);
+            this.comboBoxLightIntensity.TabIndex = 146;
+            this.comboBoxLightIntensity.ValueMember = "Low";
             // 
             // roundButton9
             // 
@@ -1234,6 +1284,7 @@
             this.roundButton9.Size = new System.Drawing.Size(40, 40);
             this.roundButton9.TabIndex = 145;
             this.roundButton9.UseVisualStyleBackColor = false;
+            this.roundButton9.Click += new System.EventHandler(this.roundButton9_Click);
             // 
             // roundButton8
             // 
@@ -1249,6 +1300,7 @@
             this.roundButton8.Size = new System.Drawing.Size(40, 40);
             this.roundButton8.TabIndex = 144;
             this.roundButton8.UseVisualStyleBackColor = false;
+            this.roundButton8.Click += new System.EventHandler(this.roundButton8_Click);
             // 
             // roundButton7
             // 
@@ -1264,6 +1316,7 @@
             this.roundButton7.Size = new System.Drawing.Size(40, 40);
             this.roundButton7.TabIndex = 143;
             this.roundButton7.UseVisualStyleBackColor = false;
+            this.roundButton7.Click += new System.EventHandler(this.roundButton7_Click);
             // 
             // label31
             // 
@@ -1438,7 +1491,11 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1467, 935);
+=======
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
+>>>>>>> 2979ee84560c35670ab22ea3e6fc73ba79ce4d08
             this.Controls.Add(this.label26);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.pictureBox39);
@@ -1654,7 +1711,6 @@
         private Label label20;
         private Label label21;
         private NumericUpDown numericUpDownWaterPlants;
-        private ListBox listBoxLightIntensity;
         private RoundButton roundButtonLightIntensity;
         private RoundButton roundButtonWaterPlants;
         private PictureBox pictureBox31;
@@ -1688,5 +1744,6 @@
         private ListBox listBox4;
         private Label label29;
         private ListBox listBox3;
+        private ComboBox comboBoxLightIntensity;
     }
 }
