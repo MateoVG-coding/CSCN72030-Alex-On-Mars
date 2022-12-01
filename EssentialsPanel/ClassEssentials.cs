@@ -6,39 +6,14 @@ namespace EssentialsPanel
 {
     public class EssentialsPanel
     {
-        private double oxygen_level = 100;
-        private double water_level = 20000;
-       // private string[] oxygenUseLevel = new string[7];
-       // private string[] waterUseLevel = new string[7];
+        private double oxygen_level;
+        private double water_level;
        
-        //public void oxygenUsed(double usedOxygen)
-        //{
-        //    StreamReader reader;
-        //    var path = Path.Combine(Directory.GetCurrentDirectory(), "Oxygen Used.txt");
-        //    reader = new StreamReader(path);
-        //    string line = reader.ReadLine();
-        //    int i = 0;
-
-        //    while (i < 7 && line == oxygenUseLevel[i])
-        //    {
-        //        line = reader.ReadLine();
-        //        i++;
-        //    }
-
-        //    if (line != null)
-        //    {
-        //        oxygenUseLevel[i] = line;
-        //        usedOxygen = double.Parse(line);
-        //        double newOxygenLevel = getOxygenLevel() - usedOxygen;
-
-        //        setOxygenLevel(newOxygenLevel);
-        //    }
-        //    else
-        //    {
-        //        reader.Close();
-        //    }
-        //}
-
+        public EssentialsPanel()
+        {
+            oxygen_level = 100;
+            water_level = 20000;
+        }
         public EssentialsPanel(double availableOxygen)
         {
             this.oxygen_level = availableOxygen;

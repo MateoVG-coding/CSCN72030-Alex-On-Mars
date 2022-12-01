@@ -67,8 +67,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox37 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.HomeOxygen = new System.Windows.Forms.Label();
+            this.HomeWater = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -80,12 +80,12 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownTemperatureHome = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.roundButton1 = new HMI.RoundButton();
-            this.roundButton2 = new HMI.RoundButton();
+            this.numericUpDownHumidityHome = new System.Windows.Forms.NumericUpDown();
+            this.roundButtonTemperatureHome = new HMI.RoundButton();
+            this.roundButtonHumidityHome = new HMI.RoundButton();
             this.roundButtonHumidityPlants = new HMI.RoundButton();
             this.roundButtonTemperaturePlants = new HMI.RoundButton();
             this.numericUpDownHumidityPlants = new System.Windows.Forms.NumericUpDown();
@@ -162,8 +162,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTemperatureHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHumidityHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHumidityPlants)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTemperaturePlants)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWaterPlants)).BeginInit();
@@ -580,29 +580,29 @@
             this.label7.TabIndex = 50;
             this.label7.Text = "Light Intensity";
             // 
-            // label8
+            // HomeOxygen
             // 
-            this.label8.BackColor = System.Drawing.SystemColors.Desktop;
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.SystemColors.Window;
-            this.label8.Location = new System.Drawing.Point(720, 361);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(120, 40);
-            this.label8.TabIndex = 55;
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            this.HomeOxygen.BackColor = System.Drawing.SystemColors.Desktop;
+            this.HomeOxygen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.HomeOxygen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HomeOxygen.ForeColor = System.Drawing.SystemColors.Window;
+            this.HomeOxygen.Location = new System.Drawing.Point(720, 361);
+            this.HomeOxygen.Name = "HomeOxygen";
+            this.HomeOxygen.Size = new System.Drawing.Size(120, 40);
+            this.HomeOxygen.TabIndex = 55;
+            this.HomeOxygen.Click += new System.EventHandler(this.label8_Click);
             // 
-            // label9
+            // HomeWater
             // 
-            this.label9.BackColor = System.Drawing.SystemColors.Desktop;
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.SystemColors.Window;
-            this.label9.Location = new System.Drawing.Point(311, 545);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(120, 40);
-            this.label9.TabIndex = 56;
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            this.HomeWater.BackColor = System.Drawing.SystemColors.Desktop;
+            this.HomeWater.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.HomeWater.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HomeWater.ForeColor = System.Drawing.SystemColors.Window;
+            this.HomeWater.Location = new System.Drawing.Point(311, 545);
+            this.HomeWater.Name = "HomeWater";
+            this.HomeWater.Size = new System.Drawing.Size(120, 40);
+            this.HomeWater.TabIndex = 56;
+            this.HomeWater.Click += new System.EventHandler(this.label9_Click);
             // 
             // radioButton2
             // 
@@ -737,31 +737,31 @@
             this.label15.Text = "Home";
             this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
-            // numericUpDown1
+            // numericUpDownTemperatureHome
             // 
-            this.numericUpDown1.DecimalPlaces = 1;
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown1.Increment = new decimal(new int[] {
+            this.numericUpDownTemperatureHome.DecimalPlaces = 1;
+            this.numericUpDownTemperatureHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDownTemperatureHome.Increment = new decimal(new int[] {
             5,
             0,
             0,
             65536});
-            this.numericUpDown1.Location = new System.Drawing.Point(265, 87);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.numericUpDownTemperatureHome.Location = new System.Drawing.Point(265, 87);
+            this.numericUpDownTemperatureHome.Maximum = new decimal(new int[] {
             28,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.numericUpDownTemperatureHome.Minimum = new decimal(new int[] {
             14,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.ReadOnly = true;
-            this.numericUpDown1.Size = new System.Drawing.Size(72, 30);
-            this.numericUpDown1.TabIndex = 77;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.numericUpDownTemperatureHome.Name = "numericUpDownTemperatureHome";
+            this.numericUpDownTemperatureHome.ReadOnly = true;
+            this.numericUpDownTemperatureHome.Size = new System.Drawing.Size(72, 30);
+            this.numericUpDownTemperatureHome.TabIndex = 77;
+            this.numericUpDownTemperatureHome.Value = new decimal(new int[] {
             26,
             0,
             0,
@@ -789,64 +789,64 @@
             this.label17.TabIndex = 79;
             this.label17.Text = "Humidity\r\n";
             // 
-            // numericUpDown2
+            // numericUpDownHumidityHome
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown2.Increment = new decimal(new int[] {
+            this.numericUpDownHumidityHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDownHumidityHome.Increment = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown2.Location = new System.Drawing.Point(267, 153);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.numericUpDownHumidityHome.Location = new System.Drawing.Point(267, 153);
+            this.numericUpDownHumidityHome.Maximum = new decimal(new int[] {
             60,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.numericUpDownHumidityHome.Minimum = new decimal(new int[] {
             30,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.ReadOnly = true;
-            this.numericUpDown2.Size = new System.Drawing.Size(72, 30);
-            this.numericUpDown2.TabIndex = 80;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.numericUpDownHumidityHome.Name = "numericUpDownHumidityHome";
+            this.numericUpDownHumidityHome.ReadOnly = true;
+            this.numericUpDownHumidityHome.Size = new System.Drawing.Size(72, 30);
+            this.numericUpDownHumidityHome.TabIndex = 80;
+            this.numericUpDownHumidityHome.Value = new decimal(new int[] {
             60,
             0,
             0,
             0});
             // 
-            // roundButton1
+            // roundButtonTemperatureHome
             // 
-            this.roundButton1.BackColor = System.Drawing.SystemColors.WindowText;
-            this.roundButton1.BackgroundImage = global::HMI.Properties.Resources.compass_background;
-            this.roundButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.roundButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.roundButton1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.roundButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundButton1.Location = new System.Drawing.Point(363, 80);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(40, 40);
-            this.roundButton1.TabIndex = 81;
-            this.roundButton1.UseVisualStyleBackColor = false;
+            this.roundButtonTemperatureHome.BackColor = System.Drawing.SystemColors.WindowText;
+            this.roundButtonTemperatureHome.BackgroundImage = global::HMI.Properties.Resources.compass_background;
+            this.roundButtonTemperatureHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.roundButtonTemperatureHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundButtonTemperatureHome.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.roundButtonTemperatureHome.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.roundButtonTemperatureHome.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.roundButtonTemperatureHome.Location = new System.Drawing.Point(363, 80);
+            this.roundButtonTemperatureHome.Name = "roundButtonTemperatureHome";
+            this.roundButtonTemperatureHome.Size = new System.Drawing.Size(40, 40);
+            this.roundButtonTemperatureHome.TabIndex = 81;
+            this.roundButtonTemperatureHome.UseVisualStyleBackColor = false;
             // 
-            // roundButton2
+            // roundButtonHumidityHome
             // 
-            this.roundButton2.BackColor = System.Drawing.SystemColors.WindowText;
-            this.roundButton2.BackgroundImage = global::HMI.Properties.Resources.compass_background;
-            this.roundButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.roundButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.roundButton2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.roundButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundButton2.Location = new System.Drawing.Point(363, 145);
-            this.roundButton2.Name = "roundButton2";
-            this.roundButton2.Size = new System.Drawing.Size(40, 40);
-            this.roundButton2.TabIndex = 82;
-            this.roundButton2.UseVisualStyleBackColor = false;
+            this.roundButtonHumidityHome.BackColor = System.Drawing.SystemColors.WindowText;
+            this.roundButtonHumidityHome.BackgroundImage = global::HMI.Properties.Resources.compass_background;
+            this.roundButtonHumidityHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.roundButtonHumidityHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundButtonHumidityHome.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.roundButtonHumidityHome.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.roundButtonHumidityHome.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.roundButtonHumidityHome.Location = new System.Drawing.Point(363, 145);
+            this.roundButtonHumidityHome.Name = "roundButtonHumidityHome";
+            this.roundButtonHumidityHome.Size = new System.Drawing.Size(40, 40);
+            this.roundButtonHumidityHome.TabIndex = 82;
+            this.roundButtonHumidityHome.UseVisualStyleBackColor = false;
             // 
             // roundButtonHumidityPlants
             // 
@@ -1471,12 +1471,12 @@
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.numericUpDownTemperaturePlants);
-            this.Controls.Add(this.roundButton2);
-            this.Controls.Add(this.roundButton1);
-            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.roundButtonHumidityHome);
+            this.Controls.Add(this.roundButtonTemperatureHome);
+            this.Controls.Add(this.numericUpDownHumidityHome);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numericUpDownTemperatureHome);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -1486,8 +1486,8 @@
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.HomeWater);
+            this.Controls.Add(this.HomeOxygen);
             this.Controls.Add(this.pictureBox37);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox36);
@@ -1568,8 +1568,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTemperatureHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHumidityHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHumidityPlants)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTemperaturePlants)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWaterPlants)).EndInit();
@@ -1632,8 +1632,8 @@
         private Label label6;
         private PictureBox pictureBox37;
         private Label label7;
-        private Label label8;
-        private Label label9;
+        private Label HomeOxygen;
+        private Label HomeWater;
         private RadioButton radioButton2;
         private ListBox listBox1;
         private RadioButton radioButton1;
@@ -1645,12 +1645,12 @@
         private Label label13;
         private Label label14;
         private Label label15;
-        private NumericUpDown numericUpDown1;
+        private NumericUpDown numericUpDownTemperatureHome;
         private Label label16;
         private Label label17;
-        private NumericUpDown numericUpDown2;
-        private RoundButton roundButton1;
-        private RoundButton roundButton2;
+        private NumericUpDown numericUpDownHumidityHome;
+        private RoundButton roundButtonTemperatureHome;
+        private RoundButton roundButtonHumidityHome;
         private RoundButton roundButtonHumidityPlants;
         private RoundButton roundButtonTemperaturePlants;
         private NumericUpDown numericUpDownHumidityPlants;

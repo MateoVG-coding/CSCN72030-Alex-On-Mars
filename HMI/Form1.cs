@@ -23,6 +23,10 @@ namespace HMI
 
         private CancellationTokenSource ctsHumidity;
 
+        EssentialsPanel.EssentialsPanel essentialsPanel = new EssentialsPanel.EssentialsPanel();
+
+        private CancellationTokenSource ctsOxygen;
+
         PlantsPanel.PlantsPanel plantsPanel = new PlantsPanel.PlantsPanel();
         Energy power = new Energy();
         UseLevel uselevel = new UseLevel();
@@ -70,7 +74,8 @@ namespace HMI
 
         private void label9_Click(object sender, EventArgs e)
         {
-
+            double waterLevel = essentialsPanel.getWaterLevel();
+            HomeWater.Text = Convert.ToString(waterLevel) +' '+'l'+'t'+'s';
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -83,9 +88,44 @@ namespace HMI
 
         }
 
-        private void label8_Click(object sender, EventArgs e)
-        {
+        private async void label8_Click(object sender, EventArgs e)
+        {         
+        
+            if (ctsOxygen != null)
+            {
+                ctsOxygen.Cancel();
+            }
+            // Create a CTS for this request.
+            ctsOxygen = new CancellationTokenSource();
 
+            double oxygenLevel = essentialsPanel.getOxygenLevel();
+
+            essentialsPanel.setOxygenLevel(oxygenLevel);
+
+            Cursor.Current = Cursors.WaitCursor;
+
+            essentialsPanel.createFileOxygen(essentialsPanel);
+           
+            Cursor.Current = Cursors.Default;
+
+            try
+            {
+                await readFileOxygen(ctsOxygen.Token, 4000);
+            }
+            catch (OperationCanceledException)
+            {
+            }
+        }
+
+        private async Task readFileOxygen(CancellationToken token, int time)
+        {
+            string[] lines = File.ReadAllLines("FileOxygen.txt");
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                await Task.Delay(time, token);
+                HomeOxygen.Text = lines[i] + '%' ;
+            }
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
