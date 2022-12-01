@@ -746,10 +746,6 @@
             0,
             0,
             65536});
-<<<<<<< HEAD
-            this.numericUpDownTemperatureHome.Location = new System.Drawing.Point(265, 87);
-            this.numericUpDownTemperatureHome.Maximum = new decimal(new int[] {
-=======
             this.numericUpDown1.Location = new System.Drawing.Point(265, 87);
             this.numericUpDown1.Maximum = new decimal(new int[] {
 >>>>>>> 2979ee84560c35670ab22ea3e6fc73ba79ce4d08
@@ -811,10 +807,6 @@
             0,
             0,
             0});
-<<<<<<< HEAD
-            this.numericUpDownHumidityHome.Location = new System.Drawing.Point(267, 153);
-            this.numericUpDownHumidityHome.Maximum = new decimal(new int[] {
-=======
             this.numericUpDown2.Location = new System.Drawing.Point(267, 153);
             this.numericUpDown2.Maximum = new decimal(new int[] {
 >>>>>>> 2979ee84560c35670ab22ea3e6fc73ba79ce4d08
@@ -1039,23 +1031,6 @@
             0,
             0});
             // 
-<<<<<<< HEAD
-            // listBoxLightIntensity
-            // 
-            this.listBoxLightIntensity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listBoxLightIntensity.FormattingEnabled = true;
-            this.listBoxLightIntensity.ItemHeight = 25;
-            this.listBoxLightIntensity.Items.AddRange(new object[] {
-            "Low",
-            "Medium",
-            "High"});
-            this.listBoxLightIntensity.Location = new System.Drawing.Point(1115, 140);
-            this.listBoxLightIntensity.Name = "listBoxLightIntensity";
-            this.listBoxLightIntensity.Size = new System.Drawing.Size(121, 29);
-            this.listBoxLightIntensity.TabIndex = 92;
-            // 
-=======
->>>>>>> 2979ee84560c35670ab22ea3e6fc73ba79ce4d08
             // roundButtonLightIntensity
             // 
             this.roundButtonLightIntensity.BackColor = System.Drawing.SystemColors.WindowText;
@@ -1491,11 +1466,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(1467, 935);
-=======
             this.ClientSize = new System.Drawing.Size(1902, 1033);
->>>>>>> 2979ee84560c35670ab22ea3e6fc73ba79ce4d08
             this.Controls.Add(this.label26);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.pictureBox39);
