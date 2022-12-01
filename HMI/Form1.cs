@@ -14,6 +14,7 @@ using System.Threading;
 using System.Drawing;
 using static System.Net.Mime.MediaTypeNames;
 using System.Diagnostics;
+using System.Reflection.Emit;
 
 namespace HMI
 {
@@ -35,6 +36,8 @@ namespace HMI
         {
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
+            label9_Click(null, null);
+            label8_Click(null, null);
         }
 
         private void label1_Click(object sender, EventArgs e)
