@@ -11,16 +11,19 @@ namespace PowerPanel
         private bool energy_available;
         private float max_energy;
         private int energy_percentage;
-        SolarPanel[] solar_Panel;
+        public SolarPanel[] solar_Panel = new SolarPanel[4];
 
 
         public Energy()
         {
             energy_watts = 0;
-            max_energy = 0;
+            max_energy = 10000;
             energy_percentage = 0;
-            energy_available = true;
-            this.solar_Panel = new SolarPanel[10];
+            energy_available = false;
+            for (int i = 0; i < 4; ++i)
+            {
+                solar_Panel[i] = new SolarPanel();
+            }
         }
 
         public Energy(float energyWatts, float maxEnergy, int energyPercentage, bool energyAvailable)
@@ -29,7 +32,7 @@ namespace PowerPanel
             this.max_energy = maxEnergy;
             this.energy_percentage = energyPercentage;
             this.energy_available = energyAvailable;
-            this.solar_Panel = new SolarPanel[10];
+            this.solar_Panel = new SolarPanel[4];
         }
 
         public void calculateEnergyPercentage(float energyWatts, float maxEnergy)
@@ -227,7 +230,14 @@ namespace PowerPanel
     {
         private float solar_energy;
         private bool panel_state;
-        private string[] lines = new string[15];
+        private string[] lines;
+
+        public SolarPanel()
+        {
+            this.solar_energy = 0;
+            this.panel_state = false;
+            lines = new string[15];
+        }
 
         public float getSolarEnergy()
         {
@@ -244,7 +254,7 @@ namespace PowerPanel
             this.solar_energy = solarEnergy;
         }
 
-        private void setPanelState(bool panelState)
+        public void setPanelState(bool panelState)
         {
             this.panel_state = panelState;
         }

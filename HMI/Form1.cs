@@ -19,6 +19,9 @@ namespace HMI
     public partial class Form1 : Form
     {
         PlantsPanel.PlantsPanel plantsPanel = new PlantsPanel.PlantsPanel();
+        Energy power = new Energy();
+        UseLevel uselevel = new UseLevel();
+
         public Form1()
         {
             InitializeComponent();
@@ -130,6 +133,162 @@ namespace HMI
         }
 
         private void process1_Exited(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newTotalEnergy()
+        {
+            float[] energy = new float[4];
+            float totalEnergy = 0;
+            for (int i = 0; i < 4; i++)
+            {
+                if (power.solar_Panel[i].getPanelState() == true)
+                {
+                    if (power.solar_Panel[i].readSolarEnergy() == 0)
+                    {
+                        energy[i] = energy[i] + power.solar_Panel[i].getSolarEnergy();
+                    }
+                }
+            }
+
+            totalEnergy = power.getTotalEnergy() + (energy[0] + energy[1] + energy[2] + energy[3]);
+            power.setTotalEnergy(totalEnergy);
+            power.calculateEnergyPercentage(totalEnergy, power.getMaxEnergy());
+
+            label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
+        }
+
+        private void pictureBox40_Click(object sender, EventArgs e)
+        {
+            if (power.solar_Panel[0].getPanelState() == true)
+            {
+                DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    power.solar_Panel[0].changePanelState(2);
+                }
+            }
+            else
+            {
+                DialogResult dr = MessageBox.Show("Do you want to turn this panel ON?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    power.solar_Panel[0].changePanelState(1);
+                }
+            }
+
+            if (power.solar_Panel[0].getPanelState() == true)
+            {
+                for (int i = 0; i < 15; i++)
+                {
+                    if (power.getEnergyPercentage() < 100)
+                    {
+                        newTotalEnergy();
+                        WaitNSeconds(4);
+                    }
+                }
+            }
+        }
+
+        private void pictureBox43_Click(object sender, EventArgs e)
+        {
+            if (power.solar_Panel[1].getPanelState() == true)
+            {
+                DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    power.solar_Panel[1].changePanelState(2);
+                }
+            }
+            else
+            {
+                DialogResult dr = MessageBox.Show("Do you want to turn this panel ON?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    power.solar_Panel[1].changePanelState(1);
+                }
+            }
+
+            if (power.solar_Panel[1].getPanelState() == true)
+            {
+                for (int i = 0; i < 15; i++)
+                {
+                    if (power.getEnergyPercentage() < 100)
+                    {
+                        newTotalEnergy();
+                        WaitNSeconds(4);
+                    }
+                }
+            }
+        }
+
+        private void pictureBox41_Click(object sender, EventArgs e)
+        {
+            if (power.solar_Panel[2].getPanelState() == true)
+            {
+                DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    power.solar_Panel[2].changePanelState(2);
+                }
+            }
+            else
+            {
+                DialogResult dr = MessageBox.Show("Do you want to turn this panel ON?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    power.solar_Panel[2].changePanelState(1);
+                }
+            }
+
+
+            if (power.solar_Panel[2].getPanelState() == true)
+            {
+                for (int i = 0; i < 15; i++)
+                {
+                    if (power.getEnergyPercentage() < 100)
+                    {
+                        newTotalEnergy();
+                        WaitNSeconds(4);
+                    }
+                }
+            }
+        }
+
+        private void pictureBox42_Click(object sender, EventArgs e)
+        {
+            if (power.solar_Panel[3].getPanelState() == true)
+            {
+                DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    power.solar_Panel[3].changePanelState(2);
+                }
+            }
+            else
+            {
+                DialogResult dr = MessageBox.Show("Do you want to turn this panel ON?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    power.solar_Panel[3].changePanelState(1);
+                }
+            }
+
+            if (power.solar_Panel[3].getPanelState() == true)
+            {
+                for (int i = 0; i < 15; i++)
+                {
+                    if (power.getEnergyPercentage() < 100)
+                    {
+                        newTotalEnergy();
+                        WaitNSeconds(4);
+                    }
+                }
+            }
+        }
+
+        private void label26_Click(object sender, EventArgs e)
         {
 
         }
