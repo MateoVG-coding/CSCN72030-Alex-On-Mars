@@ -168,7 +168,7 @@ namespace PlantsPanel
 
             Random random = new Random();
 
-            int NValues = 100000;
+            int NValues = 5000;
 
             double max = DesiredHumidity + 2;
 
@@ -193,7 +193,7 @@ namespace PlantsPanel
 
             double DesiredTemperature = plantsPanel.ActualTemperature;
 
-            int NValues = 50000;
+            int NValues = 5000;
 
             double max = DesiredTemperature + 0.2;
 

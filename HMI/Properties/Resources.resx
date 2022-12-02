@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="generator_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\generator_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tank_lowrounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tank_lowrounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -153,6 +156,9 @@
   </data>
   <data name="pipe_3d_tjunction" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pipe_3d_tjunction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="switch_hoa_hand_OFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\switch_hoa_hand_OFF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lcd-types-arduino-supports-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lcd-types-arduino-supports-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,7 +205,7 @@
   <data name="tank_pillshape2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tank_pillshape2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="generator_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\generator_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="switch_hoa_auto_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\switch_hoa_auto_ON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

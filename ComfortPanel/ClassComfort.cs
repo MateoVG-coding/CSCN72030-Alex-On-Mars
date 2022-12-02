@@ -48,11 +48,11 @@
 
             double prefferedTemperature = temp.cTemp;
 
-            int NValues = 100;
+            int NValues = 5000;
 
-            double max = prefferedTemperature + 0.5;
+            double max = prefferedTemperature + 0.1;
 
-            double min = prefferedTemperature - 0.5;
+            double min = prefferedTemperature - 0.1;
 
             for (int i = 0; i < NValues; i++)
             {
@@ -127,11 +127,11 @@
 
             double prefferedHumidity = humidity.humidity;
 
-            int NValues = 100;
+            int NValues = 5000;
 
-            double max = prefferedHumidity + 4;
+            double max = prefferedHumidity + 0.5;
 
-            double min = prefferedHumidity - 4;
+            double min = prefferedHumidity - 0.5;
 
             for (int i = 0; i < NValues; i++)
             {

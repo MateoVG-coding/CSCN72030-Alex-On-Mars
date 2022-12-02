@@ -129,6 +129,12 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.pictureBox39 = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox46 = new System.Windows.Forms.PictureBox();
+            this.pictureBox45 = new System.Windows.Forms.PictureBox();
+            this.pictureBox44 = new System.Windows.Forms.PictureBox();
+            this.pictureBox47 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -180,6 +186,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -460,7 +472,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(729, 311);
+            this.label2.Location = new System.Drawing.Point(698, 312);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 29);
             this.label2.TabIndex = 29;
@@ -472,7 +484,7 @@
             this.pictureBox29.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox29.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox29.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox29.Location = new System.Drawing.Point(711, 340);
+            this.pictureBox29.Location = new System.Drawing.Point(680, 341);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(140, 80);
             this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -586,10 +598,11 @@
             this.HomeOxygen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.HomeOxygen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.HomeOxygen.ForeColor = System.Drawing.SystemColors.Window;
-            this.HomeOxygen.Location = new System.Drawing.Point(720, 361);
+            this.HomeOxygen.Location = new System.Drawing.Point(689, 362);
             this.HomeOxygen.Name = "HomeOxygen";
             this.HomeOxygen.Size = new System.Drawing.Size(120, 40);
             this.HomeOxygen.TabIndex = 55;
+            this.HomeOxygen.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.HomeOxygen.Click += new System.EventHandler(this.label8_Click);
             // 
             // HomeWater
@@ -598,10 +611,11 @@
             this.HomeWater.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.HomeWater.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.HomeWater.ForeColor = System.Drawing.SystemColors.Window;
-            this.HomeWater.Location = new System.Drawing.Point(311, 545);
+            this.HomeWater.Location = new System.Drawing.Point(309, 545);
             this.HomeWater.Name = "HomeWater";
             this.HomeWater.Size = new System.Drawing.Size(120, 40);
             this.HomeWater.TabIndex = 56;
+            this.HomeWater.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.HomeWater.Click += new System.EventHandler(this.label9_Click);
             // 
             // radioButton2
@@ -609,7 +623,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton2.Location = new System.Drawing.Point(1593, 443);
+            this.radioButton2.Location = new System.Drawing.Point(4, 4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(50, 33);
             this.radioButton2.TabIndex = 62;
@@ -635,12 +649,14 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
             this.radioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton1.Location = new System.Drawing.Point(1593, 491);
+            this.radioButton1.Location = new System.Drawing.Point(4, 52);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(52, 33);
             this.radioButton1.TabIndex = 61;
+            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "C";
             this.radioButton1.UseVisualStyleBackColor = false;
             // 
@@ -700,6 +716,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(120, 40);
             this.label12.TabIndex = 73;
+            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label13
             // 
@@ -762,7 +779,7 @@
             this.numericUpDownTemperatureHome.Size = new System.Drawing.Size(72, 30);
             this.numericUpDownTemperatureHome.TabIndex = 77;
             this.numericUpDownTemperatureHome.Value = new decimal(new int[] {
-            26,
+            19,
             0,
             0,
             0});
@@ -813,7 +830,7 @@
             this.numericUpDownHumidityHome.Size = new System.Drawing.Size(72, 30);
             this.numericUpDownHumidityHome.TabIndex = 80;
             this.numericUpDownHumidityHome.Value = new decimal(new int[] {
-            60,
+            40,
             0,
             0,
             0});
@@ -832,6 +849,7 @@
             this.roundButtonTemperatureHome.Size = new System.Drawing.Size(40, 40);
             this.roundButtonTemperatureHome.TabIndex = 81;
             this.roundButtonTemperatureHome.UseVisualStyleBackColor = false;
+            this.roundButtonTemperatureHome.Click += new System.EventHandler(this.roundButtonTemperatureHome_Click);
             // 
             // roundButtonHumidityHome
             // 
@@ -847,6 +865,7 @@
             this.roundButtonHumidityHome.Size = new System.Drawing.Size(40, 40);
             this.roundButtonHumidityHome.TabIndex = 82;
             this.roundButtonHumidityHome.UseVisualStyleBackColor = false;
+            this.roundButtonHumidityHome.Click += new System.EventHandler(this.roundButtonHumidityHome_Click);
             // 
             // roundButtonHumidityPlants
             // 
@@ -904,7 +923,7 @@
             this.numericUpDownHumidityPlants.Size = new System.Drawing.Size(72, 30);
             this.numericUpDownHumidityPlants.TabIndex = 86;
             this.numericUpDownHumidityPlants.Value = new decimal(new int[] {
-            60,
+            50,
             0,
             0,
             0});
@@ -954,7 +973,7 @@
             this.numericUpDownTemperaturePlants.Size = new System.Drawing.Size(72, 30);
             this.numericUpDownTemperaturePlants.TabIndex = 83;
             this.numericUpDownTemperaturePlants.Value = new decimal(new int[] {
-            25,
+            21,
             0,
             0,
             0});
@@ -1004,7 +1023,7 @@
             this.numericUpDownWaterPlants.Size = new System.Drawing.Size(72, 30);
             this.numericUpDownWaterPlants.TabIndex = 91;
             this.numericUpDownWaterPlants.Value = new decimal(new int[] {
-            100,
+            200,
             0,
             0,
             0});
@@ -1107,7 +1126,7 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton3.Location = new System.Drawing.Point(1335, 724);
+            this.radioButton3.Location = new System.Drawing.Point(5, 2);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(50, 33);
             this.radioButton3.TabIndex = 119;
@@ -1120,7 +1139,7 @@
             this.radioButton4.Checked = true;
             this.radioButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton4.Location = new System.Drawing.Point(1335, 772);
+            this.radioButton4.Location = new System.Drawing.Point(5, 50);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(52, 33);
             this.radioButton4.TabIndex = 118;
@@ -1209,7 +1228,6 @@
             // 
             // comboBoxLightIntensity
             // 
-            this.comboBoxLightIntensity.DisplayMember = "Low";
             this.comboBoxLightIntensity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxLightIntensity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBoxLightIntensity.FormattingEnabled = true;
@@ -1221,7 +1239,6 @@
             this.comboBoxLightIntensity.Name = "comboBoxLightIntensity";
             this.comboBoxLightIntensity.Size = new System.Drawing.Size(121, 33);
             this.comboBoxLightIntensity.TabIndex = 146;
-            this.comboBoxLightIntensity.ValueMember = "Low";
             // 
             // roundButton9
             // 
@@ -1437,6 +1454,71 @@
             this.pictureBox39.TabIndex = 134;
             this.pictureBox39.TabStop = false;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Location = new System.Drawing.Point(1589, 439);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(64, 89);
+            this.groupBox1.TabIndex = 136;
+            this.groupBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radioButton3);
+            this.groupBox2.Controls.Add(this.radioButton4);
+            this.groupBox2.Location = new System.Drawing.Point(1330, 722);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(59, 87);
+            this.groupBox2.TabIndex = 137;
+            this.groupBox2.TabStop = false;
+            // 
+            // pictureBox46
+            // 
+            this.pictureBox46.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox46.Image = global::HMI.Properties.Resources.switch_hoa_hand_OFF;
+            this.pictureBox46.Location = new System.Drawing.Point(363, 884);
+            this.pictureBox46.Name = "pictureBox46";
+            this.pictureBox46.Size = new System.Drawing.Size(86, 91);
+            this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox46.TabIndex = 146;
+            this.pictureBox46.TabStop = false;
+            // 
+            // pictureBox45
+            // 
+            this.pictureBox45.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox45.Image = global::HMI.Properties.Resources.switch_hoa_hand_OFF;
+            this.pictureBox45.Location = new System.Drawing.Point(200, 884);
+            this.pictureBox45.Name = "pictureBox45";
+            this.pictureBox45.Size = new System.Drawing.Size(86, 91);
+            this.pictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox45.TabIndex = 147;
+            this.pictureBox45.TabStop = false;
+            this.pictureBox45.Click += new System.EventHandler(this.pictureBox45_Click_1);
+            // 
+            // pictureBox44
+            // 
+            this.pictureBox44.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox44.Image = global::HMI.Properties.Resources.switch_hoa_hand_OFF;
+            this.pictureBox44.Location = new System.Drawing.Point(30, 884);
+            this.pictureBox44.Name = "pictureBox44";
+            this.pictureBox44.Size = new System.Drawing.Size(86, 91);
+            this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox44.TabIndex = 148;
+            this.pictureBox44.TabStop = false;
+            // 
+            // pictureBox47
+            // 
+            this.pictureBox47.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox47.Image = global::HMI.Properties.Resources.switch_hoa_hand_OFF;
+            this.pictureBox47.Location = new System.Drawing.Point(520, 884);
+            this.pictureBox47.Name = "pictureBox47";
+            this.pictureBox47.Size = new System.Drawing.Size(86, 91);
+            this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox47.TabIndex = 149;
+            this.pictureBox47.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1445,6 +1527,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label26);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.pictureBox39);
@@ -1457,8 +1541,6 @@
             this.Controls.Add(this.pictureBox54);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.pictureBox53);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.pictureBox38);
@@ -1484,8 +1566,6 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.HomeWater);
             this.Controls.Add(this.HomeOxygen);
             this.Controls.Add(this.pictureBox37);
@@ -1529,6 +1609,10 @@
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox25);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox46);
+            this.Controls.Add(this.pictureBox45);
+            this.Controls.Add(this.pictureBox44);
+            this.Controls.Add(this.pictureBox47);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -1587,6 +1671,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1694,5 +1786,11 @@
         private Label label29;
         private ListBox listBox3;
         private ComboBox comboBoxLightIntensity;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
+        private PictureBox pictureBox46;
+        private PictureBox pictureBox45;
+        private PictureBox pictureBox44;
+        private PictureBox pictureBox47;
     }
 }

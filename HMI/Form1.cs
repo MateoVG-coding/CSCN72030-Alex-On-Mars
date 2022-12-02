@@ -20,17 +20,29 @@ namespace HMI
 {
     public partial class Form1 : Form
     {
+        private CancellationTokenSource ctsOxygen;
+
+        private CancellationTokenSource ctsTemperatureHome;
+
+        private CancellationTokenSource ctsHumidityHome;
+
         private CancellationTokenSource ctsTemperature;
 
         private CancellationTokenSource ctsHumidity;
 
         EssentialsPanel.EssentialsPanel essentialsPanel = new EssentialsPanel.EssentialsPanel();
 
-        private CancellationTokenSource ctsOxygen;
-
         PlantsPanel.PlantsPanel plantsPanel = new PlantsPanel.PlantsPanel();
+
+        ComfortPanel.Temperature temperatureHome = new ComfortPanel.Temperature();
+
+        ComfortPanel.Humidity humidityHome = new ComfortPanel.Humidity();
+
         Energy power = new Energy();
         UseLevel uselevel = new UseLevel();
+
+        Bitmap imgTurnOFF = Properties.Resources.switch_hoa_hand_OFF;
+        Bitmap imgTurnON = Properties.Resources.switch_hoa_auto_ON;
 
         public Form1()
         {
@@ -38,6 +50,17 @@ namespace HMI
             WindowState = FormWindowState.Maximized;
             label9_Click(null, null);
             label8_Click(null, null);
+            roundButtonTemperatureHome_Click(null, null);
+            roundButtonHumidityHome_Click(null, null);
+            roundButtonHumidityPlants_Click(null, null);
+            roundButton4_Click(null, null);
+            roundButtonLightIntensity_Click(null, null);
+            roundButtonWaterPlants_Click(null, null);
+
+            this.pictureBox44.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox44_Click_1);
+            this.pictureBox45.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox45_Click_1);
+            this.pictureBox46.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox46_Click);
+            this.pictureBox47.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox47_Click);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -78,7 +101,7 @@ namespace HMI
         private void label9_Click(object sender, EventArgs e)
         {
             double waterLevel = essentialsPanel.getWaterLevel();
-            HomeWater.Text = Convert.ToString(waterLevel) +' '+'l'+'t'+'s';
+            HomeWater.Text = Convert.ToString(waterLevel) + "L" + 't' + 's';
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -176,7 +199,15 @@ namespace HMI
             for (int i = 0; i < lines.Length; i++)
             {
                 await Task.Delay(time, token);
-                label11.Text = lines[i];
+
+                if(radioButton2.Checked == true)
+                {
+                    label11.Text = Convert.ToString((Convert.ToDouble(lines[i]) * 9) / 5 + 32); 
+                }
+                else
+                {
+                    label11.Text = lines[i];
+                }
             }
         }
 
@@ -215,12 +246,19 @@ namespace HMI
             for (int i = 0; i < lines.Length; i++)
             {
                 await Task.Delay(time, token);
-                label13.Text = lines[i];
+                label13.Text = lines[i] + '%';
             }
         }
 
         private void roundButtonWaterPlants_Click(object sender, EventArgs e)
         {
+            double desiredWater = Convert.ToDouble(numericUpDownWaterPlants.Value);
+
+            plantsPanel.setWaterPlants(plantsPanel, desiredWater, essentialsPanel);
+
+            label12.Text = Convert.ToString(desiredWater) + 'L' + 't' + 's';
+
+            label9_Click(null, null);
         }
 
         private void roundButtonLightIntensity_Click(object sender, EventArgs e)
@@ -295,86 +333,7 @@ namespace HMI
 
             label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
         }
-
-        private void pictureBox40_Click(object sender, EventArgs e)
-        {
-            power.checkEnergy();
-
-            if (power.solar_Panel[0].getPanelState() == true)
-            {
-                DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dr == DialogResult.Yes)
-                {
-                    power.solar_Panel[0].changePanelState(2);
-                }
-            }
-            else
-            {
-                DialogResult dr = MessageBox.Show("Do you want to turn this panel ON?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dr == DialogResult.Yes)
-                {
-                    power.solar_Panel[0].changePanelState(1);
-                }
-            }
-
-            if (power.solar_Panel[0].getPanelState() == true)
-            {
-                for (int i = 0; i < 15; i++)
-                {
-                    if (power.getEnergyPercentage() < 100)
-                    {
-                        newTotalEnergy();
-                        WaitNSeconds(4);
-                    }
-                    else
-                    {
-                        WaitNSeconds(10);
-                        continue;
-                    }
-                }
-            }
-        }
-
-        private void pictureBox43_Click(object sender, EventArgs e)
-        {
-            power.checkEnergy();
-
-            if (power.solar_Panel[1].getPanelState() == true)
-            {
-                DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dr == DialogResult.Yes)
-                {
-                    power.solar_Panel[1].changePanelState(2);
-                }
-            }
-            else
-            {
-                DialogResult dr = MessageBox.Show("Do you want to turn this panel ON?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dr == DialogResult.Yes)
-                {
-                    power.solar_Panel[1].changePanelState(1);
-                }
-            }
-
-            if (power.solar_Panel[1].getPanelState() == true)
-            {
-                for (int i = 0; i < 15; i++)
-                {
-                    if (power.getEnergyPercentage() < 100)
-                    {
-                        newTotalEnergy();
-                        WaitNSeconds(4);
-                    }
-                    else
-                    {
-                        WaitNSeconds(10);
-                        continue;
-                    }
-                }
-            }
-        }
-
-        private void pictureBox41_Click(object sender, EventArgs e)
+        private void pictureBox46_Click(object sender, EventArgs e)
         {
             power.checkEnergy();
 
@@ -384,6 +343,7 @@ namespace HMI
                 if (dr == DialogResult.Yes)
                 {
                     power.solar_Panel[2].changePanelState(2);
+                    pictureBox46.Image = imgTurnOFF;
                 }
             }
             else
@@ -392,6 +352,7 @@ namespace HMI
                 if (dr == DialogResult.Yes)
                 {
                     power.solar_Panel[2].changePanelState(1);
+                    pictureBox46.Image = imgTurnON;
                 }
             }
 
@@ -414,7 +375,7 @@ namespace HMI
             }
         }
 
-        private void pictureBox42_Click(object sender, EventArgs e)
+        private void pictureBox47_Click(object sender, EventArgs e)
         {
             power.checkEnergy();
 
@@ -424,6 +385,7 @@ namespace HMI
                 if (dr == DialogResult.Yes)
                 {
                     power.solar_Panel[3].changePanelState(2);
+                    pictureBox47.Image = imgTurnOFF;
                 }
             }
             else
@@ -432,6 +394,7 @@ namespace HMI
                 if (dr == DialogResult.Yes)
                 {
                     power.solar_Panel[3].changePanelState(1);
+                    pictureBox47.Image = imgTurnON;
                 }
             }
 
@@ -453,6 +416,26 @@ namespace HMI
             }
         }
 
+        private void pictureBox40_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox43_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox41_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox42_Click(object sender, EventArgs e)
+        {
+       
+        }
+
         private void label26_Click(object sender, EventArgs e)
         {
 
@@ -460,17 +443,185 @@ namespace HMI
 
         private void roundButton7_Click(object sender, EventArgs e)
         {
-
+            //comfort button energy
         }
 
         private void roundButton8_Click(object sender, EventArgs e)
         {
-
+            //Essentials button energy
         }
 
         private void roundButton9_Click(object sender, EventArgs e)
         {
+            //Plants button energy
+        }
 
+        private async void roundButtonTemperatureHome_Click(object sender, EventArgs e)
+        {
+            if (ctsTemperatureHome != null)
+            {
+                ctsTemperatureHome.Cancel();
+            }
+            // Create a CTS for this request.
+            ctsTemperatureHome = new CancellationTokenSource();
+
+            double desiredTemperatureHome = Convert.ToDouble(numericUpDownTemperatureHome.Text);
+
+            temperatureHome.setTemperature(temperatureHome, desiredTemperatureHome);
+
+            Cursor.Current = Cursors.WaitCursor;
+
+            temperatureHome.createFileTemperature(temperatureHome);
+
+            Cursor.Current = Cursors.Default;
+
+            try
+            {
+                await readFileTemperatureHome(ctsTemperatureHome.Token, 6500);
+            }
+            catch (OperationCanceledException)
+            {
+            }
+        }
+
+        private async Task readFileTemperatureHome(CancellationToken token, int time)
+        {
+            string[] lines = File.ReadAllLines("FileComfortTemperature.txt");
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                await Task.Delay(time, token);
+
+                if (radioButton3.Checked == true)
+                {
+                    label22.Text = Convert.ToString((Convert.ToDouble(lines[i]) * 9) / 5 + 32);
+                }
+                else
+                {
+                    label22.Text = lines[i];
+                }
+            }
+        }
+
+        private async void roundButtonHumidityHome_Click(object sender, EventArgs e)
+        {
+            if (ctsHumidityHome != null)
+            {
+                ctsHumidityHome.Cancel();
+            }
+            // Create a CTS for this request.
+            ctsHumidityHome = new CancellationTokenSource();
+
+            double desiredHumdityHome = Convert.ToDouble(numericUpDownHumidityHome.Text);
+
+            humidityHome.setHumidity(humidityHome, desiredHumdityHome);
+
+            Cursor.Current = Cursors.WaitCursor;
+
+            humidityHome.createFileHumidity(humidityHome);
+
+            Cursor.Current = Cursors.Default;
+
+            try
+            {
+                await readFileHumidityHome(ctsHumidityHome.Token, 3000);
+            }
+            catch (OperationCanceledException)
+            {
+            }
+        }
+
+        private async Task readFileHumidityHome(CancellationToken token, int time)
+        {
+            string[] lines = File.ReadAllLines("FileComfortHumidity.txt");
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                await Task.Delay(time, token);
+                label24.Text = lines[i] + '%';
+            }
+        }
+
+        private void pictureBox44_Click_1(object sender, EventArgs e)
+        {
+            power.checkEnergy();
+
+            if (power.solar_Panel[0].getPanelState() == true)
+            {
+                DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    power.solar_Panel[0].changePanelState(2);
+                    pictureBox44.Image = imgTurnOFF;
+                }
+            }
+            else
+            {
+                DialogResult dr = MessageBox.Show("Do you want to turn this panel ON?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    power.solar_Panel[0].changePanelState(1);
+                    pictureBox44.Image = imgTurnON;
+                }
+            }
+
+            if (power.solar_Panel[0].getPanelState() == true)
+            {
+                for (int i = 0; i < 15; i++)
+                {
+                    if (power.getEnergyPercentage() < 100)
+                    {
+                        newTotalEnergy();
+                        WaitNSeconds(4);
+                    }
+                    else
+                    {
+                        WaitNSeconds(10);
+                        continue;
+                    }
+                }
+            }
+        }
+
+        private void pictureBox45_Click_1(object sender, EventArgs e)
+        {
+            power.checkEnergy();
+
+            if (power.solar_Panel[1].getPanelState() == true)
+            {
+                DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    power.solar_Panel[0].changePanelState(2);
+                    pictureBox45.Image = imgTurnOFF;
+                }
+            }
+            else
+            {
+                DialogResult dr = MessageBox.Show("Do you want to turn this panel ON?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    power.solar_Panel[1].changePanelState(1);
+                    pictureBox45.Image = imgTurnON;
+                }
+            }
+
+            if (power.solar_Panel[1].getPanelState() == true)
+            {
+                for (int i = 0; i < 15; i++)
+                {
+                    if (power.getEnergyPercentage() < 100)
+                    {
+                        newTotalEnergy();
+                        WaitNSeconds(4);
+                    }
+                    else
+                    {
+                        WaitNSeconds(10);
+                        continue;
+                    }
+                }
+            }
         }
     }
 

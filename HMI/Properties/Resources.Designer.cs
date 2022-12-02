@@ -283,6 +283,26 @@ namespace HMI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap switch_hoa_auto_ON {
+            get {
+                object obj = ResourceManager.GetObject("switch_hoa_auto_ON", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap switch_hoa_hand_OFF {
+            get {
+                object obj = ResourceManager.GetObject("switch_hoa_hand_OFF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tank_cylinder {
             get {
                 object obj = ResourceManager.GetObject("tank_cylinder", resourceCulture);
