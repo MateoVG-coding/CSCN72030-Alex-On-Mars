@@ -478,7 +478,7 @@ namespace HMI
                     uselevel.readEnergyUsed(comfortPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
-                    await Task.Delay(2000, ctsUseLevel.Token);
+                    await Task.Delay(8000, ctsUseLevel.Token);
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
 
                     if (i == 14)
@@ -494,7 +494,7 @@ namespace HMI
                     uselevel.readEnergyUsed(comfortPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
-                    await Task.Delay(2000, ctsUseLevel.Token);
+                    await Task.Delay(8000, ctsUseLevel.Token);
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
 
                     if (i == 14)
@@ -510,7 +510,7 @@ namespace HMI
                     uselevel.readEnergyUsed(comfortPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
-                    await Task.Delay(2000, ctsUseLevel.Token);
+                    await Task.Delay(8000, ctsUseLevel.Token);
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
 
                     if (i == 14)
@@ -543,7 +543,7 @@ namespace HMI
                     uselevel.readEnergyUsed(essentialPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
-                    await Task.Delay(2000, ctsUseLevel.Token);
+                    await Task.Delay(8000, ctsUseLevel.Token);
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
 
                     if (i == 14)
@@ -559,7 +559,7 @@ namespace HMI
                     uselevel.readEnergyUsed(essentialPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
-                    await Task.Delay(2000, ctsUseLevel.Token);
+                    await Task.Delay(8000, ctsUseLevel.Token);
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
 
                     if (i == 14)
@@ -575,7 +575,7 @@ namespace HMI
                     uselevel.readEnergyUsed(essentialPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
-                    await Task.Delay(2000, ctsUseLevel.Token);
+                    await Task.Delay(8000, ctsUseLevel.Token);
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
 
                     if (i == 14)
@@ -608,7 +608,7 @@ namespace HMI
                     uselevel.readEnergyUsed(essentialPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
-                    await Task.Delay(2000, ctsUseLevel.Token);
+                    await Task.Delay(8000, ctsUseLevel.Token);
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
 
                     if (i == 14)
@@ -624,7 +624,7 @@ namespace HMI
                     uselevel.readEnergyUsed(essentialPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
-                    await Task.Delay(2000, ctsUseLevel.Token);
+                    await Task.Delay(8000, ctsUseLevel.Token);
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
 
                     if (i == 14)
