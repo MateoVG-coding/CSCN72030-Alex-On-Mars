@@ -15,6 +15,7 @@ using System.Drawing;
 using static System.Net.Mime.MediaTypeNames;
 using System.Diagnostics;
 using System.Reflection.Emit;
+using System.Media;
 
 namespace HMI
 {
@@ -53,6 +54,8 @@ namespace HMI
         Bitmap MedEnergy = Properties.Resources.electricbolt_med;
         Bitmap HighEnergy = Properties.Resources.electricbolt_high;
 
+        int start = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -70,6 +73,11 @@ namespace HMI
             this.pictureBox45.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox45_Click_1);
             this.pictureBox46.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox46_Click);
             this.pictureBox47.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox47_Click);
+
+            SoundPlayer simpleSound = new SoundPlayer("intro.wav");
+            simpleSound.Play();
+
+            start++;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -175,6 +183,12 @@ namespace HMI
 
         private async void roundButton4_Click(object sender, EventArgs e)
         {
+            if(start != 0)
+            {
+                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
+                simpleSound.Play();
+            }
+
             if (ctsTemperature != null)
             {
                 ctsTemperature.Cancel();
@@ -222,6 +236,12 @@ namespace HMI
 
         private async void roundButtonHumidityPlants_Click(object sender, EventArgs e)
         {
+            if (start != 0)
+            {
+                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
+                simpleSound.Play();
+            }
+
             if (ctsHumidity != null)
             {
                 ctsHumidity.Cancel();
@@ -261,6 +281,12 @@ namespace HMI
 
         private void roundButtonWaterPlants_Click(object sender, EventArgs e)
         {
+            if (start != 0)
+            {
+                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
+                simpleSound.Play();
+            }
+
             double desiredWater = Convert.ToDouble(numericUpDownWaterPlants.Value);
 
             plantsPanel.setWaterPlants(plantsPanel, desiredWater, essentialsPanel);
@@ -272,6 +298,12 @@ namespace HMI
 
         private void roundButtonLightIntensity_Click(object sender, EventArgs e)
         {
+            if (start != 0)
+            {
+                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
+                simpleSound.Play();
+            }
+
             string desiredLightIntensity = comboBoxLightIntensity.Text;
 
             if (desiredLightIntensity == "High")
@@ -458,6 +490,12 @@ namespace HMI
 
         private async void roundButton7_Click(object sender, EventArgs e)
         {
+            if (start != 0)
+            {
+                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
+                simpleSound.Play();
+            }
+
             //comfort button energy
 
             ctsUseLevel = new CancellationTokenSource();
@@ -544,6 +582,12 @@ namespace HMI
 
         private async void roundButton8_Click(object sender, EventArgs e)
         {
+            if (start != 0)
+            {
+                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
+                simpleSound.Play();
+            }
+
             //Essentials button energy
 
             ctsUseLevel = new CancellationTokenSource();
@@ -630,6 +674,11 @@ namespace HMI
 
         private async void roundButton9_Click(object sender, EventArgs e)
         {
+            if (start != 0)
+            {
+                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
+                simpleSound.Play();
+            }
             //Plants button energy
 
             ctsUseLevel = new CancellationTokenSource();
@@ -716,6 +765,12 @@ namespace HMI
 
         private async void roundButtonTemperatureHome_Click(object sender, EventArgs e)
         {
+            if (start != 0)
+            {
+                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
+                simpleSound.Play();
+            }
+
             if (ctsTemperatureHome != null)
             {
                 ctsTemperatureHome.Cancel();
@@ -763,6 +818,12 @@ namespace HMI
 
         private async void roundButtonHumidityHome_Click(object sender, EventArgs e)
         {
+            if (start != 0)
+            {
+                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
+                simpleSound.Play();
+            }
+
             if (ctsHumidityHome != null)
             {
                 ctsHumidityHome.Cancel();
