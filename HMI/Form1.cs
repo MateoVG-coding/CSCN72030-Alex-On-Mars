@@ -468,7 +468,6 @@ namespace HMI
             }
 
             string level = comboBox1.Text;
-            float x = 0;
 
             if (level == "Low")
             {
@@ -478,13 +477,6 @@ namespace HMI
                 {
                     uselevel.readEnergyUsed(comfortPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
-                    power.checkEnergy();
-
-                    if (power.getEnergyAvailable() == false)
-                    {
-                        power.setTotalEnergy(0);
-                    }
-
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
                     await Task.Delay(8000, ctsUseLevel.Token);
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
@@ -501,13 +493,6 @@ namespace HMI
                 {
                     uselevel.readEnergyUsed(comfortPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
-                    power.checkEnergy();
-
-                    if (power.getEnergyAvailable() == false)
-                    {
-                        power.setTotalEnergy(0);
-                    }
-
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
                     await Task.Delay(8000, ctsUseLevel.Token);
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
@@ -524,13 +509,6 @@ namespace HMI
                 {
                     uselevel.readEnergyUsed(comfortPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
-                    power.checkEnergy();
-
-                    if (power.getEnergyAvailable() == false)
-                    {
-                        power.setTotalEnergy(0);
-                    }
-
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
                     await Task.Delay(8000, ctsUseLevel.Token);
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
@@ -564,13 +542,6 @@ namespace HMI
                 {
                     uselevel.readEnergyUsed(essentialPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
-                    power.checkEnergy();
-
-                    if (power.getEnergyAvailable() == false)
-                    {
-                        power.setTotalEnergy(0);
-                    }
-
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
                     await Task.Delay(8000, ctsUseLevel.Token);
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
@@ -587,13 +558,6 @@ namespace HMI
                 {
                     uselevel.readEnergyUsed(essentialPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
-                    power.checkEnergy();
-
-                    if (power.getEnergyAvailable() == false)
-                    {
-                        power.setTotalEnergy(0);
-                    }
-
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
                     await Task.Delay(8000, ctsUseLevel.Token);
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
@@ -610,13 +574,6 @@ namespace HMI
                 {
                     uselevel.readEnergyUsed(essentialPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
-                    power.checkEnergy();
-
-                    if (power.getEnergyAvailable() == false)
-                    {
-                        power.setTotalEnergy(0);
-                    }
-
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
                     await Task.Delay(8000, ctsUseLevel.Token);
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
@@ -650,13 +607,6 @@ namespace HMI
                 {
                     uselevel.readEnergyUsed(essentialPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
-                    power.checkEnergy();
-
-                    if (power.getEnergyAvailable() == false)
-                    {
-                        power.setTotalEnergy(0);
-                    }
-
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
                     await Task.Delay(8000, ctsUseLevel.Token);
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
@@ -673,13 +623,6 @@ namespace HMI
                 {
                     uselevel.readEnergyUsed(essentialPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
-                    power.checkEnergy();
-
-                    if (power.getEnergyAvailable() == false)
-                    {
-                        power.setTotalEnergy(0);
-                    }
-
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
                     await Task.Delay(8000, ctsUseLevel.Token); 
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
@@ -696,13 +639,6 @@ namespace HMI
                 {
                     uselevel.readEnergyUsed(essentialPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
-                    power.checkEnergy();
-
-                    if (power.getEnergyAvailable() == false)
-                    {
-                        power.setTotalEnergy(0);
-                    }
-
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
                     await Task.Delay(2000, ctsUseLevel.Token);
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
