@@ -790,7 +790,7 @@ namespace HMI
                 DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dr == DialogResult.Yes)
                 {
-                    power.solar_Panel[0].changePanelState(2);
+                    power.solar_Panel[1].changePanelState(2);
                     pictureBox45.Image = imgTurnOFF;
                 }
             }
