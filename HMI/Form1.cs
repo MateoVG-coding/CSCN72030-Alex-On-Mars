@@ -43,6 +43,9 @@ namespace HMI
 
         Bitmap imgTurnOFF = Properties.Resources.switch_hoa_hand_OFF;
         Bitmap imgTurnON = Properties.Resources.switch_hoa_auto_ON;
+        Bitmap lowEnergy = Properties.Resources.electricbolt_low;
+        Bitmap MedEnergy = Properties.Resources.electricbolt_med;
+        Bitmap HighEnergy = Properties.Resources.electricbolt_high;
 
         public Form1()
         {

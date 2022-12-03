@@ -116,11 +116,8 @@
             this.roundButton8 = new HMI.RoundButton();
             this.roundButton7 = new HMI.RoundButton();
             this.label31 = new System.Windows.Forms.Label();
-            this.listBox5 = new System.Windows.Forms.ListBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.listBox4 = new System.Windows.Forms.ListBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.listBox3 = new System.Windows.Forms.ListBox();
             this.label28 = new System.Windows.Forms.Label();
             this.pictureBox43 = new System.Windows.Forms.PictureBox();
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
@@ -135,6 +132,16 @@
             this.pictureBox45 = new System.Windows.Forms.PictureBox();
             this.pictureBox44 = new System.Windows.Forms.PictureBox();
             this.pictureBox47 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.pictureBox49 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.pictureBox48 = new System.Windows.Forms.PictureBox();
+            this.pictureBox50 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -192,6 +199,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -1205,22 +1215,23 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.comboBoxLightIntensity);
             this.panel1.Controls.Add(this.roundButton9);
             this.panel1.Controls.Add(this.roundButton8);
             this.panel1.Controls.Add(this.roundButton7);
             this.panel1.Controls.Add(this.label31);
-            this.panel1.Controls.Add(this.listBox5);
             this.panel1.Controls.Add(this.label30);
-            this.panel1.Controls.Add(this.listBox4);
             this.panel1.Controls.Add(this.label29);
-            this.panel1.Controls.Add(this.listBox3);
             this.panel1.Controls.Add(this.label28);
             this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.numericUpDownWaterPlants);
             this.panel1.Controls.Add(this.roundButtonWaterPlants);
             this.panel1.Controls.Add(this.roundButtonLightIntensity);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.comboBox3);
             this.panel1.Location = new System.Drawing.Point(9, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1899, 211);
@@ -1299,20 +1310,6 @@
             this.label31.TabIndex = 141;
             this.label31.Text = "Plants";
             // 
-            // listBox5
-            // 
-            this.listBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listBox5.FormattingEnabled = true;
-            this.listBox5.ItemHeight = 25;
-            this.listBox5.Items.AddRange(new object[] {
-            "Low",
-            "Medium",
-            "High"});
-            this.listBox5.Location = new System.Drawing.Point(1632, 163);
-            this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(121, 29);
-            this.listBox5.TabIndex = 142;
-            // 
             // label30
             // 
             this.label30.AutoSize = true;
@@ -1324,20 +1321,6 @@
             this.label30.TabIndex = 139;
             this.label30.Text = "Essentials";
             // 
-            // listBox4
-            // 
-            this.listBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.ItemHeight = 25;
-            this.listBox4.Items.AddRange(new object[] {
-            "Low",
-            "Medium",
-            "High"});
-            this.listBox4.Location = new System.Drawing.Point(1632, 107);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(121, 29);
-            this.listBox4.TabIndex = 140;
-            // 
             // label29
             // 
             this.label29.AutoSize = true;
@@ -1348,20 +1331,6 @@
             this.label29.Size = new System.Drawing.Size(105, 29);
             this.label29.TabIndex = 137;
             this.label29.Text = "Comfort";
-            // 
-            // listBox3
-            // 
-            this.listBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 25;
-            this.listBox3.Items.AddRange(new object[] {
-            "Low",
-            "Medium",
-            "High"});
-            this.listBox3.Location = new System.Drawing.Point(1632, 56);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(121, 29);
-            this.listBox3.TabIndex = 138;
             // 
             // label28
             // 
@@ -1519,6 +1488,122 @@
             this.pictureBox47.TabIndex = 149;
             this.pictureBox47.TabStop = false;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Low",
+            "Medium",
+            "High"});
+            this.comboBox1.Location = new System.Drawing.Point(1632, 52);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 33);
+            this.comboBox1.TabIndex = 147;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Low",
+            "Medium",
+            "High"});
+            this.comboBox2.Location = new System.Drawing.Point(1632, 106);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 33);
+            this.comboBox2.TabIndex = 148;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Low",
+            "Medium",
+            "High"});
+            this.comboBox3.Location = new System.Drawing.Point(1632, 160);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 33);
+            this.comboBox3.TabIndex = 149;
+            // 
+            // pictureBox49
+            // 
+            this.pictureBox49.Image = global::HMI.Properties.Resources.electricbolt_low;
+            this.pictureBox49.Location = new System.Drawing.Point(856, 818);
+            this.pictureBox49.Name = "pictureBox49";
+            this.pictureBox49.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox49.TabIndex = 151;
+            this.pictureBox49.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(897, 91);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(105, 29);
+            this.label8.TabIndex = 150;
+            this.label8.Text = "Comfort";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(680, 829);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(105, 29);
+            this.label9.TabIndex = 151;
+            this.label9.Text = "Comfort";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label32.Location = new System.Drawing.Point(680, 885);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(133, 29);
+            this.label32.TabIndex = 151;
+            this.label32.Text = "Essentials";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label33.Location = new System.Drawing.Point(680, 946);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(85, 29);
+            this.label33.TabIndex = 151;
+            this.label33.Text = "Plants";
+            // 
+            // pictureBox48
+            // 
+            this.pictureBox48.Image = global::HMI.Properties.Resources.electricbolt_low;
+            this.pictureBox48.Location = new System.Drawing.Point(856, 874);
+            this.pictureBox48.Name = "pictureBox48";
+            this.pictureBox48.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox48.TabIndex = 152;
+            this.pictureBox48.TabStop = false;
+            // 
+            // pictureBox50
+            // 
+            this.pictureBox50.Image = global::HMI.Properties.Resources.electricbolt_low;
+            this.pictureBox50.Location = new System.Drawing.Point(856, 935);
+            this.pictureBox50.Name = "pictureBox50";
+            this.pictureBox50.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox50.TabIndex = 153;
+            this.pictureBox50.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1527,6 +1612,12 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.Controls.Add(this.pictureBox50);
+            this.Controls.Add(this.pictureBox48);
+            this.Controls.Add(this.label33);
+            this.Controls.Add(this.label32);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.pictureBox49);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label26);
@@ -1679,6 +1770,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1780,11 +1874,8 @@
         private RoundButton roundButton8;
         private RoundButton roundButton7;
         private Label label31;
-        private ListBox listBox5;
         private Label label30;
-        private ListBox listBox4;
         private Label label29;
-        private ListBox listBox3;
         private ComboBox comboBoxLightIntensity;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
@@ -1792,5 +1883,15 @@
         private PictureBox pictureBox45;
         private PictureBox pictureBox44;
         private PictureBox pictureBox47;
+        private Label label8;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
+        private ComboBox comboBox3;
+        private PictureBox pictureBox49;
+        private Label label9;
+        private Label label32;
+        private Label label33;
+        private PictureBox pictureBox48;
+        private PictureBox pictureBox50;
     }
 }

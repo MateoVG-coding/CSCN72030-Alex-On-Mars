@@ -103,6 +103,36 @@ namespace HMI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap electricbolt_high {
+            get {
+                object obj = ResourceManager.GetObject("electricbolt_high", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap electricbolt_low {
+            get {
+                object obj = ResourceManager.GetObject("electricbolt_low", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap electricbolt_med {
+            get {
+                object obj = ResourceManager.GetObject("electricbolt_med", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap electricmeter {
             get {
                 object obj = ResourceManager.GetObject("electricmeter", resourceCulture);

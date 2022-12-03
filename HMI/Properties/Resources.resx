@@ -121,11 +121,11 @@
   <data name="generator_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\generator_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="valve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\valve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tank_lowrounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tank_lowrounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="boiler" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boiler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pipe_3d_elbow_r180" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pipe_3d_elbow_r180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,6 +169,9 @@
   <data name="centerPivot_circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\centerPivot_circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="switch_hoa_auto_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\switch_hoa_auto_ON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="compass_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\compass_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,8 +193,11 @@
   <data name="heater1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\heater1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="valve" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\valve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="electricbolt_low" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electricbolt_low.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boiler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boiler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tank_rounded_wlegs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tank_rounded_wlegs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,7 +211,10 @@
   <data name="tank_pillshape2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tank_pillshape2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="switch_hoa_auto_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\switch_hoa_auto_ON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="electricbolt_high" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electricbolt_high.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electricbolt_med" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electricbolt_med.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
