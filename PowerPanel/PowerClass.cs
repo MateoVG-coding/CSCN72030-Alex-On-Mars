@@ -46,7 +46,7 @@ namespace PowerPanel
 
         public void checkEnergy()
         {
-            if (energy_watts > 0)
+            if (energy_watts >= 0)
                 energy_available = true;
             else
                 energy_available = false;
