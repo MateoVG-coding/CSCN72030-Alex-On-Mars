@@ -125,7 +125,10 @@ namespace PowerPanel
 
             if (useLevel == 1)
             {
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "UseLevel1.txt");
+                var dir = Directory.GetCurrentDirectory();
+                var v = dir.Length - 25;
+                dir = dir.Substring(0, v);
+                var path = Path.Combine(dir, "UseLevel1.txt");
                 reader = new StreamReader(path);
                 string line = reader.ReadLine();
                 int i = 0;
@@ -152,7 +155,10 @@ namespace PowerPanel
             }
             else if (useLevel == 2)
             {
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "UseLevel2.txt");
+                var dir = Directory.GetCurrentDirectory();
+                var v = dir.Length - 25;
+                dir = dir.Substring(0, v);
+                var path = Path.Combine(dir, "UseLevel2.txt");
                 reader = new StreamReader(path);
                 string line = reader.ReadLine();
                 int i = 0;
@@ -179,12 +185,15 @@ namespace PowerPanel
             }
             else if (useLevel == 3)
             {
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "UseLevel3.txt");
+                var dir = Directory.GetCurrentDirectory();
+                var v = dir.Length - 25;
+                dir = dir.Substring(0, v);
+                var path = Path.Combine(dir, "UseLevel3.txt");
                 reader = new StreamReader(path);
                 string line = reader.ReadLine();
                 int i = 0;
 
-                while (i < 16 && line == lines3[i])
+                while (i < 15 && line == lines3[i])
                 {
                     line = reader.ReadLine();
                     i++;

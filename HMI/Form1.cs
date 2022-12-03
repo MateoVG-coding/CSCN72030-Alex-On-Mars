@@ -30,13 +30,19 @@ namespace HMI
 
         private CancellationTokenSource ctsHumidity;
 
+        private CancellationTokenSource ctsUseLevel;
+
         EssentialsPanel.EssentialsPanel essentialsPanel = new EssentialsPanel.EssentialsPanel();
+
+        EssentialsPanel.powerConsumed essentialPower = new EssentialsPanel.powerConsumed(1);
 
         PlantsPanel.PlantsPanel plantsPanel = new PlantsPanel.PlantsPanel();
 
         ComfortPanel.Temperature temperatureHome = new ComfortPanel.Temperature();
 
         ComfortPanel.Humidity humidityHome = new ComfortPanel.Humidity();
+
+        ComfortPanel.powerConsumed comfortPower = new ComfortPanel.powerConsumed(1);
 
         Energy power = new Energy();
         UseLevel uselevel = new UseLevel();
@@ -374,6 +380,9 @@ namespace HMI
                         WaitNSeconds(10);
                         continue;
                     }
+
+                    if (i == 14)
+                        i = 0;
                 }
             }
         }
@@ -415,6 +424,9 @@ namespace HMI
                         WaitNSeconds(10);
                         continue;
                     }
+
+                    if (i == 14)
+                        i = 0;
                 }
             }
         }
@@ -444,19 +456,199 @@ namespace HMI
 
         }
 
-        private void roundButton7_Click(object sender, EventArgs e)
+        private async void roundButton7_Click(object sender, EventArgs e)
         {
             //comfort button energy
+
+            ctsUseLevel = new CancellationTokenSource();
+
+            if (ctsUseLevel == null)
+            {
+                ctsUseLevel.Cancel();
+            }
+
+            string level = comboBox1.Text;
+
+            if (level == "Low")
+            {
+                comfortPower.setPower(1);
+
+                for (int i = 0; i < 15; i++)
+                {
+                    uselevel.readEnergyUsed(comfortPower.getPower());
+                    uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
+                    power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
+                    await Task.Delay(2000, ctsUseLevel.Token);
+                    label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
+
+                    if (i == 14)
+                        i = 0;
+                }
+            }
+            else if (level == "Medium")
+            {
+                comfortPower.setPower(2);
+
+                for (int i = 0; i < 15; i++)
+                {
+                    uselevel.readEnergyUsed(comfortPower.getPower());
+                    uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
+                    power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
+                    await Task.Delay(2000, ctsUseLevel.Token);
+                    label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
+
+                    if (i == 14)
+                        i = 0;
+                }
+            }
+            else if (level == "High")
+            {
+                comfortPower.setPower(3);
+
+                for (int i = 0; i < 15; i++)
+                {
+                    uselevel.readEnergyUsed(comfortPower.getPower());
+                    uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
+                    power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
+                    await Task.Delay(2000, ctsUseLevel.Token);
+                    label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
+
+                    if (i == 14)
+                        i = 0;
+                }
+            }
+            else
+                return;
         }
 
-        private void roundButton8_Click(object sender, EventArgs e)
+        private async void roundButton8_Click(object sender, EventArgs e)
         {
             //Essentials button energy
+
+            ctsUseLevel = new CancellationTokenSource();
+
+            if (ctsUseLevel == null)
+            {
+                ctsUseLevel.Cancel();
+            }
+
+            string level = comboBox2.Text;
+
+            if (level == "Low")
+            {
+                essentialPower.setPower(1);
+
+                for (int i = 0; i < 15; i++)
+                {
+                    uselevel.readEnergyUsed(essentialPower.getPower());
+                    uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
+                    power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
+                    await Task.Delay(2000, ctsUseLevel.Token);
+                    label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
+
+                    if (i == 14)
+                        i = 0;
+                }
+            }
+            else if (level == "Medium")
+            {
+                essentialPower.setPower(2);
+
+                for (int i = 0; i < 15; i++)
+                {
+                    uselevel.readEnergyUsed(essentialPower.getPower());
+                    uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
+                    power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
+                    await Task.Delay(2000, ctsUseLevel.Token);
+                    label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
+
+                    if (i == 14)
+                        i = 0;
+                }
+            }
+            else if (level == "High")
+            {
+                essentialPower.setPower(3);
+
+                for (int i = 0; i < 15; i++)
+                {
+                    uselevel.readEnergyUsed(essentialPower.getPower());
+                    uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
+                    power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
+                    await Task.Delay(2000, ctsUseLevel.Token);
+                    label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
+
+                    if (i == 14)
+                        i = 0;
+                }
+            }
+            else
+                return;
         }
 
-        private void roundButton9_Click(object sender, EventArgs e)
+        private async void roundButton9_Click(object sender, EventArgs e)
         {
             //Plants button energy
+
+            ctsUseLevel = new CancellationTokenSource();
+
+            if (ctsUseLevel == null)
+            {
+                ctsUseLevel.Cancel();
+            }
+
+            string level = comboBox3.Text;
+
+            if (level == "Low")
+            {
+                essentialPower.setPower(1);
+
+                for (int i = 0; i < 15; i++)
+                {
+                    uselevel.readEnergyUsed(essentialPower.getPower());
+                    uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
+                    power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
+                    await Task.Delay(2000, ctsUseLevel.Token);
+                    label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
+
+                    if (i == 14)
+                        i = 0;
+                }
+            }
+            else if (level == "Medium")
+            {
+                essentialPower.setPower(2);
+
+                for (int i = 0; i < 15; i++)
+                {
+                    uselevel.readEnergyUsed(essentialPower.getPower());
+                    uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
+                    power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
+                    await Task.Delay(2000, ctsUseLevel.Token);
+                    label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
+
+                    if (i == 14)
+                        i = 0;
+                }
+            }
+            else if (level == "High")
+            {
+                essentialPower.setPower(3);
+
+                for (int i = 0; i < 15; i++)
+                {
+                    uselevel.readEnergyUsed(essentialPower.getPower());
+                    uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
+                    power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
+                    await Task.Delay(2000, ctsUseLevel.Token);
+                    label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
+
+                    if (i == 14)
+                        i = 0;
+                }
+            }
+            else
+                return;
         }
 
         private async void roundButtonTemperatureHome_Click(object sender, EventArgs e)
@@ -582,6 +774,9 @@ namespace HMI
                         WaitNSeconds(10);
                         continue;
                     }
+
+                    if (i == 14)
+                        i = 0;
                 }
             }
         }
@@ -623,6 +818,9 @@ namespace HMI
                         WaitNSeconds(10);
                         continue;
                     }
+
+                    if (i == 14)
+                        i = 0;
                 }
             }
         }
