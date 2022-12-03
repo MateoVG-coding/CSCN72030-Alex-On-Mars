@@ -244,7 +244,7 @@ namespace PowerPanel
         public SolarPanel()
         {
             this.solar_energy = 0;
-            this.panel_state = false;
+            this.panel_state = true;
             lines = new string[15];
         }
 

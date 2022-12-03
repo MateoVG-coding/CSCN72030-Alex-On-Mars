@@ -433,7 +433,7 @@ namespace HMI
 
         private void pictureBox40_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pictureBox43_Click(object sender, EventArgs e)
@@ -443,12 +443,12 @@ namespace HMI
 
         private void pictureBox41_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void pictureBox42_Click(object sender, EventArgs e)
         {
-       
+            
         }
 
         private void label26_Click(object sender, EventArgs e)
@@ -624,7 +624,7 @@ namespace HMI
                     uselevel.readEnergyUsed(essentialPower.getPower());
                     uselevel.updateTotalEnergy(power, power.getTotalEnergy(), uselevel.getEnergyUsed());
                     power.calculateEnergyPercentage(power.getTotalEnergy(), power.getMaxEnergy());
-                    await Task.Delay(8000, ctsUseLevel.Token);
+                    await Task.Delay(8000, ctsUseLevel.Token); 
                     label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
 
                     if (i == 14)
