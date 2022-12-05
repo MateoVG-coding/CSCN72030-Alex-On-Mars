@@ -59,7 +59,7 @@ namespace HMI
         public Form1()
         {
             InitializeComponent();
-            WindowState = FormWindowState.Maximized;
+            WindowState = FormWindowState.Normal;
             label9_Click(null, null);
             label8_Click(null, null);
             roundButtonTemperatureHome_Click(null, null);
@@ -346,6 +346,22 @@ namespace HMI
 
         }
 
+        private bool checkPanels()
+        {
+            int panelsOn = 0;
+
+            for (int i = 0; i < 4; i++)
+            {
+                if (power.solar_Panel[i].getPanelState() == true)
+                    panelsOn++;
+            }
+
+            if (panelsOn <= 1)
+                return false;
+            else
+                return true;
+        }
+
         private void newTotalEnergy()
         {
             float[] energy = new float[4];
@@ -380,6 +396,11 @@ namespace HMI
 
             if (power.solar_Panel[2].getPanelState() == true)
             {
+                if (checkPanels() == false)
+                {
+                    DialogResult ex = MessageBox.Show("Unable to turn panel OFF. At least one panel must be ON.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
+
                 DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dr == DialogResult.Yes)
                 {
@@ -425,6 +446,11 @@ namespace HMI
 
             if (power.solar_Panel[3].getPanelState() == true)
             {
+                if (checkPanels() == false)
+                {
+                    DialogResult ex = MessageBox.Show("Unable to turn panel OFF. At least one panel must be ON.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
+
                 DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dr == DialogResult.Yes)
                 {
@@ -867,6 +893,11 @@ namespace HMI
 
             if (power.solar_Panel[0].getPanelState() == true)
             {
+                if (checkPanels() == false)
+                {
+                    DialogResult ex = MessageBox.Show("Unable to turn panel OFF. At least one panel must be ON.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
+
                 DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dr == DialogResult.Yes)
                 {
@@ -911,6 +942,11 @@ namespace HMI
 
             if (power.solar_Panel[1].getPanelState() == true)
             {
+                if (checkPanels() == false)
+                {
+                    DialogResult ex = MessageBox.Show("Unable to turn panel OFF. At least one panel must be ON.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
+
                 DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dr == DialogResult.Yes)
                 {
