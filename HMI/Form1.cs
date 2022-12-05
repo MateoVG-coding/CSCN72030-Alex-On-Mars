@@ -59,7 +59,7 @@ namespace HMI
         public Form1()
         {
             InitializeComponent();
-            WindowState = FormWindowState.Normal;
+            WindowState = FormWindowState.Maximized;
             label9_Click(null, null);
             label8_Click(null, null);
             roundButtonTemperatureHome_Click(null, null);
@@ -541,6 +541,8 @@ namespace HMI
             {
                 comfortPower.setPower(1);
 
+                pictureBox49.Image = lowEnergy;
+
                 for (int i = 0; i < 15; i++)
                 {
                     uselevel.readEnergyUsed(comfortPower.getPower());
@@ -564,6 +566,8 @@ namespace HMI
             {
                 comfortPower.setPower(2);
 
+                pictureBox49.Image = MedEnergy;
+
                 for (int i = 0; i < 15; i++)
                 {
                     uselevel.readEnergyUsed(comfortPower.getPower());
@@ -586,6 +590,8 @@ namespace HMI
             else if (level == "High")
             {
                 comfortPower.setPower(3);
+
+                pictureBox49.Image = HighEnergy;
 
                 for (int i = 0; i < 15; i++)
                 {
@@ -633,6 +639,8 @@ namespace HMI
             {
                 essentialPower.setPower(1);
 
+                pictureBox48.Image = lowEnergy;
+
                 for (int i = 0; i < 15; i++)
                 {
                     uselevel.readEnergyUsed(essentialPower.getPower());
@@ -656,6 +664,8 @@ namespace HMI
             {
                 essentialPower.setPower(2);
 
+                pictureBox48.Image = MedEnergy;
+
                 for (int i = 0; i < 15; i++)
                 {
                     uselevel.readEnergyUsed(essentialPower.getPower());
@@ -678,6 +688,8 @@ namespace HMI
             else if (level == "High")
             {
                 essentialPower.setPower(3);
+
+                pictureBox48.Image = HighEnergy;
 
                 for (int i = 0; i < 15; i++)
                 {
@@ -724,6 +736,8 @@ namespace HMI
             {
                 essentialPower.setPower(1);
 
+                pictureBox50.Image = lowEnergy;
+
                 for (int i = 0; i < 15; i++)
                 {
                     uselevel.readEnergyUsed(essentialPower.getPower());
@@ -747,6 +761,8 @@ namespace HMI
             {
                 essentialPower.setPower(2);
 
+                pictureBox50.Image = MedEnergy;
+
                 for (int i = 0; i < 15; i++)
                 {
                     uselevel.readEnergyUsed(essentialPower.getPower());
@@ -769,6 +785,8 @@ namespace HMI
             else if (level == "High")
             {
                 essentialPower.setPower(3);
+
+                pictureBox50.Image = HighEnergy;
 
                 for (int i = 0; i < 15; i++)
                 {

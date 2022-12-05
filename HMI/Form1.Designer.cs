@@ -206,10 +206,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HMI.Properties.Resources.tank_cylinder;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 364);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 291);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 186);
+            this.pictureBox1.Size = new System.Drawing.Size(200, 149);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -218,10 +217,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::HMI.Properties.Resources.tank_cylinder;
-            this.pictureBox2.Location = new System.Drawing.Point(14, 521);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(11, 417);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(250, 165);
+            this.pictureBox2.Size = new System.Drawing.Size(200, 132);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -229,10 +227,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::HMI.Properties.Resources.pipe_3d_h1;
-            this.pictureBox3.Location = new System.Drawing.Point(169, 399);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(135, 319);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(189, 100);
+            this.pictureBox3.Size = new System.Drawing.Size(151, 80);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -240,10 +237,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::HMI.Properties.Resources.pipe_3d_h1;
-            this.pictureBox4.Location = new System.Drawing.Point(169, 551);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Location = new System.Drawing.Point(135, 441);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(189, 100);
+            this.pictureBox4.Size = new System.Drawing.Size(151, 80);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
@@ -251,10 +247,9 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::HMI.Properties.Resources.pipe_3d_tjunction_r270;
-            this.pictureBox5.Location = new System.Drawing.Point(299, 459);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Location = new System.Drawing.Point(239, 367);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(124, 130);
+            this.pictureBox5.Size = new System.Drawing.Size(99, 104);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
@@ -262,10 +257,9 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::HMI.Properties.Resources.pipe_3d_elbow_r90;
-            this.pictureBox6.Location = new System.Drawing.Point(299, 399);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Location = new System.Drawing.Point(239, 319);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(126, 100);
+            this.pictureBox6.Size = new System.Drawing.Size(101, 80);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
@@ -273,10 +267,9 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::HMI.Properties.Resources.pipe_3d_elbow;
-            this.pictureBox7.Location = new System.Drawing.Point(299, 551);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Location = new System.Drawing.Point(239, 441);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(124, 100);
+            this.pictureBox7.Size = new System.Drawing.Size(99, 80);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
@@ -285,10 +278,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(419, 619);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(335, 495);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 32);
+            this.label1.Size = new System.Drawing.Size(81, 29);
             this.label1.TabIndex = 7;
             this.label1.Text = "Water";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -298,10 +290,9 @@
             this.pictureBox8.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox8.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox8.Location = new System.Drawing.Point(374, 656);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Location = new System.Drawing.Point(299, 525);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(174, 99);
+            this.pictureBox8.Size = new System.Drawing.Size(140, 80);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 8;
             this.pictureBox8.TabStop = false;
@@ -309,10 +300,9 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::HMI.Properties.Resources.pipe_3d_tjunction;
-            this.pictureBox9.Location = new System.Drawing.Point(391, 459);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Location = new System.Drawing.Point(313, 367);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(159, 130);
+            this.pictureBox9.Size = new System.Drawing.Size(127, 104);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 9;
             this.pictureBox9.TabStop = false;
@@ -320,10 +310,9 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::HMI.Properties.Resources.tank_pillshape2;
-            this.pictureBox10.Location = new System.Drawing.Point(361, 311);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox10.Location = new System.Drawing.Point(289, 249);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(211, 185);
+            this.pictureBox10.Size = new System.Drawing.Size(169, 148);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 10;
             this.pictureBox10.TabStop = false;
@@ -331,10 +320,9 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::HMI.Properties.Resources.pipe_3d_elbow_r90;
-            this.pictureBox11.Location = new System.Drawing.Point(521, 459);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox11.Location = new System.Drawing.Point(417, 367);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(111, 130);
+            this.pictureBox11.Size = new System.Drawing.Size(89, 104);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 11;
             this.pictureBox11.TabStop = false;
@@ -342,10 +330,9 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::HMI.Properties.Resources.coolingtower;
-            this.pictureBox12.Location = new System.Drawing.Point(616, 364);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox12.Location = new System.Drawing.Point(493, 291);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(209, 245);
+            this.pictureBox12.Size = new System.Drawing.Size(167, 196);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 12;
             this.pictureBox12.TabStop = false;
@@ -353,10 +340,9 @@
             // pictureBox13
             // 
             this.pictureBox13.Image = global::HMI.Properties.Resources.pipe_3d_elbow_r270;
-            this.pictureBox13.Location = new System.Drawing.Point(514, 570);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox13.Location = new System.Drawing.Point(411, 456);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(126, 61);
+            this.pictureBox13.Size = new System.Drawing.Size(101, 49);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 13;
             this.pictureBox13.TabStop = false;
@@ -364,10 +350,9 @@
             // pictureBox14
             // 
             this.pictureBox14.Image = global::HMI.Properties.Resources.tank_rounded_wlegs;
-            this.pictureBox14.Location = new System.Drawing.Point(999, 326);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox14.Location = new System.Drawing.Point(799, 261);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(294, 354);
+            this.pictureBox14.Size = new System.Drawing.Size(235, 283);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 14;
             this.pictureBox14.TabStop = false;
@@ -375,10 +360,9 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = global::HMI.Properties.Resources.tank_rounded_wlegs;
-            this.pictureBox15.Location = new System.Drawing.Point(1206, 326);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox15.Location = new System.Drawing.Point(965, 261);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(321, 359);
+            this.pictureBox15.Size = new System.Drawing.Size(257, 287);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 15;
             this.pictureBox15.TabStop = false;
@@ -386,10 +370,9 @@
             // pictureBox16
             // 
             this.pictureBox16.Image = global::HMI.Properties.Resources.tank_rounded_wlegs;
-            this.pictureBox16.Location = new System.Drawing.Point(1444, 326);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox16.Location = new System.Drawing.Point(1155, 261);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(294, 359);
+            this.pictureBox16.Size = new System.Drawing.Size(235, 287);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox16.TabIndex = 16;
             this.pictureBox16.TabStop = false;
@@ -397,10 +380,9 @@
             // pictureBox17
             // 
             this.pictureBox17.Image = global::HMI.Properties.Resources.tank_lowrounded;
-            this.pictureBox17.Location = new System.Drawing.Point(844, 679);
-            this.pictureBox17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox17.Location = new System.Drawing.Point(675, 543);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(206, 159);
+            this.pictureBox17.Size = new System.Drawing.Size(165, 127);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox17.TabIndex = 17;
             this.pictureBox17.TabStop = false;
@@ -408,10 +390,9 @@
             // pictureBox18
             // 
             this.pictureBox18.Image = global::HMI.Properties.Resources.pipe_3d_h2;
-            this.pictureBox18.Location = new System.Drawing.Point(1560, 626);
-            this.pictureBox18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox18.Location = new System.Drawing.Point(1248, 501);
             this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(61, 134);
+            this.pictureBox18.Size = new System.Drawing.Size(49, 107);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox18.TabIndex = 18;
             this.pictureBox18.TabStop = false;
@@ -419,10 +400,9 @@
             // pictureBox19
             // 
             this.pictureBox19.Image = global::HMI.Properties.Resources.pipe_3d_h2;
-            this.pictureBox19.Location = new System.Drawing.Point(1339, 626);
-            this.pictureBox19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox19.Location = new System.Drawing.Point(1071, 501);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(61, 154);
+            this.pictureBox19.Size = new System.Drawing.Size(49, 123);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox19.TabIndex = 19;
             this.pictureBox19.TabStop = false;
@@ -430,10 +410,9 @@
             // pictureBox21
             // 
             this.pictureBox21.Image = global::HMI.Properties.Resources.pipe_3d_elbow;
-            this.pictureBox21.Location = new System.Drawing.Point(1111, 689);
-            this.pictureBox21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox21.Location = new System.Drawing.Point(889, 551);
             this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(61, 100);
+            this.pictureBox21.Size = new System.Drawing.Size(49, 80);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox21.TabIndex = 21;
             this.pictureBox21.TabStop = false;
@@ -441,10 +420,9 @@
             // pictureBox23
             // 
             this.pictureBox23.Image = global::HMI.Properties.Resources.pipe_3d_tjunction;
-            this.pictureBox23.Location = new System.Drawing.Point(1339, 756);
-            this.pictureBox23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox23.Location = new System.Drawing.Point(1071, 605);
             this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(61, 94);
+            this.pictureBox23.Size = new System.Drawing.Size(49, 75);
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox23.TabIndex = 23;
             this.pictureBox23.TabStop = false;
@@ -452,10 +430,9 @@
             // pictureBox22
             // 
             this.pictureBox22.Image = global::HMI.Properties.Resources.pipe_3d_elbow;
-            this.pictureBox22.Location = new System.Drawing.Point(1560, 756);
-            this.pictureBox22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox22.Location = new System.Drawing.Point(1248, 605);
             this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(61, 94);
+            this.pictureBox22.Size = new System.Drawing.Size(49, 75);
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox22.TabIndex = 22;
             this.pictureBox22.TabStop = false;
@@ -463,10 +440,9 @@
             // pictureBox24
             // 
             this.pictureBox24.Image = global::HMI.Properties.Resources.pipe_3d_h2;
-            this.pictureBox24.Location = new System.Drawing.Point(1111, 616);
-            this.pictureBox24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox24.Location = new System.Drawing.Point(889, 493);
             this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(61, 144);
+            this.pictureBox24.Size = new System.Drawing.Size(49, 115);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox24.TabIndex = 24;
             this.pictureBox24.TabStop = false;
@@ -474,10 +450,9 @@
             // pictureBox25
             // 
             this.pictureBox25.Image = global::HMI.Properties.Resources.pipe_3d_h1;
-            this.pictureBox25.Location = new System.Drawing.Point(1379, 756);
-            this.pictureBox25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox25.Location = new System.Drawing.Point(1103, 605);
             this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(199, 94);
+            this.pictureBox25.Size = new System.Drawing.Size(159, 75);
             this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox25.TabIndex = 25;
             this.pictureBox25.TabStop = false;
@@ -485,10 +460,9 @@
             // pictureBox27
             // 
             this.pictureBox27.Image = global::HMI.Properties.Resources.pipe_3d_h1;
-            this.pictureBox27.Location = new System.Drawing.Point(1034, 756);
-            this.pictureBox27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox27.Location = new System.Drawing.Point(827, 605);
             this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(309, 94);
+            this.pictureBox27.Size = new System.Drawing.Size(247, 75);
             this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox27.TabIndex = 27;
             this.pictureBox27.TabStop = false;
@@ -496,10 +470,9 @@
             // pictureBox28
             // 
             this.pictureBox28.Image = global::HMI.Properties.Resources.pipe_3d_h1;
-            this.pictureBox28.Location = new System.Drawing.Point(1034, 689);
-            this.pictureBox28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox28.Location = new System.Drawing.Point(827, 551);
             this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(86, 100);
+            this.pictureBox28.Size = new System.Drawing.Size(69, 80);
             this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox28.TabIndex = 28;
             this.pictureBox28.TabStop = false;
@@ -508,10 +481,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(872, 390);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(698, 312);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 32);
+            this.label2.Size = new System.Drawing.Size(101, 29);
             this.label2.TabIndex = 29;
             this.label2.Text = "Oxygen\r\n";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -521,10 +493,9 @@
             this.pictureBox29.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox29.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox29.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox29.Location = new System.Drawing.Point(850, 426);
-            this.pictureBox29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox29.Location = new System.Drawing.Point(680, 341);
             this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(174, 99);
+            this.pictureBox29.Size = new System.Drawing.Size(140, 80);
             this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox29.TabIndex = 30;
             this.pictureBox29.TabStop = false;
@@ -533,10 +504,9 @@
             // 
             this.pictureBox20.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pictureBox20.Image = global::HMI.Properties.Resources.centerPivot_circle;
-            this.pictureBox20.Location = new System.Drawing.Point(1969, 296);
-            this.pictureBox20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox20.Location = new System.Drawing.Point(1575, 237);
             this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(246, 206);
+            this.pictureBox20.Size = new System.Drawing.Size(197, 165);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox20.TabIndex = 31;
             this.pictureBox20.TabStop = false;
@@ -545,10 +515,9 @@
             // 
             this.pictureBox26.BackColor = System.Drawing.SystemColors.Desktop;
             this.pictureBox26.Image = global::HMI.Properties.Resources.leaves_elm;
-            this.pictureBox26.Location = new System.Drawing.Point(1999, 344);
-            this.pictureBox26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox26.Location = new System.Drawing.Point(1599, 275);
             this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(189, 111);
+            this.pictureBox26.Size = new System.Drawing.Size(151, 89);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox26.TabIndex = 32;
             this.pictureBox26.TabStop = false;
@@ -558,10 +527,9 @@
             this.label3.AutoSize = true;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(1169, 25);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(935, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 39);
+            this.label3.Size = new System.Drawing.Size(98, 33);
             this.label3.TabIndex = 33;
             this.label3.Text = "Plants";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -570,10 +538,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(1749, 519);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(1399, 415);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(281, 32);
+            this.label4.Size = new System.Drawing.Size(243, 29);
             this.label4.TabIndex = 34;
             this.label4.Text = "Plants Temperature";
             // 
@@ -582,10 +549,9 @@
             this.pictureBox30.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox30.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox30.Location = new System.Drawing.Point(1806, 555);
-            this.pictureBox30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox30.Location = new System.Drawing.Point(1445, 444);
             this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(174, 99);
+            this.pictureBox30.Size = new System.Drawing.Size(140, 80);
             this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox30.TabIndex = 35;
             this.pictureBox30.TabStop = false;
@@ -595,10 +561,9 @@
             this.pictureBox36.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox36.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox36.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox36.Location = new System.Drawing.Point(1806, 719);
-            this.pictureBox36.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox36.Location = new System.Drawing.Point(1445, 575);
             this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(174, 99);
+            this.pictureBox36.Size = new System.Drawing.Size(140, 80);
             this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox36.TabIndex = 45;
             this.pictureBox36.TabStop = false;
@@ -607,10 +572,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(1779, 679);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(1423, 543);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(227, 32);
+            this.label6.Size = new System.Drawing.Size(193, 29);
             this.label6.TabIndex = 44;
             this.label6.Text = "Plants Humidity";
             // 
@@ -619,10 +583,9 @@
             this.pictureBox37.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox37.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox37.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox37.Location = new System.Drawing.Point(2200, 721);
-            this.pictureBox37.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox37.Location = new System.Drawing.Point(1760, 577);
             this.pictureBox37.Name = "pictureBox37";
-            this.pictureBox37.Size = new System.Drawing.Size(174, 99);
+            this.pictureBox37.Size = new System.Drawing.Size(140, 80);
             this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox37.TabIndex = 51;
             this.pictureBox37.TabStop = false;
@@ -632,10 +595,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(2186, 681);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(1749, 545);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(205, 32);
+            this.label7.Size = new System.Drawing.Size(173, 29);
             this.label7.TabIndex = 50;
             this.label7.Text = "Light Intensity";
             // 
@@ -645,10 +607,9 @@
             this.HomeOxygen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.HomeOxygen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.HomeOxygen.ForeColor = System.Drawing.SystemColors.Window;
-            this.HomeOxygen.Location = new System.Drawing.Point(861, 452);
-            this.HomeOxygen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.HomeOxygen.Location = new System.Drawing.Point(689, 362);
             this.HomeOxygen.Name = "HomeOxygen";
-            this.HomeOxygen.Size = new System.Drawing.Size(150, 50);
+            this.HomeOxygen.Size = new System.Drawing.Size(120, 40);
             this.HomeOxygen.TabIndex = 55;
             this.HomeOxygen.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.HomeOxygen.Click += new System.EventHandler(this.label8_Click);
@@ -659,10 +620,9 @@
             this.HomeWater.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.HomeWater.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.HomeWater.ForeColor = System.Drawing.SystemColors.Window;
-            this.HomeWater.Location = new System.Drawing.Point(386, 681);
-            this.HomeWater.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.HomeWater.Location = new System.Drawing.Point(309, 545);
             this.HomeWater.Name = "HomeWater";
-            this.HomeWater.Size = new System.Drawing.Size(150, 50);
+            this.HomeWater.Size = new System.Drawing.Size(120, 40);
             this.HomeWater.TabIndex = 56;
             this.HomeWater.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.HomeWater.Click += new System.EventHandler(this.label9_Click);
@@ -672,10 +632,9 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton2.Location = new System.Drawing.Point(5, 5);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton2.Location = new System.Drawing.Point(4, 4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(57, 36);
+            this.radioButton2.Size = new System.Drawing.Size(50, 33);
             this.radioButton2.TabIndex = 62;
             this.radioButton2.Text = "F";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -686,15 +645,14 @@
             this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.listBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 29;
+            this.listBox1.ItemHeight = 25;
             this.listBox1.Items.AddRange(new object[] {
             "Low",
             "Medium",
             "High"});
-            this.listBox1.Location = new System.Drawing.Point(2216, 751);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBox1.Location = new System.Drawing.Point(1773, 601);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(138, 33);
+            this.listBox1.Size = new System.Drawing.Size(111, 4);
             this.listBox1.TabIndex = 64;
             // 
             // radioButton1
@@ -703,10 +661,9 @@
             this.radioButton1.Checked = true;
             this.radioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton1.Location = new System.Drawing.Point(5, 65);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton1.Location = new System.Drawing.Point(4, 52);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(60, 36);
+            this.radioButton1.Size = new System.Drawing.Size(52, 33);
             this.radioButton1.TabIndex = 61;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "C";
@@ -717,10 +674,9 @@
             this.pictureBox35.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox35.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox35.Location = new System.Drawing.Point(2200, 559);
-            this.pictureBox35.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox35.Location = new System.Drawing.Point(1760, 447);
             this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(174, 99);
+            this.pictureBox35.Size = new System.Drawing.Size(140, 80);
             this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox35.TabIndex = 41;
             this.pictureBox35.TabStop = false;
@@ -729,10 +685,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(2186, 520);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(1749, 416);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(188, 32);
+            this.label5.Size = new System.Drawing.Size(160, 29);
             this.label5.TabIndex = 40;
             this.label5.Text = "Plants Water";
             // 
@@ -743,10 +698,9 @@
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.SystemColors.Window;
-            this.label10.Location = new System.Drawing.Point(1779, 670);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(1423, 536);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(2, 41);
+            this.label10.Size = new System.Drawing.Size(2, 34);
             this.label10.TabIndex = 68;
             // 
             // label11
@@ -755,10 +709,9 @@
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label11.ForeColor = System.Drawing.SystemColors.Window;
-            this.label11.Location = new System.Drawing.Point(1819, 580);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(1455, 464);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(150, 50);
+            this.label11.Size = new System.Drawing.Size(120, 40);
             this.label11.TabIndex = 72;
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -768,10 +721,9 @@
             this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label12.ForeColor = System.Drawing.SystemColors.Window;
-            this.label12.Location = new System.Drawing.Point(2211, 581);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(1769, 465);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(150, 50);
+            this.label12.Size = new System.Drawing.Size(120, 40);
             this.label12.TabIndex = 73;
             this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -781,10 +733,9 @@
             this.label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.SystemColors.Window;
-            this.label13.Location = new System.Drawing.Point(1819, 744);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(1455, 595);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(150, 50);
+            this.label13.Size = new System.Drawing.Size(120, 40);
             this.label13.TabIndex = 74;
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -794,10 +745,9 @@
             this.label14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label14.ForeColor = System.Drawing.SystemColors.Window;
-            this.label14.Location = new System.Drawing.Point(2211, 746);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(1769, 597);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(150, 50);
+            this.label14.Size = new System.Drawing.Size(120, 40);
             this.label14.TabIndex = 75;
             this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -806,10 +756,9 @@
             this.label15.AutoSize = true;
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(210, 25);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(168, 20);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(108, 39);
+            this.label15.Size = new System.Drawing.Size(92, 33);
             this.label15.TabIndex = 76;
             this.label15.Text = "Home";
             this.label15.Click += new System.EventHandler(this.label15_Click);
@@ -823,8 +772,7 @@
             0,
             0,
             65536});
-            this.numericUpDownTemperatureHome.Location = new System.Drawing.Point(331, 109);
-            this.numericUpDownTemperatureHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownTemperatureHome.Location = new System.Drawing.Point(265, 87);
             this.numericUpDownTemperatureHome.Maximum = new decimal(new int[] {
             28,
             0,
@@ -837,7 +785,7 @@
             0});
             this.numericUpDownTemperatureHome.Name = "numericUpDownTemperatureHome";
             this.numericUpDownTemperatureHome.ReadOnly = true;
-            this.numericUpDownTemperatureHome.Size = new System.Drawing.Size(90, 35);
+            this.numericUpDownTemperatureHome.Size = new System.Drawing.Size(72, 30);
             this.numericUpDownTemperatureHome.TabIndex = 77;
             this.numericUpDownTemperatureHome.Value = new decimal(new int[] {
             19,
@@ -850,10 +798,9 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(120, 106);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Location = new System.Drawing.Point(96, 85);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(187, 32);
+            this.label16.Size = new System.Drawing.Size(164, 29);
             this.label16.TabIndex = 78;
             this.label16.Text = "Temperature";
             // 
@@ -862,10 +809,9 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(121, 189);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Location = new System.Drawing.Point(97, 151);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(133, 32);
+            this.label17.Size = new System.Drawing.Size(114, 29);
             this.label17.TabIndex = 79;
             this.label17.Text = "Humidity\r\n";
             // 
@@ -877,8 +823,7 @@
             0,
             0,
             0});
-            this.numericUpDownHumidityHome.Location = new System.Drawing.Point(334, 191);
-            this.numericUpDownHumidityHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownHumidityHome.Location = new System.Drawing.Point(267, 153);
             this.numericUpDownHumidityHome.Maximum = new decimal(new int[] {
             60,
             0,
@@ -891,7 +836,7 @@
             0});
             this.numericUpDownHumidityHome.Name = "numericUpDownHumidityHome";
             this.numericUpDownHumidityHome.ReadOnly = true;
-            this.numericUpDownHumidityHome.Size = new System.Drawing.Size(90, 35);
+            this.numericUpDownHumidityHome.Size = new System.Drawing.Size(72, 30);
             this.numericUpDownHumidityHome.TabIndex = 80;
             this.numericUpDownHumidityHome.Value = new decimal(new int[] {
             40,
@@ -908,10 +853,9 @@
             this.roundButtonTemperatureHome.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.roundButtonTemperatureHome.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.roundButtonTemperatureHome.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundButtonTemperatureHome.Location = new System.Drawing.Point(454, 100);
-            this.roundButtonTemperatureHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roundButtonTemperatureHome.Location = new System.Drawing.Point(363, 80);
             this.roundButtonTemperatureHome.Name = "roundButtonTemperatureHome";
-            this.roundButtonTemperatureHome.Size = new System.Drawing.Size(50, 50);
+            this.roundButtonTemperatureHome.Size = new System.Drawing.Size(40, 40);
             this.roundButtonTemperatureHome.TabIndex = 81;
             this.roundButtonTemperatureHome.UseVisualStyleBackColor = false;
             this.roundButtonTemperatureHome.Click += new System.EventHandler(this.roundButtonTemperatureHome_Click);
@@ -925,10 +869,9 @@
             this.roundButtonHumidityHome.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.roundButtonHumidityHome.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.roundButtonHumidityHome.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundButtonHumidityHome.Location = new System.Drawing.Point(454, 181);
-            this.roundButtonHumidityHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roundButtonHumidityHome.Location = new System.Drawing.Point(363, 145);
             this.roundButtonHumidityHome.Name = "roundButtonHumidityHome";
-            this.roundButtonHumidityHome.Size = new System.Drawing.Size(50, 50);
+            this.roundButtonHumidityHome.Size = new System.Drawing.Size(40, 40);
             this.roundButtonHumidityHome.TabIndex = 82;
             this.roundButtonHumidityHome.UseVisualStyleBackColor = false;
             this.roundButtonHumidityHome.Click += new System.EventHandler(this.roundButtonHumidityHome_Click);
@@ -942,10 +885,9 @@
             this.roundButtonHumidityPlants.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.roundButtonHumidityPlants.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.roundButtonHumidityPlants.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundButtonHumidityPlants.Location = new System.Drawing.Point(1066, 181);
-            this.roundButtonHumidityPlants.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roundButtonHumidityPlants.Location = new System.Drawing.Point(853, 145);
             this.roundButtonHumidityPlants.Name = "roundButtonHumidityPlants";
-            this.roundButtonHumidityPlants.Size = new System.Drawing.Size(50, 50);
+            this.roundButtonHumidityPlants.Size = new System.Drawing.Size(40, 40);
             this.roundButtonHumidityPlants.TabIndex = 88;
             this.roundButtonHumidityPlants.UseVisualStyleBackColor = false;
             this.roundButtonHumidityPlants.Click += new System.EventHandler(this.roundButtonHumidityPlants_Click);
@@ -959,10 +901,9 @@
             this.roundButtonTemperaturePlants.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.roundButtonTemperaturePlants.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.roundButtonTemperaturePlants.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundButtonTemperaturePlants.Location = new System.Drawing.Point(1066, 100);
-            this.roundButtonTemperaturePlants.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roundButtonTemperaturePlants.Location = new System.Drawing.Point(853, 80);
             this.roundButtonTemperaturePlants.Name = "roundButtonTemperaturePlants";
-            this.roundButtonTemperaturePlants.Size = new System.Drawing.Size(50, 50);
+            this.roundButtonTemperaturePlants.Size = new System.Drawing.Size(40, 40);
             this.roundButtonTemperaturePlants.TabIndex = 87;
             this.roundButtonTemperaturePlants.UseVisualStyleBackColor = false;
             this.roundButtonTemperaturePlants.Click += new System.EventHandler(this.roundButton4_Click);
@@ -975,8 +916,7 @@
             0,
             0,
             0});
-            this.numericUpDownHumidityPlants.Location = new System.Drawing.Point(946, 189);
-            this.numericUpDownHumidityPlants.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownHumidityPlants.Location = new System.Drawing.Point(757, 151);
             this.numericUpDownHumidityPlants.Maximum = new decimal(new int[] {
             90,
             0,
@@ -989,7 +929,7 @@
             0});
             this.numericUpDownHumidityPlants.Name = "numericUpDownHumidityPlants";
             this.numericUpDownHumidityPlants.ReadOnly = true;
-            this.numericUpDownHumidityPlants.Size = new System.Drawing.Size(90, 35);
+            this.numericUpDownHumidityPlants.Size = new System.Drawing.Size(72, 30);
             this.numericUpDownHumidityPlants.TabIndex = 86;
             this.numericUpDownHumidityPlants.Value = new decimal(new int[] {
             50,
@@ -1001,10 +941,9 @@
             // 
             this.label18.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(734, 189);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Location = new System.Drawing.Point(587, 151);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(206, 36);
+            this.label18.Size = new System.Drawing.Size(165, 29);
             this.label18.TabIndex = 85;
             this.label18.Text = "Humidity\r\n";
             // 
@@ -1012,10 +951,9 @@
             // 
             this.label19.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label19.Location = new System.Drawing.Point(731, 106);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Location = new System.Drawing.Point(585, 85);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(206, 36);
+            this.label19.Size = new System.Drawing.Size(165, 29);
             this.label19.TabIndex = 84;
             this.label19.Text = "Temperature";
             // 
@@ -1028,8 +966,7 @@
             0,
             0,
             65536});
-            this.numericUpDownTemperaturePlants.Location = new System.Drawing.Point(946, 106);
-            this.numericUpDownTemperaturePlants.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownTemperaturePlants.Location = new System.Drawing.Point(757, 85);
             this.numericUpDownTemperaturePlants.Maximum = new decimal(new int[] {
             25,
             0,
@@ -1042,7 +979,7 @@
             0});
             this.numericUpDownTemperaturePlants.Name = "numericUpDownTemperaturePlants";
             this.numericUpDownTemperaturePlants.ReadOnly = true;
-            this.numericUpDownTemperaturePlants.Size = new System.Drawing.Size(90, 35);
+            this.numericUpDownTemperaturePlants.Size = new System.Drawing.Size(72, 30);
             this.numericUpDownTemperaturePlants.TabIndex = 83;
             this.numericUpDownTemperaturePlants.Value = new decimal(new int[] {
             21,
@@ -1054,10 +991,9 @@
             // 
             this.label20.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(1171, 94);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Location = new System.Drawing.Point(937, 75);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(206, 36);
+            this.label20.Size = new System.Drawing.Size(165, 29);
             this.label20.TabIndex = 89;
             this.label20.Text = "Water";
             this.label20.Click += new System.EventHandler(this.label20_Click);
@@ -1067,10 +1003,9 @@
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(1171, 175);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Location = new System.Drawing.Point(937, 140);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(205, 32);
+            this.label21.Size = new System.Drawing.Size(173, 29);
             this.label21.TabIndex = 90;
             this.label21.Text = "Light Intensity";
             // 
@@ -1082,8 +1017,7 @@
             0,
             0,
             0});
-            this.numericUpDownWaterPlants.Location = new System.Drawing.Point(1394, 94);
-            this.numericUpDownWaterPlants.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownWaterPlants.Location = new System.Drawing.Point(1115, 75);
             this.numericUpDownWaterPlants.Maximum = new decimal(new int[] {
             19000,
             0,
@@ -1095,7 +1029,7 @@
             0,
             0});
             this.numericUpDownWaterPlants.Name = "numericUpDownWaterPlants";
-            this.numericUpDownWaterPlants.Size = new System.Drawing.Size(90, 35);
+            this.numericUpDownWaterPlants.Size = new System.Drawing.Size(72, 30);
             this.numericUpDownWaterPlants.TabIndex = 91;
             this.numericUpDownWaterPlants.Value = new decimal(new int[] {
             200,
@@ -1112,10 +1046,9 @@
             this.roundButtonLightIntensity.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.roundButtonLightIntensity.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.roundButtonLightIntensity.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundButtonLightIntensity.Location = new System.Drawing.Point(1589, 169);
-            this.roundButtonLightIntensity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roundButtonLightIntensity.Location = new System.Drawing.Point(1271, 135);
             this.roundButtonLightIntensity.Name = "roundButtonLightIntensity";
-            this.roundButtonLightIntensity.Size = new System.Drawing.Size(50, 50);
+            this.roundButtonLightIntensity.Size = new System.Drawing.Size(40, 40);
             this.roundButtonLightIntensity.TabIndex = 94;
             this.roundButtonLightIntensity.UseVisualStyleBackColor = false;
             this.roundButtonLightIntensity.Click += new System.EventHandler(this.roundButtonLightIntensity_Click);
@@ -1129,10 +1062,9 @@
             this.roundButtonWaterPlants.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.roundButtonWaterPlants.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.roundButtonWaterPlants.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundButtonWaterPlants.Location = new System.Drawing.Point(1584, 81);
-            this.roundButtonWaterPlants.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roundButtonWaterPlants.Location = new System.Drawing.Point(1267, 65);
             this.roundButtonWaterPlants.Name = "roundButtonWaterPlants";
-            this.roundButtonWaterPlants.Size = new System.Drawing.Size(50, 50);
+            this.roundButtonWaterPlants.Size = new System.Drawing.Size(40, 40);
             this.roundButtonWaterPlants.TabIndex = 93;
             this.roundButtonWaterPlants.UseVisualStyleBackColor = false;
             this.roundButtonWaterPlants.Click += new System.EventHandler(this.roundButtonWaterPlants_Click);
@@ -1140,10 +1072,9 @@
             // pictureBox31
             // 
             this.pictureBox31.Image = global::HMI.Properties.Resources.heater1;
-            this.pictureBox31.Location = new System.Drawing.Point(2101, 884);
-            this.pictureBox31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox31.Location = new System.Drawing.Point(1681, 707);
             this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(244, 309);
+            this.pictureBox31.Size = new System.Drawing.Size(195, 247);
             this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox31.TabIndex = 95;
             this.pictureBox31.TabStop = false;
@@ -1151,10 +1082,9 @@
             // pictureBox32
             // 
             this.pictureBox32.Image = global::HMI.Properties.Resources.heater1;
-            this.pictureBox32.Location = new System.Drawing.Point(1789, 884);
-            this.pictureBox32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox32.Location = new System.Drawing.Point(1431, 707);
             this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(244, 309);
+            this.pictureBox32.Size = new System.Drawing.Size(195, 247);
             this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox32.TabIndex = 96;
             this.pictureBox32.TabStop = false;
@@ -1162,10 +1092,9 @@
             // pictureBox33
             // 
             this.pictureBox33.Image = global::HMI.Properties.Resources.pipe_3d_h1;
-            this.pictureBox33.Location = new System.Drawing.Point(1969, 1124);
-            this.pictureBox33.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox33.Location = new System.Drawing.Point(1575, 899);
             this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(194, 55);
+            this.pictureBox33.Size = new System.Drawing.Size(155, 44);
             this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox33.TabIndex = 97;
             this.pictureBox33.TabStop = false;
@@ -1173,10 +1102,9 @@
             // pictureBox38
             // 
             this.pictureBox38.Image = global::HMI.Properties.Resources.pipe_3d_h1;
-            this.pictureBox38.Location = new System.Drawing.Point(1961, 985);
-            this.pictureBox38.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox38.Location = new System.Drawing.Point(1569, 788);
             this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(206, 56);
+            this.pictureBox38.Size = new System.Drawing.Size(165, 45);
             this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox38.TabIndex = 99;
             this.pictureBox38.TabStop = false;
@@ -1184,10 +1112,9 @@
             // pictureBox34
             // 
             this.pictureBox34.Image = global::HMI.Properties.Resources.pipe_3d_h1;
-            this.pictureBox34.Location = new System.Drawing.Point(1646, 344);
-            this.pictureBox34.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox34.Location = new System.Drawing.Point(1317, 275);
             this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(331, 94);
+            this.pictureBox34.Size = new System.Drawing.Size(265, 75);
             this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox34.TabIndex = 100;
             this.pictureBox34.TabStop = false;
@@ -1198,10 +1125,9 @@
             this.label22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label22.ForeColor = System.Drawing.SystemColors.Window;
-            this.label22.Location = new System.Drawing.Point(1496, 931);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Location = new System.Drawing.Point(1197, 745);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(150, 50);
+            this.label22.Size = new System.Drawing.Size(120, 40);
             this.label22.TabIndex = 120;
             // 
             // radioButton3
@@ -1209,10 +1135,9 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton3.Location = new System.Drawing.Point(6, 2);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton3.Location = new System.Drawing.Point(5, 2);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(57, 36);
+            this.radioButton3.Size = new System.Drawing.Size(50, 33);
             this.radioButton3.TabIndex = 119;
             this.radioButton3.Text = "F";
             this.radioButton3.UseVisualStyleBackColor = true;
@@ -1223,10 +1148,9 @@
             this.radioButton4.Checked = true;
             this.radioButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton4.Location = new System.Drawing.Point(6, 62);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton4.Location = new System.Drawing.Point(5, 50);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(60, 36);
+            this.radioButton4.Size = new System.Drawing.Size(52, 33);
             this.radioButton4.TabIndex = 118;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "C";
@@ -1237,10 +1161,9 @@
             this.pictureBox53.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox53.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox53.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox53.Location = new System.Drawing.Point(1484, 906);
-            this.pictureBox53.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox53.Location = new System.Drawing.Point(1187, 725);
             this.pictureBox53.Name = "pictureBox53";
-            this.pictureBox53.Size = new System.Drawing.Size(174, 99);
+            this.pictureBox53.Size = new System.Drawing.Size(140, 80);
             this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox53.TabIndex = 117;
             this.pictureBox53.TabStop = false;
@@ -1249,10 +1172,9 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(1466, 869);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Location = new System.Drawing.Point(1173, 695);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(187, 32);
+            this.label23.Size = new System.Drawing.Size(164, 29);
             this.label23.TabIndex = 116;
             this.label23.Text = "Temperature";
             // 
@@ -1262,10 +1184,9 @@
             this.label24.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label24.ForeColor = System.Drawing.SystemColors.Window;
-            this.label24.Location = new System.Drawing.Point(1500, 1124);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Location = new System.Drawing.Point(1200, 899);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(150, 50);
+            this.label24.Size = new System.Drawing.Size(120, 40);
             this.label24.TabIndex = 123;
             // 
             // pictureBox54
@@ -1273,10 +1194,9 @@
             this.pictureBox54.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox54.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox54.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox54.Location = new System.Drawing.Point(1489, 1099);
-            this.pictureBox54.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox54.Location = new System.Drawing.Point(1191, 879);
             this.pictureBox54.Name = "pictureBox54";
-            this.pictureBox54.Size = new System.Drawing.Size(174, 99);
+            this.pictureBox54.Size = new System.Drawing.Size(140, 80);
             this.pictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox54.TabIndex = 122;
             this.pictureBox54.TabStop = false;
@@ -1285,10 +1205,9 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label25.Location = new System.Drawing.Point(1504, 1059);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Location = new System.Drawing.Point(1203, 847);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(133, 32);
+            this.label25.Size = new System.Drawing.Size(114, 29);
             this.label25.TabIndex = 121;
             this.label25.Text = "Humidity";
             // 
@@ -1311,10 +1230,9 @@
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.comboBox2);
             this.panel1.Controls.Add(this.comboBox3);
-            this.panel1.Location = new System.Drawing.Point(11, 15);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(9, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2374, 264);
+            this.panel1.Size = new System.Drawing.Size(1899, 211);
             this.panel1.TabIndex = 124;
             // 
             // comboBoxLightIntensity
@@ -1326,10 +1244,9 @@
             "Low",
             "Medium",
             "High"});
-            this.comboBoxLightIntensity.Location = new System.Drawing.Point(1395, 175);
-            this.comboBoxLightIntensity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxLightIntensity.Location = new System.Drawing.Point(1116, 140);
             this.comboBoxLightIntensity.Name = "comboBoxLightIntensity";
-            this.comboBoxLightIntensity.Size = new System.Drawing.Size(150, 37);
+            this.comboBoxLightIntensity.Size = new System.Drawing.Size(121, 33);
             this.comboBoxLightIntensity.TabIndex = 146;
             // 
             // roundButton9
@@ -1341,10 +1258,9 @@
             this.roundButton9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.roundButton9.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.roundButton9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundButton9.Location = new System.Drawing.Point(2224, 200);
-            this.roundButton9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roundButton9.Location = new System.Drawing.Point(1779, 160);
             this.roundButton9.Name = "roundButton9";
-            this.roundButton9.Size = new System.Drawing.Size(50, 50);
+            this.roundButton9.Size = new System.Drawing.Size(40, 40);
             this.roundButton9.TabIndex = 145;
             this.roundButton9.UseVisualStyleBackColor = false;
             this.roundButton9.Click += new System.EventHandler(this.roundButton9_Click);
@@ -1358,10 +1274,9 @@
             this.roundButton8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.roundButton8.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.roundButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundButton8.Location = new System.Drawing.Point(2224, 129);
-            this.roundButton8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roundButton8.Location = new System.Drawing.Point(1779, 103);
             this.roundButton8.Name = "roundButton8";
-            this.roundButton8.Size = new System.Drawing.Size(50, 50);
+            this.roundButton8.Size = new System.Drawing.Size(40, 40);
             this.roundButton8.TabIndex = 144;
             this.roundButton8.UseVisualStyleBackColor = false;
             this.roundButton8.Click += new System.EventHandler(this.roundButton8_Click);
@@ -1375,10 +1290,9 @@
             this.roundButton7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.roundButton7.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.roundButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundButton7.Location = new System.Drawing.Point(2224, 61);
-            this.roundButton7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roundButton7.Location = new System.Drawing.Point(1779, 49);
             this.roundButton7.Name = "roundButton7";
-            this.roundButton7.Size = new System.Drawing.Size(50, 50);
+            this.roundButton7.Size = new System.Drawing.Size(40, 40);
             this.roundButton7.TabIndex = 143;
             this.roundButton7.UseVisualStyleBackColor = false;
             this.roundButton7.Click += new System.EventHandler(this.roundButton7_Click);
@@ -1388,10 +1302,9 @@
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label31.Location = new System.Drawing.Point(1861, 204);
-            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label31.Location = new System.Drawing.Point(1489, 163);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(100, 32);
+            this.label31.Size = new System.Drawing.Size(85, 29);
             this.label31.TabIndex = 141;
             this.label31.Text = "Plants";
             // 
@@ -1400,10 +1313,9 @@
             this.label30.AutoSize = true;
             this.label30.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label30.Location = new System.Drawing.Point(1856, 134);
-            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label30.Location = new System.Drawing.Point(1485, 107);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(155, 32);
+            this.label30.Size = new System.Drawing.Size(133, 29);
             this.label30.TabIndex = 139;
             this.label30.Text = "Essentials";
             // 
@@ -1412,10 +1324,9 @@
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label29.Location = new System.Drawing.Point(1856, 70);
-            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label29.Location = new System.Drawing.Point(1485, 56);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(121, 32);
+            this.label29.Size = new System.Drawing.Size(105, 29);
             this.label29.TabIndex = 137;
             this.label29.Text = "Comfort";
             // 
@@ -1425,10 +1336,9 @@
             this.label28.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label28.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label28.Location = new System.Drawing.Point(1986, 10);
-            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label28.Location = new System.Drawing.Point(1589, 8);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(114, 39);
+            this.label28.Size = new System.Drawing.Size(98, 33);
             this.label28.TabIndex = 136;
             this.label28.Text = "Power";
             // 
@@ -1441,10 +1351,9 @@
             "Low",
             "Medium",
             "High"});
-            this.comboBox1.Location = new System.Drawing.Point(2040, 65);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Location = new System.Drawing.Point(1632, 52);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(150, 37);
+            this.comboBox1.Size = new System.Drawing.Size(121, 33);
             this.comboBox1.TabIndex = 147;
             // 
             // comboBox2
@@ -1456,10 +1365,9 @@
             "Low",
             "Medium",
             "High"});
-            this.comboBox2.Location = new System.Drawing.Point(2040, 132);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox2.Location = new System.Drawing.Point(1632, 106);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(150, 37);
+            this.comboBox2.Size = new System.Drawing.Size(121, 33);
             this.comboBox2.TabIndex = 148;
             // 
             // comboBox3
@@ -1471,19 +1379,17 @@
             "Low",
             "Medium",
             "High"});
-            this.comboBox3.Location = new System.Drawing.Point(2040, 200);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox3.Location = new System.Drawing.Point(1632, 160);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(150, 37);
+            this.comboBox3.Size = new System.Drawing.Size(121, 33);
             this.comboBox3.TabIndex = 149;
             // 
             // pictureBox43
             // 
             this.pictureBox43.Image = global::HMI.Properties.Resources.solarpanel;
-            this.pictureBox43.Location = new System.Drawing.Point(206, 859);
-            this.pictureBox43.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox43.Location = new System.Drawing.Point(165, 687);
             this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(206, 239);
+            this.pictureBox43.Size = new System.Drawing.Size(165, 191);
             this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox43.TabIndex = 129;
             this.pictureBox43.TabStop = false;
@@ -1492,10 +1398,9 @@
             // pictureBox40
             // 
             this.pictureBox40.Image = global::HMI.Properties.Resources.solarpanel;
-            this.pictureBox40.Location = new System.Drawing.Point(10, 859);
-            this.pictureBox40.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox40.Location = new System.Drawing.Point(8, 687);
             this.pictureBox40.Name = "pictureBox40";
-            this.pictureBox40.Size = new System.Drawing.Size(206, 239);
+            this.pictureBox40.Size = new System.Drawing.Size(165, 191);
             this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox40.TabIndex = 130;
             this.pictureBox40.TabStop = false;
@@ -1504,10 +1409,9 @@
             // pictureBox41
             // 
             this.pictureBox41.Image = global::HMI.Properties.Resources.solarpanel;
-            this.pictureBox41.Location = new System.Drawing.Point(401, 859);
-            this.pictureBox41.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox41.Location = new System.Drawing.Point(321, 687);
             this.pictureBox41.Name = "pictureBox41";
-            this.pictureBox41.Size = new System.Drawing.Size(206, 239);
+            this.pictureBox41.Size = new System.Drawing.Size(165, 191);
             this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox41.TabIndex = 131;
             this.pictureBox41.TabStop = false;
@@ -1516,10 +1420,9 @@
             // pictureBox42
             // 
             this.pictureBox42.Image = global::HMI.Properties.Resources.solarpanel;
-            this.pictureBox42.Location = new System.Drawing.Point(599, 859);
-            this.pictureBox42.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox42.Location = new System.Drawing.Point(479, 687);
             this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(206, 239);
+            this.pictureBox42.Size = new System.Drawing.Size(165, 191);
             this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox42.TabIndex = 132;
             this.pictureBox42.TabStop = false;
@@ -1531,10 +1434,9 @@
             this.label26.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label26.ForeColor = System.Drawing.SystemColors.Window;
-            this.label26.Location = new System.Drawing.Point(861, 931);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Location = new System.Drawing.Point(689, 745);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(150, 50);
+            this.label26.Size = new System.Drawing.Size(120, 40);
             this.label26.TabIndex = 135;
             this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
@@ -1542,10 +1444,9 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label27.Location = new System.Drawing.Point(874, 869);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Location = new System.Drawing.Point(699, 695);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(110, 32);
+            this.label27.Size = new System.Drawing.Size(95, 29);
             this.label27.TabIndex = 133;
             this.label27.Text = "Energy";
             this.label27.Click += new System.EventHandler(this.label27_Click);
@@ -1555,10 +1456,9 @@
             this.pictureBox39.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox39.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox39.Image = global::HMI.Properties.Resources.lcd_types_arduino_supports_01;
-            this.pictureBox39.Location = new System.Drawing.Point(850, 906);
-            this.pictureBox39.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox39.Location = new System.Drawing.Point(680, 725);
             this.pictureBox39.Name = "pictureBox39";
-            this.pictureBox39.Size = new System.Drawing.Size(174, 99);
+            this.pictureBox39.Size = new System.Drawing.Size(140, 80);
             this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox39.TabIndex = 134;
             this.pictureBox39.TabStop = false;
@@ -1567,11 +1467,9 @@
             // 
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(1986, 549);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(1589, 439);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(80, 111);
+            this.groupBox1.Size = new System.Drawing.Size(64, 89);
             this.groupBox1.TabIndex = 136;
             this.groupBox1.TabStop = false;
             // 
@@ -1579,11 +1477,9 @@
             // 
             this.groupBox2.Controls.Add(this.radioButton3);
             this.groupBox2.Controls.Add(this.radioButton4);
-            this.groupBox2.Location = new System.Drawing.Point(1662, 902);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(1330, 722);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(74, 109);
+            this.groupBox2.Size = new System.Drawing.Size(59, 87);
             this.groupBox2.TabIndex = 137;
             this.groupBox2.TabStop = false;
             // 
@@ -1591,10 +1487,9 @@
             // 
             this.pictureBox46.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox46.Image = global::HMI.Properties.Resources.switch_hoa_auto_ON;
-            this.pictureBox46.Location = new System.Drawing.Point(454, 1105);
-            this.pictureBox46.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox46.Location = new System.Drawing.Point(363, 884);
             this.pictureBox46.Name = "pictureBox46";
-            this.pictureBox46.Size = new System.Drawing.Size(108, 114);
+            this.pictureBox46.Size = new System.Drawing.Size(86, 91);
             this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox46.TabIndex = 146;
             this.pictureBox46.TabStop = false;
@@ -1603,10 +1498,9 @@
             // 
             this.pictureBox45.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox45.Image = global::HMI.Properties.Resources.switch_hoa_auto_ON;
-            this.pictureBox45.Location = new System.Drawing.Point(250, 1105);
-            this.pictureBox45.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox45.Location = new System.Drawing.Point(200, 884);
             this.pictureBox45.Name = "pictureBox45";
-            this.pictureBox45.Size = new System.Drawing.Size(108, 114);
+            this.pictureBox45.Size = new System.Drawing.Size(86, 91);
             this.pictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox45.TabIndex = 147;
             this.pictureBox45.TabStop = false;
@@ -1615,10 +1509,9 @@
             // 
             this.pictureBox44.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox44.Image = global::HMI.Properties.Resources.switch_hoa_auto_ON;
-            this.pictureBox44.Location = new System.Drawing.Point(38, 1105);
-            this.pictureBox44.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox44.Location = new System.Drawing.Point(30, 884);
             this.pictureBox44.Name = "pictureBox44";
-            this.pictureBox44.Size = new System.Drawing.Size(108, 114);
+            this.pictureBox44.Size = new System.Drawing.Size(86, 91);
             this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox44.TabIndex = 148;
             this.pictureBox44.TabStop = false;
@@ -1627,10 +1520,9 @@
             // 
             this.pictureBox47.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox47.Image = global::HMI.Properties.Resources.switch_hoa_auto_ON;
-            this.pictureBox47.Location = new System.Drawing.Point(650, 1105);
-            this.pictureBox47.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox47.Location = new System.Drawing.Point(520, 884);
             this.pictureBox47.Name = "pictureBox47";
-            this.pictureBox47.Size = new System.Drawing.Size(108, 114);
+            this.pictureBox47.Size = new System.Drawing.Size(86, 91);
             this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox47.TabIndex = 149;
             this.pictureBox47.TabStop = false;
@@ -1638,10 +1530,9 @@
             // pictureBox49
             // 
             this.pictureBox49.Image = global::HMI.Properties.Resources.electricbolt_low;
-            this.pictureBox49.Location = new System.Drawing.Point(1070, 1022);
-            this.pictureBox49.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox49.Location = new System.Drawing.Point(856, 818);
             this.pictureBox49.Name = "pictureBox49";
-            this.pictureBox49.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox49.Size = new System.Drawing.Size(40, 40);
             this.pictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox49.TabIndex = 151;
             this.pictureBox49.TabStop = false;
@@ -1651,10 +1542,9 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(850, 1036);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(680, 829);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(121, 32);
+            this.label9.Size = new System.Drawing.Size(105, 29);
             this.label9.TabIndex = 151;
             this.label9.Text = "Comfort";
             // 
@@ -1663,10 +1553,9 @@
             this.label32.AutoSize = true;
             this.label32.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label32.Location = new System.Drawing.Point(850, 1106);
-            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label32.Location = new System.Drawing.Point(680, 885);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(155, 32);
+            this.label32.Size = new System.Drawing.Size(133, 29);
             this.label32.TabIndex = 151;
             this.label32.Text = "Essentials";
             // 
@@ -1675,20 +1564,18 @@
             this.label33.AutoSize = true;
             this.label33.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label33.Location = new System.Drawing.Point(850, 1182);
-            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label33.Location = new System.Drawing.Point(680, 946);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(100, 32);
+            this.label33.Size = new System.Drawing.Size(85, 29);
             this.label33.TabIndex = 151;
             this.label33.Text = "Plants";
             // 
             // pictureBox48
             // 
             this.pictureBox48.Image = global::HMI.Properties.Resources.electricbolt_low;
-            this.pictureBox48.Location = new System.Drawing.Point(1070, 1092);
-            this.pictureBox48.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox48.Location = new System.Drawing.Point(856, 874);
             this.pictureBox48.Name = "pictureBox48";
-            this.pictureBox48.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox48.Size = new System.Drawing.Size(40, 40);
             this.pictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox48.TabIndex = 152;
             this.pictureBox48.TabStop = false;
@@ -1696,22 +1583,21 @@
             // pictureBox50
             // 
             this.pictureBox50.Image = global::HMI.Properties.Resources.electricbolt_low;
-            this.pictureBox50.Location = new System.Drawing.Point(1070, 1169);
-            this.pictureBox50.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox50.Location = new System.Drawing.Point(856, 935);
             this.pictureBox50.Name = "pictureBox50";
-            this.pictureBox50.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox50.Size = new System.Drawing.Size(40, 40);
             this.pictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox50.TabIndex = 153;
             this.pictureBox50.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.pictureBox50);
             this.Controls.Add(this.pictureBox48);
             this.Controls.Add(this.label33);
@@ -1806,7 +1692,6 @@
             this.Controls.Add(this.pictureBox47);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Alex On Mars";
