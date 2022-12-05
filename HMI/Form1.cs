@@ -390,6 +390,7 @@ namespace HMI
 
             label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
         }
+
         private void pictureBox46_Click(object sender, EventArgs e)
         {
             power.checkEnergy();
@@ -399,6 +400,7 @@ namespace HMI
                 if (checkPanels() == false)
                 {
                     DialogResult ex = MessageBox.Show("Unable to turn panel OFF. At least one panel must be ON.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    return;
                 }
 
                 DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -418,6 +420,7 @@ namespace HMI
                 }
             }
 
+            
 
             if (power.solar_Panel[2].getPanelState() == true)
             {
@@ -449,6 +452,7 @@ namespace HMI
                 if (checkPanels() == false)
                 {
                     DialogResult ex = MessageBox.Show("Unable to turn panel OFF. At least one panel must be ON.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    return;
                 }
 
                 DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -896,6 +900,7 @@ namespace HMI
                 if (checkPanels() == false)
                 {
                     DialogResult ex = MessageBox.Show("Unable to turn panel OFF. At least one panel must be ON.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    return;
                 }
 
                 DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -945,6 +950,7 @@ namespace HMI
                 if (checkPanels() == false)
                 {
                     DialogResult ex = MessageBox.Show("Unable to turn panel OFF. At least one panel must be ON.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    return;
                 }
 
                 DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
