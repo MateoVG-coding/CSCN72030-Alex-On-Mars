@@ -123,6 +123,11 @@
 
         public void createFileHumidity(Humidity humidity)
         {
+            if (File.Exists("FileComfortHumidity.txt"))
+            {
+                File.Delete("FileComfortHumidity.txt");
+            }
+
             Random random = new Random();
 
             double prefferedHumidity = humidity.humidity;
