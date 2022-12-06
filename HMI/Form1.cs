@@ -62,6 +62,7 @@ namespace HMI
         {
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
+
             label9_Click(null, null);
             label8_Click(null, null);
             roundButtonTemperatureHome_Click(null, null);
@@ -74,9 +75,7 @@ namespace HMI
             pictureBox45_Click_1(null, null);
             pictureBox44_Click_1(null, null);
             pictureBox47_Click(null, null);
-
-
-
+            label14.Text = "Medium";
 
             this.pictureBox44.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox44_Click_1);
             this.pictureBox45.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox45_Click_1);
@@ -84,7 +83,7 @@ namespace HMI
             this.pictureBox47.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox47_Click);
 
             SoundPlayer simpleSound = new SoundPlayer("intro.wav");
-            //simpleSound.Play();
+            simpleSound.Play();
 
             start++;
         }
@@ -234,8 +233,9 @@ namespace HMI
 
                 if(radioButton2.Checked == true)
                 {
-                    label11.Text = Convert.ToString((Convert.ToDouble(lines[i]) * 9) / 5 + 32); 
-                }
+                    double fTemp = (Convert.ToDouble(lines[i]) * 9) / 5 + 32;
+                    label11.Text = fTemp.ToString("0.0");
+        }
                 else
                 {
                     label11.Text = lines[i];
@@ -884,7 +884,8 @@ namespace HMI
 
                 if (radioButton3.Checked == true)
                 {
-                    label22.Text = Convert.ToString((Convert.ToDouble(lines[i]) * 9) / 5 + 32);
+                    double fTemp = (Convert.ToDouble(lines[i]) * 9) / 5 + 32;
+                    label22.Text = fTemp.ToString("0.0");
                 }
                 else
                 {
