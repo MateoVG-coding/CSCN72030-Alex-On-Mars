@@ -33,6 +33,8 @@ namespace HMI
 
         private CancellationTokenSource ctsUseLevel;
 
+        private CancellationTokenSource ctsEnergy;
+
         EssentialsPanel.EssentialsPanel essentialsPanel = new EssentialsPanel.EssentialsPanel();
 
         EssentialsPanel.powerConsumed essentialPower = new EssentialsPanel.powerConsumed(1);
@@ -68,6 +70,13 @@ namespace HMI
             roundButton4_Click(null, null);
             roundButtonLightIntensity_Click(null, null);
             roundButtonWaterPlants_Click(null, null);
+            pictureBox46_Click(null, null);
+            pictureBox45_Click_1(null, null);
+            pictureBox44_Click_1(null, null);
+            pictureBox47_Click(null, null);
+
+
+
 
             this.pictureBox44.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox44_Click_1);
             this.pictureBox45.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox45_Click_1);
@@ -75,7 +84,7 @@ namespace HMI
             this.pictureBox47.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox47_Click);
 
             SoundPlayer simpleSound = new SoundPlayer("intro.wav");
-            simpleSound.Play();
+            //simpleSound.Play();
 
             start++;
         }
@@ -391,32 +400,42 @@ namespace HMI
             label26.Text = Convert.ToString(power.getEnergyPercentage()) + '%';
         }
 
-        private void pictureBox46_Click(object sender, EventArgs e)
+        private async void pictureBox46_Click(object sender, EventArgs e)
         {
             power.checkEnergy();
 
-            if (power.solar_Panel[2].getPanelState() == true)
-            {
-                if (checkPanels() == false)
-                {
-                    DialogResult ex = MessageBox.Show("Unable to turn panel OFF. At least one panel must be ON.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                    return;
-                }
+            ctsEnergy = new CancellationTokenSource();
 
-                DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dr == DialogResult.Yes)
-                {
-                    power.solar_Panel[2].changePanelState(2);
-                    pictureBox46.Image = imgTurnOFF;
-                }
-            }
-            else
+            if (ctsEnergy == null)
             {
-                DialogResult dr = MessageBox.Show("Do you want to turn this panel ON?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dr == DialogResult.Yes)
+                ctsEnergy.Cancel();
+            }
+
+            if (sender != null)
+            {
+                if (power.solar_Panel[2].getPanelState() == true)
                 {
-                    power.solar_Panel[2].changePanelState(1);
-                    pictureBox46.Image = imgTurnON;
+                    if (checkPanels() == false)
+                    {
+                        DialogResult ex = MessageBox.Show("Unable to turn panel OFF. At least one panel must be ON.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        return;
+                    }
+
+                    DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dr == DialogResult.Yes)
+                    {
+                        power.solar_Panel[2].changePanelState(2);
+                        pictureBox46.Image = imgTurnOFF;
+                    }
+                }
+                else
+                {
+                    DialogResult dr = MessageBox.Show("Do you want to turn this panel ON?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dr == DialogResult.Yes)
+                    {
+                        power.solar_Panel[2].changePanelState(1);
+                        pictureBox46.Image = imgTurnON;
+                    }
                 }
             }
 
@@ -428,12 +447,12 @@ namespace HMI
                 {
                     if (power.getEnergyPercentage() < 100)
                     {
+                        await Task.Delay(4000, ctsEnergy.Token);
                         newTotalEnergy();
-                        WaitNSeconds(4);
                     }
                     else
                     {
-                        WaitNSeconds(10);
+                        await Task.Delay(10000, ctsEnergy.Token);
                         continue;
                     }
 
@@ -443,32 +462,42 @@ namespace HMI
             }
         }
 
-        private void pictureBox47_Click(object sender, EventArgs e)
+        private async void pictureBox47_Click(object sender, EventArgs e)
         {
             power.checkEnergy();
 
-            if (power.solar_Panel[3].getPanelState() == true)
-            {
-                if (checkPanels() == false)
-                {
-                    DialogResult ex = MessageBox.Show("Unable to turn panel OFF. At least one panel must be ON.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                    return;
-                }
+            ctsEnergy = new CancellationTokenSource();
 
-                DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dr == DialogResult.Yes)
-                {
-                    power.solar_Panel[3].changePanelState(2);
-                    pictureBox47.Image = imgTurnOFF;
-                }
-            }
-            else
+            if (ctsEnergy == null)
             {
-                DialogResult dr = MessageBox.Show("Do you want to turn this panel ON?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dr == DialogResult.Yes)
+                ctsEnergy.Cancel();
+            }
+
+            if (sender != null)
+            {
+                if (power.solar_Panel[3].getPanelState() == true)
                 {
-                    power.solar_Panel[3].changePanelState(1);
-                    pictureBox47.Image = imgTurnON;
+                    if (checkPanels() == false)
+                    {
+                        DialogResult ex = MessageBox.Show("Unable to turn panel OFF. At least one panel must be ON.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        return;
+                    }
+
+                    DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dr == DialogResult.Yes)
+                    {
+                        power.solar_Panel[3].changePanelState(2);
+                        pictureBox47.Image = imgTurnOFF;
+                    }
+                }
+                else
+                {
+                    DialogResult dr = MessageBox.Show("Do you want to turn this panel ON?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dr == DialogResult.Yes)
+                    {
+                        power.solar_Panel[3].changePanelState(1);
+                        pictureBox47.Image = imgTurnON;
+                    }
                 }
             }
 
@@ -478,12 +507,12 @@ namespace HMI
                 {
                     if (power.getEnergyPercentage() < 100)
                     {
+                        await Task.Delay(4000, ctsEnergy.Token);
                         newTotalEnergy();
-                        WaitNSeconds(4);
                     }
                     else
                     {
-                        WaitNSeconds(10);
+                        await Task.Delay(10000, ctsEnergy.Token);
                         continue;
                     }
 
@@ -909,32 +938,42 @@ namespace HMI
             }
         }
 
-        private void pictureBox44_Click_1(object sender, EventArgs e)
+        private async void pictureBox44_Click_1(object sender, EventArgs e)
         {
             power.checkEnergy();
 
-            if (power.solar_Panel[0].getPanelState() == true)
-            {
-                if (checkPanels() == false)
-                {
-                    DialogResult ex = MessageBox.Show("Unable to turn panel OFF. At least one panel must be ON.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                    return;
-                }
+            ctsEnergy = new CancellationTokenSource();
 
-                DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dr == DialogResult.Yes)
-                {
-                    power.solar_Panel[0].changePanelState(2);
-                    pictureBox44.Image = imgTurnOFF;
-                }
-            }
-            else
+            if (ctsEnergy == null)
             {
-                DialogResult dr = MessageBox.Show("Do you want to turn this panel ON?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dr == DialogResult.Yes)
+                ctsEnergy.Cancel();
+            }
+
+            if (sender != null)
+            {
+                if (power.solar_Panel[0].getPanelState() == true)
                 {
-                    power.solar_Panel[0].changePanelState(1);
-                    pictureBox44.Image = imgTurnON;
+                    if (checkPanels() == false)
+                    {
+                        DialogResult ex = MessageBox.Show("Unable to turn panel OFF. At least one panel must be ON.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        return;
+                    }
+
+                    DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dr == DialogResult.Yes)
+                    {
+                        power.solar_Panel[0].changePanelState(2);
+                        pictureBox44.Image = imgTurnOFF;
+                    }
+                }
+                else
+                {
+                    DialogResult dr = MessageBox.Show("Do you want to turn this panel ON?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dr == DialogResult.Yes)
+                    {
+                        power.solar_Panel[0].changePanelState(1);
+                        pictureBox44.Image = imgTurnON;
+                    }
                 }
             }
 
@@ -944,12 +983,12 @@ namespace HMI
                 {
                     if (power.getEnergyPercentage() < 100)
                     {
+                        await Task.Delay(4000, ctsEnergy.Token);
                         newTotalEnergy();
-                        WaitNSeconds(4);
                     }
                     else
                     {
-                        WaitNSeconds(10);
+                        await Task.Delay(10000, ctsEnergy.Token);
                         continue;
                     }
 
@@ -959,32 +998,42 @@ namespace HMI
             }
         }
 
-        private void pictureBox45_Click_1(object sender, EventArgs e)
+        private async void pictureBox45_Click_1(object sender, EventArgs e)
         {
             power.checkEnergy();
 
-            if (power.solar_Panel[1].getPanelState() == true)
-            {
-                if (checkPanels() == false)
-                {
-                    DialogResult ex = MessageBox.Show("Unable to turn panel OFF. At least one panel must be ON.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                    return;
-                }
+            ctsEnergy = new CancellationTokenSource();
 
-                DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dr == DialogResult.Yes)
-                {
-                    power.solar_Panel[1].changePanelState(2);
-                    pictureBox45.Image = imgTurnOFF;
-                }
-            }
-            else
+            if (ctsEnergy == null)
             {
-                DialogResult dr = MessageBox.Show("Do you want to turn this panel ON?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dr == DialogResult.Yes)
+                ctsEnergy.Cancel();
+            }
+
+            if (sender != null)
+            {
+                if (power.solar_Panel[1].getPanelState() == true)
                 {
-                    power.solar_Panel[1].changePanelState(1);
-                    pictureBox45.Image = imgTurnON;
+                    if (checkPanels() == false)
+                    {
+                        DialogResult ex = MessageBox.Show("Unable to turn panel OFF. At least one panel must be ON.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        return;
+                    }
+
+                    DialogResult dr = MessageBox.Show("Do you want to turn this panel OFF?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dr == DialogResult.Yes)
+                    {
+                        power.solar_Panel[1].changePanelState(2);
+                        pictureBox45.Image = imgTurnOFF;
+                    }
+                }
+                else
+                {
+                    DialogResult dr = MessageBox.Show("Do you want to turn this panel ON?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dr == DialogResult.Yes)
+                    {
+                        power.solar_Panel[1].changePanelState(1);
+                        pictureBox45.Image = imgTurnON;
+                    }
                 }
             }
 
@@ -994,12 +1043,12 @@ namespace HMI
                 {
                     if (power.getEnergyPercentage() < 100)
                     {
+                        await Task.Delay(4000, ctsEnergy.Token);
                         newTotalEnergy();
-                        WaitNSeconds(4);
                     }
                     else
                     {
-                        WaitNSeconds(10);
+                        await Task.Delay(4000, ctsEnergy.Token);
                         continue;
                     }
 
