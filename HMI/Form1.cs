@@ -297,7 +297,10 @@ namespace HMI
 
             double desiredWater = Convert.ToDouble(numericUpDownWaterPlants.Value);
 
-            plantsPanel.setWaterPlants(plantsPanel, desiredWater, essentialsPanel);
+            if(plantsPanel.setWaterPlants(plantsPanel, desiredWater, essentialsPanel) == 1)
+            {
+                DialogResult ex = MessageBox.Show("The amount of water you have requested is not available.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
 
             label12.Text = Convert.ToString(desiredWater) + 'L' + 't' + 's';
 
