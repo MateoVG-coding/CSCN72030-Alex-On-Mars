@@ -62,10 +62,6 @@ namespace HMI
         {
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
-            pictureBox46_Click(null, null);
-            pictureBox45_Click_1(null, null);
-            pictureBox44_Click_1(null, null);
-            pictureBox47_Click(null, null);
             label9_Click(null, null);
             label8_Click(null, null);
             roundButtonTemperatureHome_Click(null, null);
@@ -74,6 +70,13 @@ namespace HMI
             roundButton4_Click(null, null);
             roundButtonLightIntensity_Click(null, null);
             roundButtonWaterPlants_Click(null, null);
+            pictureBox46_Click(null, null);
+            pictureBox45_Click_1(null, null);
+            pictureBox44_Click_1(null, null);
+            pictureBox47_Click(null, null);
+
+
+
 
             this.pictureBox44.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox44_Click_1);
             this.pictureBox45.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox45_Click_1);
@@ -368,23 +371,22 @@ namespace HMI
                 return true;
         }
 
-        private void newTotalEnergy(int panelNumber)
+        private void newTotalEnergy()
         {
-            //float[] energy = new float[4];
+            float[] energy = new float[4];
             float totalEnergy = 0;
-            //for (int i = 0; i < 4; i++)
-            //{
-            //    if (power.solar_Panel[i].getPanelState() == true)
-            //    {
-            //        if (power.solar_Panel[i].readSolarEnergy() == 0)
-            //        {
-            //            energy[i] = energy[i] + power.solar_Panel[i].getSolarEnergy();
-            //        }
-            //    }
-            //}
+            for (int i = 0; i < 4; i++)
+            {
+                if (power.solar_Panel[i].getPanelState() == true)
+                {
+                    if (power.solar_Panel[i].readSolarEnergy() == 0)
+                    {
+                        energy[i] = energy[i] + power.solar_Panel[i].getSolarEnergy();
+                    }
+                }
+            }
 
-            power.solar_Panel[panelNumber].readSolarEnergy();
-            totalEnergy = power.getTotalEnergy() + power.solar_Panel[panelNumber].getSolarEnergy();
+            totalEnergy = power.getTotalEnergy() + (energy[0] + energy[1] + energy[2] + energy[3]);
 
             if (totalEnergy > power.getMaxEnergy())
             {
@@ -446,7 +448,7 @@ namespace HMI
                     if (power.getEnergyPercentage() < 100)
                     {
                         await Task.Delay(4000, ctsEnergy.Token);
-                        newTotalEnergy(2);
+                        newTotalEnergy();
                     }
                     else
                     {
@@ -506,7 +508,7 @@ namespace HMI
                     if (power.getEnergyPercentage() < 100)
                     {
                         await Task.Delay(4000, ctsEnergy.Token);
-                        newTotalEnergy(3);
+                        newTotalEnergy();
                     }
                     else
                     {
@@ -550,7 +552,7 @@ namespace HMI
             if (start != 0)
             {
                 SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
-                //simpleSound.Play();
+                simpleSound.Play();
             }
 
             //comfort button energy
@@ -648,7 +650,7 @@ namespace HMI
             if (start != 0)
             {
                 SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
-                //simpleSound.Play();
+                simpleSound.Play();
             }
 
             //Essentials button energy
@@ -746,7 +748,7 @@ namespace HMI
             if (start != 0)
             {
                 SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
-                //simpleSound.Play();
+                simpleSound.Play();
             }
             //Plants button energy
 
@@ -982,7 +984,7 @@ namespace HMI
                     if (power.getEnergyPercentage() < 100)
                     {
                         await Task.Delay(4000, ctsEnergy.Token);
-                        newTotalEnergy(0);
+                        newTotalEnergy();
                     }
                     else
                     {
@@ -1042,7 +1044,7 @@ namespace HMI
                     if (power.getEnergyPercentage() < 100)
                     {
                         await Task.Delay(4000, ctsEnergy.Token);
-                        newTotalEnergy(1);
+                        newTotalEnergy();
                     }
                     else
                     {
