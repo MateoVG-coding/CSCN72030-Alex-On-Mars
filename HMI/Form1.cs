@@ -81,10 +81,21 @@ namespace HMI
             this.pictureBox46.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox46_Click);
             this.pictureBox47.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox47_Click);
 
-            SoundPlayer simpleSound = new SoundPlayer("intro.wav");
-            simpleSound.Play();
+            playIntro();
 
             start++;
+        }
+
+        private void playIntro() 
+        {
+            SoundPlayer audio = new SoundPlayer(HMI.Properties.Resources.intro);
+            audio.Play();
+        }
+
+        private void playButtonSound()
+        {
+            SoundPlayer audio = new SoundPlayer(HMI.Properties.Resources.pressButton);
+            audio.Play();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -192,8 +203,7 @@ namespace HMI
         {
             if(start != 0)
             {
-                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
-                simpleSound.Play();
+                playButtonSound();
             }
 
             if (ctsTemperature != null)
@@ -246,8 +256,7 @@ namespace HMI
         {
             if (start != 0)
             {
-                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
-                simpleSound.Play();
+                playButtonSound();
             }
 
             if (ctsHumidity != null)
@@ -291,8 +300,7 @@ namespace HMI
         {
             if (start != 0)
             {
-                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
-                simpleSound.Play();
+                playButtonSound();
             }
 
             double desiredWater = Convert.ToDouble(numericUpDownWaterPlants.Value);
@@ -311,8 +319,7 @@ namespace HMI
         {
             if (start != 0)
             {
-                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
-                simpleSound.Play();
+                playButtonSound();
             }
 
             string desiredLightIntensity = comboBoxLightIntensity.Text;
@@ -331,16 +338,6 @@ namespace HMI
             }
 
             label14.Text = desiredLightIntensity;
-        }
-
-        private void WaitNSeconds(int seconds)
-        {
-            if (seconds < 1) return;
-            DateTime _desired = DateTime.Now.AddSeconds(seconds);
-            while (DateTime.Now < _desired)
-            {
-                System.Windows.Forms.Application.DoEvents();
-            }
         }
         private void label27_Click(object sender, EventArgs e)
         {
@@ -552,10 +549,10 @@ namespace HMI
 
         private async void roundButton7_Click(object sender, EventArgs e)
         {
+
             if (start != 0)
             {
-                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
-                simpleSound.Play();
+                playButtonSound();
             }
 
             //comfort button energy
@@ -652,10 +649,8 @@ namespace HMI
         {
             if (start != 0)
             {
-                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
-                simpleSound.Play();
+                playButtonSound();
             }
-
             //Essentials button energy
 
             ctsUseLevel = new CancellationTokenSource();
@@ -750,8 +745,7 @@ namespace HMI
         {
             if (start != 0)
             {
-                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
-                simpleSound.Play();
+                playButtonSound();
             }
             //Plants button energy
 
@@ -847,8 +841,7 @@ namespace HMI
         {
             if (start != 0)
             {
-                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
-                simpleSound.Play();
+                playButtonSound();
             }
 
             if (ctsTemperatureHome != null)
@@ -901,8 +894,7 @@ namespace HMI
         {
             if (start != 0)
             {
-                SoundPlayer simpleSound = new SoundPlayer("pressButton.wav");
-                simpleSound.Play();
+                playButtonSound();
             }
 
             if (ctsHumidityHome != null)

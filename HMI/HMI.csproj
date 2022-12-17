@@ -9,6 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\pressButton.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\intro.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ComfortPanel\ComfortPanel.csproj" />
     <ProjectReference Include="..\EssentialsPanel\EssentialsPanel.csproj" />
     <ProjectReference Include="..\PlantsPanel\PlantsPanel.csproj" />

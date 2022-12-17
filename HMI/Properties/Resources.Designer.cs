@@ -171,6 +171,15 @@ namespace HMI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream intro {
+            get {
+                return ResourceManager.GetStream("intro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap lcd_types_arduino_supports_01 {
@@ -297,6 +306,15 @@ namespace HMI.Properties {
             get {
                 object obj = ResourceManager.GetObject("pngtree-thermometer-icon-vector--icon-design-png-image_1978811", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream pressButton {
+            get {
+                return ResourceManager.GetStream("pressButton", resourceCulture);
             }
         }
         
